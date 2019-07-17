@@ -1,0 +1,8 @@
+name, movie, percent of dialogue, percent of fanworks (literal), percent of fanworks (including sub tags), age, gender,  year, script ID, imdb ID, movie words, gross, AO3 works in closest fandom (literal), AO3 works in closest fandom (including fandom subtags), AO3 closest fandom,title similarity
+yoda,Star Wars: Episode VI - Return of the Jedi,1.0,0.00176056338028,0.0975352112676,19,m,1983,1359,tt0086190,163,853,15,831,Star Wars: Rise of Empire Era - All Media Types,0.234042553191
+mimi,A Serious Man,1.0,-1,-1,None,f,2009,633,tt1019452,219,10,0,0,,0
+elaine,Airplane!,1.0,-1,-1,25,f,1980,648,tt0080339,904,269,0,0,,0
+buckaroo banzai,The Adventures of Buckaroo Banzai Across the 8th Dimension,1.0,0.52,0.52,37,m,1984,640,tt0086856,1723,None,39,39,The Adventures of Buckaroo Banzai Across The 8th Dimension (1984),0.892307692308
+simon,25th Hour,0.643076923077,-1,-1,32,m,2002,630,tt0307901,325,19,-1,0,,0
+trey,25th Hour,0.356923076923,-1,-1,None,m,2002,630,tt0307901,325,19,-1,0,,0
+madam pomfrey,Harry Potter and the Chamber of Secrets,1.0,0.00975445940458,0.00975445940458,60,f,2002,989,tt0295297,133,392,1249,1249,Harry Potter - J. K. Rowling,0.333333333333

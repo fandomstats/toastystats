@@ -1,0 +1,69 @@
+README: get_tagstats.py
+AUTHOR: destinationtoast@gmail.com
+LAST UPDATED: Aug 27, 2016
+
+ This python script takes in the name of a Tumblr tag and fetches the
+most recent N posts using that tag.  It prints out metadata about the
+posts in one CSV file and aggregate stats about the tag in another --
+number of usages per hour and per day, types of Tumblr posts, and
+which other tags it co-occurs with (and how often).
+
+This script relies on you having already installed both Python and
+pytumblr, which allows you to access the Tumblr API using Python.
+Pytumblr can be downloaded here: https://github.com/tumblr/pytumblr
+
+If you are getting an error message "ImportError: No module named
+pytumblr," one quick fix is to put the get_tagstats script in the
+pytumblr directory.
+
+------
+Usage: 
+python get_tagstats.py [tag name] [number of posts] [min co-occurrence popularity]
+
+Example: 
+python get_tagstats.py "sherlock holmes" 1000 10
+
+* The tag name should not include a hashtag and should be encased in quotes.  
+
+* The number of posts is the number to fetch with this tag.  The most
+  recent N are fetched and analyzed to produce aggregate stats (it is
+  possible to alter the script to fetch N posts that are not the most
+  recent ones).  KNOWN ISSUE: Right now the results can be erratic for
+  some tags with large values of N (e.g., 50K); there is some kind of
+  Tumblr API bug where every once in a while it skips several years
+  worth of posts and returns something from much earlier. I’ve tried
+  to adjust for that in my script by throwing out outliers, but it
+  doesn’t work in all cases.  (And my current version sometimes leads
+  to refetching the same posts and over counting them.)
+
+* The min co-occurrence popularity is a threshold for which
+  co-occurring tags should be returned.  E.g., if "lolololololololol"
+  only is used one time with "sherlock holmes", you might not care to
+  see it in the list; you can exclude it by setting a requirement that
+  only tags that co-occur at least 10 times (as in the example above)
+  are included in the results.  To include every tag, set this
+  threshold to 0.
+
+Output: The script prints out the number of posts fetched and earliest
+post ID every time it fetches a new set of 20 posts, that looks
+something like this:
+
+10
+1450040825
+20
+1450033323
+30
+1450022986
+40
+1450004388
+50
+1449981291
+
+Feel free to remove the print statements if annoying; I use them to
+make sure things are running properly.
+
+The actual results come in the form of two CSV files:
+[tag name]_posts.csv -- all the actual post contents and metadata from the posts that used this tag
+[tag name]_stats.csv -- the aggregate stats
+
+These will be in your current directory.

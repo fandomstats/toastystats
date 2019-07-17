@@ -1,0 +1,30 @@
+# sampleFanworks.py
+# Last modified: July 17, 2019
+
+sampleFanworks.py lets you sample random fanworks from AO3, FFN, or
+Wattpad.  It does so by grabbing random numbers between 0 and the
+maximum fanwork ID # on the given archive, then constructing a
+URL to try to retrieve a fanwork with that ID number.  
+
+In order to run this, you'll need to estimate the maximum fanwork ID #
+for the site.  You can do that by browsing recent fanworks on the site
+and looking at their ID numbers (the number is part of the URL).
+
+Example usage:
+
+> python sampleFanworks.py "Wattpad" 100 1910000 "wattpad.csv"
+
+This would sample 100 random URLs from Wattpad, with IDs less than
+1910000, and output their metadata into wattpad.csv.
+
+KNOWN LIMITATIONS:
+
+- some of the AO3 metadata is not being reliably collected and will be
+  missing from some fanworks.  And I think popularity metrics (hits,
+  kudos, etc) are not always correct.
+
+- Each URL may or may not correspond to a fanwork (some numbers never
+  corresponded to a fanwork, some fanworks have been deleted, and on
+  AO3 some fanworks are not public and thus can't be retrieved).  This
+  means you may need to sample a much larger number of URLs in order
+  to get the number of fanworks you want (especially on Wattpad).

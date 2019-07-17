@@ -1,0 +1,5430 @@
+script_id,imdb_character_name,words,gender,age
+6495,barr,232,m,NULL
+6495,cash,344,m,81
+6495,charlie,390,m,26
+6495,emerson,810,m,36
+6495,helen,2450,f,33
+6495,linsky,188,m,35
+6495,rob farrior,187,m,58
+6495,rodin,496,m,65
+6495,sandy,260,f,20
+6495,the zec,410,m,70
+6495,woman on bus,198,f,NULL
+6509,amy courtland,129,f,NULL
+6509,dr. ellman,226,m,53
+6509,farber,150,m,NULL
+6509,insp. brie,308,m,65
+6509,jane,143,f,38
+6509,michael courtla,2025,m,53
+6509,newscaster,175,m,50
+6509,Robert Lasalle,877,m,31
+6509,sandra portinar,1398,f,34
+6509,ticket agent,116,m,40
+6511,detective,278,f,NULL
+6511,detective farme,245,m,52
+6511,dr. verringer,374,m,38
+6511,jefe,144,m,53
+6511,marty augustine,332,m,44
+6511,morgan,228,m,36
+6511,philip marlowe,3694,m,35
+6511,roger wade,1562,m,57
+6511,terry lennox,627,m,34
+6512,captain jack wa,1338,m,47
+6512,captain james b,598,m,49
+6512,coates,197,m,36
+6512,detective dante,475,m,47
+6512,detective paul ,972,m,27
+6512,detective tom l,4247,m,44
+6512,grill,167,m,29
+6512,linda washingto,373,f,32
+6512,megan,612,f,NULL
+6512,scribble,147,m,44
+6512,Sgt. Mike Clady,518,m,38
+6514,2nd lieutenant,560,m,NULL
+6514,capt. 'painless,417,m,30
+6514,cpl. 'radar' o',418,m,27
+6514,dr. oliver 'spe,551,m,32
+6514,duke forrest,1993,m,37
+6514,hawkeye pierce,5284,m,35
+6514,ho-jon,247,m,NULL
+6514,korean doctor,257,m,45
+6514,lt. col. henry ,1006,m,38
+6514,maj. frank burn,544,m,39
+6514,maj. margaret ',593,f,33
+6514,sgt. major voll,126,m,29
+6514,trapper john mc,1973,m,32
+6515,anthony meredit,406,m,34
+6515,barnes,139,m,33
+6515,bertha,243,f,NULL
+6515,constable dexte,104,m,NULL
+6515,constance trent,1171,f,67
+6515,dorothy,312,f,39
+6515,elsie,939,f,34
+6515,george,230,m,44
+6515,henry denton,351,m,27
+6515,inspector thomp,494,m,44
+6515,isobel mccordle,310,f,25
+6515,ivor novello,353,m,40
+6515,jennings,783,m,67
+6515,jeremy blond,182,m,22
+6515,lord raymond st,475,m,55
+6515,louisa stockbri,210,f,34
+6515,mary maceachran,1210,f,25
+6515,morris weissman,603,m,56
+6515,mrs. croft,392,f,67
+6515,mrs. wilson,600,f,56
+6515,probert,195,m,63
+6515,robert parks,520,m,37
+6515,strutt,155,m,NULL
+6515,william mccordl,331,m,61
+6518,eva cuza,781,f,28
+6518,father fonescu,313,m,53
+6518,glaeken,366,m,42
+6518,kaempffer,675,m,33
+6518,lutz,119,m,32
+6518,magda,392,f,NULL
+6518,radu molasar,174,m,36
+6518,woermann,1071,m,42
+6522,big evil,186,m,NULL
+6522,brian taylor,3166,m,32
+6522,captain reese,224,m,NULL
+6522,ck,119,m,NULL
+6522,demon,103,m,NULL
+6522,gabby,295,f,28
+6522,janet,432,f,27
+6522,la la,243,f,NULL
+6522,mike zavala,2662,m,36
+6522,mr. tre,398,m,NULL
+6522,orozco,186,f,28
+6522,sarge,514,m,49
+6527,annette,303,f,52
+6527,becky,179,f,24
+6527,bonnie,165,f,31
+6527,buddy,182,m,31
+6527,claire bennett,3517,f,45
+6527,jason bennett,175,m,40
+6527,nina collins,278,f,29
+6527,nurse gayle,118,f,37
+6527,roy collins,589,m,38
+6527,silvana,716,f,58
+6529,caroline,344,f,26
+6529,lucy,2668,f,30
+6529,phone voice roy,131,f,NULL
+6529,pierre del rio,337,m,41
+6529,Professor Norma,1510,m,77
+6529,regent hotel co,105,m,36
+6529,richard,486,m,32
+6529,taipei surgeon,154,m,NULL
+6529,the limey,235,m,46
+6535,digger holt,297,m,71
+6535,dr. pritchard,714,m,NULL
+6535,fred clawson,190,m,42
+6535,garrison,165,m,NULL
+6535,homer gamache,411,m,NULL
+6535,liz beaumont,1300,f,43
+6535,man in the hall,200,m,NULL
+6535,mike donaldson,417,m,53
+6535,miriam cowley,124,f,51
+6535,rick cowley,150,m,46
+6535,shayla beaumont,199,f,44
+6535,sheriff alan pa,1470,m,38
+6535,thad beaumont,4912,m,33
+6537,gerald olin,541,m,59
+6537,lily,284,f,38
+6537,mike enslin,2338,m,41
+6537,sam farrell,160,m,54
+6538,burt,2120,m,31
+6538,diehl,328,m,67
+6538,isaac,552,m,25
+6538,job,566,m,11
+6538,joseph,135,m,NULL
+6538,malachai,335,m,19
+6538,sarah,156,f,NULL
+6538,vicky,1170,f,28
+6539,andrew 'andy' m,1646,m,30
+6539,bates,101,m,40
+6539,captain hollist,267,m,44
+6539,charlene 'charl,1387,f,9
+6539,Dr. Rahv,461,f,NULL
+6539,irv manders,133,m,66
+6539,quincey,106,m,NULL
+6539,steinowitz,177,m,NULL
+6539,victoria 'vicky,434,f,23
+6540,donna trenton,1136,f,35
+6540,gary pervier,259,m,43
+6540,joe camber,429,m,45
+6540,roger breakston,147,m,NULL
+6540,tad trenton,449,m,7
+6540,vic trenton,672,m,31
+6549,Aunt Bedelia,297,f,62
+6549,cass blaine (se,297,f,NULL
+6549,charlie gereson,303,m,31
+6549,dexter stanley ,194,m,56
+6549,george,155,m,NULL
+6549,harry wentworth,855,m,35
+6549,henry northrup ,1971,m,57
+6549,jordy verrill (,949,m,35
+6549,mike the janito,845,m,66
+6549,nate,118,m,NULL
+6549,richard vickers,1913,m,56
+6549,sylvia grantham,626,f,46
+6549,upson pratt (se,1323,m,68
+6549,white (segment ,265,m,44
+6549,wilma northrup ,579,f,37
+6552,barry neiman,202,m,33
+6552,beaver,379,m,33
+6552,henry,938,m,34
+6552,jonesy,740,m,32
+6552,kurtz,449,m,NULL
+6552,mr gray,202,m,NULL
+6552,owen,385,m,42
+6552,pete,1046,m,35
+6552,roberta cavell,123,f,51
+6554,brian rusk,180,m,16
+6554,cora rusk,112,f,36
+6554,danforth keeton,536,m,50
+6554,deputy norris r,439,m,36
+6554,hugh priest,147,m,NULL
+6554,myrtle keeton,165,f,35
+6554,nettie cobb,186,f,36
+6554,polly chalmers,361,f,45
+6554,reverend rose,121,m,51
+6554,sheriff alan pa,1061,m,43
+6568,clarice starlin,2265,f,41
+6568,crawford,415,m,NULL
+6568,dr fell,335,m,NULL
+6568,Dr. Doemling,124,m,NULL
+6568,fell,600,m,NULL
+6568,hannibal lecter,1673,m,64
+6568,insp. rinaldo p,703,m,59
+6568,mason,282,m,NULL
+6568,nurse barney,576,m,52
+6568,paul krendler,474,m,47
+6568,proprietor,161,m,NULL
+6571,anita vanger,292,f,46
+6571,armansky,145,m,39
+6571,bjurman,460,m,47
+6571,cecilia,242,f,61
+6571,detective morel,489,m,68
+6571,erika berger,473,f,45
+6571,frode,765,m,74
+6571,harald,206,m,78
+6571,harriet,220,f,NULL
+6571,henrik vanger,1346,m,82
+6571,lisbeth salande,2340,f,26
+6571,liv,146,f,40
+6571,martin vanger,1605,m,60
+6571,mikael blomkvis,3736,m,43
+6571,plague,108,m,33
+6571,reporter,105,m,NULL
+6574,al eustis,104,m,64
+6574,anne anderson,255,f,44
+6574,james gordon,388,m,48
+6574,jan schlichtman,1798,m,44
+6574,jerome facher,779,m,67
+6574,john riley,204,m,58
+6574,judge walter j.,236,m,53
+6574,kevin conway,544,m,45
+6574,mr. granger,128,m,48
+6574,pinder,170,m,41
+6574,william cheesem,202,m,38
+6576,bonnie waitzkin,875,f,37
+6576,bruce pandolfin,741,m,50
+6576,dimitri,255,m,NULL
+6576,fred waitzkin,2986,m,46
+6576,jonathan poe,176,m,NULL
+6576,josh waitzkin,2401,m,9
+6576,lina,239,f,NULL
+6576,merlin,141,m,NULL
+6576,poe's teacher,161,m,62
+6576,reporter,232,f,NULL
+6576,tournament dire,101,m,53
+6576,vinnie,1073,m,32
+6580,bill robinson,1155,m,24
+6580,brett,501,f,28
+6580,connie,132,f,22
+6580,curt,213,m,NULL
+6580,handy,144,m,37
+6582,aisha,693,f,25
+6582,al-saleem,302,m,43
+6582,bassam,385,m,29
+6582,ed hoffman,2534,m,44
+6582,garland,292,m,51
+6582,hani,1757,m,45
+6582,holiday,194,m,46
+6582,nizar,179,m,37
+6582,omar sadiki,187,m,NULL
+6582,roger ferris,4522,m,34
+6582,skip,136,m,42
+6585,bobby garfield,2095,m,12
+6585,carol gerber,743,f,14
+6585,liz garfield,865,f,37
+6585,ted brautigan,2021,m,64
+6605,army-jacket,144,m,29
+6605,audrey,1027,f,26
+6605,bardo,809,m,29
+6605,beat girl,142,f,26
+6605,candace,177,f,29
+6605,Cliffy,101,m,NULL
+6605,eno,166,m,NULL
+6605,jerome,1713,m,21
+6605,jimmy,449,m,57
+6605,jonah,244,m,34
+6605,marvin bushmill,110,m,33
+6605,matthew,163,m,30
+6605,Professor Sandi,980,m,53
+6605,sophie,258,f,NULL
+6605,vince,759,m,30
+6607,caberts,157,m,NULL
+6607,gina aufiero,121,f,42
+6607,len,408,m,NULL
+6607,melissa,165,f,NULL
+6607,parking garage ,207,f,NULL
+6607,paul aufiero,1750,m,40
+6607,philadelphia ph,468,m,39
+6607,randy clark,115,m,NULL
+6607,sal,512,m,40
+6607,theresa,164,f,NULL
+6610,blonde woman,295,f,NULL
+6610,charles,166,m,NULL
+6610,curly,1203,m,37
+6610,heavyset woman,111,f,73
+6610,larry,1206,m,42
+6610,lydia,257,f,40
+6610,moe,1831,m,37
+6610,Mother Superior,353,f,52
+6610,mr wiley,232,m,NULL
+6610,mrs wiley,141,f,NULL
+6610,Sister Rosemary,226,f,31
+6610,teddy,447,m,35
+6611,bud dodge,291,m,41
+6611,custodian,440,m,36
+6611,gas station own,111,m,NULL
+6611,gil kinney,891,m,26
+6611,jim dodge,4601,m,28
+6611,josie mcclellan,2585,f,21
+6611,nestor pyle,947,m,28
+6611,officer don,157,m,51
+6611,penny dodge,174,f,24
+6611,roger roy mccle,217,m,60
+6611,young man,313,m,NULL
+6612,anise hall,139,f,NULL
+6612,bernard oxbar,464,m,49
+6612,bill dancer,2950,m,37
+6612,curly sue,1806,f,10
+6612,grey ellison,3269,f,32
+6612,theater patron,149,m,31
+6612,walker mccormic,1371,m,45
+6613,arno crostic,116,m,NULL
+6613,benjamin pierce,141,m,38
+6613,braedon keller,439,m,44
+6613,cameron vale,1317,m,35
+6613,darryl revok,780,m,31
+6613,dr. paul ruth,1474,m,53
+6613,kim obrist,532,f,33
+6614,andré petrescu,206,m,47
+6614,anthony adubato,613,m,83
+6614,benno levin,1224,m,45
+6614,brutha fez,128,m,34
+6614,didi fancher,281,f,48
+6614,elise shifrin,617,f,25
+6614,eric packer,3107,m,26
+6614,ibrahim hamadou,305,m,47
+6614,jane melman,496,f,31
+6614,kendra hays,186,f,NULL
+6614,michael chin,211,m,NULL
+6614,shiner,224,m,30
+6614,torval,480,m,38
+6614,vija kinsky,698,f,35
+6617,adele,755,f,45
+6617,dr. pinchelow,850,m,61
+6617,dr. walcott,244,f,NULL
+6617,fraida,560,f,60
+6617,harry,3503,m,59
+6617,lloyd,4017,m,52
+6617,ms. sourpuss,170,f,NULL
+6617,penny,1054,f,29
+6617,travis,691,m,44
+6622,colonel montfor,177,m,NULL
+6622,doctok,695,m,NULL
+6622,doctoyd,588,m,NULL
+6622,fisk,104,m,NULL
+6622,gwen's maid,1226,f,29
+6622,lawrence talbot,2790,m,43
+6622,maleva,130,f,66
+6622,rag picker,351,m,NULL
+6622,sir john talbot,2223,m,73
+6622,squire strickla,702,m,NULL
+6625,bill,423,m,NULL
+6625,cecilia,625,f,NULL
+6625,clancy,302,m,NULL
+6625,clarence pool,4241,m,24
+6625,clifford,327,m,NULL
+6625,cute girl,101,f,NULL
+6625,eddie,688,m,NULL
+6625,lenny otis,101,m,NULL
+6625,mickey burnett,1688,m,NULL
+6625,misty,941,f,NULL
+6625,oliver brandon,135,m,NULL
+6625,ronny,278,m,NULL
+6634,hassan,2005,m,31
+6634,jean-pierre,227,m,38
+6634,Madame Mallory,1062,f,69
+6634,Mahira,173,f,NULL
+6634,mama,440,f,47
+6634,Marguerite,1116,f,28
+6634,mayor,586,m,62
+6634,paul,295,m,43
+6649,charlie hollowa,793,m,36
+6649,david,1143,m,35
+6649,elizabeth shaw,1242,f,33
+6649,fifield,207,m,46
+6649,janek,736,m,40
+6649,meredith vicker,504,f,37
+6649,peter weyland,611,m,45
+6672,betty ross,118,f,33
+6672,bruce banner,1935,m,35
+6672,capt siegel,173,m,NULL
+6672,doc samson,198,m,NULL
+6672,leder,2198,m,NULL
+6672,marlo,277,f,NULL
+6672,rick jones,1687,m,NULL
+6672,ross,1021,m,59
+6672,simple man,102,m,NULL
+6672,talbot,577,m,32
+6672,technician,150,f,32
+6672,vince,205,m,NULL
+6674,frank castle,816,m,35
+6674,frank sr,157,m,NULL
+6674,howard saint,232,m,50
+6674,joan,101,f,32
+6674,john saint,127,m,29
+6674,leonard glass,160,m,NULL
+6674,nicky duka,237,m,NULL
+6674,tattooed mike,152,m,32
+6679,dr. otto octavi,2459,m,51
+6679,girl,161,f,NULL
+6679,harry osborn,672,m,26
+6679,J. Jonah Jameso,764,m,49
+6679,Mary Jane Watso,1335,f,22
+6679,may parker,614,f,77
+6679,mr. aziz,254,m,38
+6679,Norman Osborn,146,m,51
+6679,peter parker,2193,m,29
+6701,brogan-moore,243,m,54
+6701,carter,438,m,61
+6701,christine,1867,f,56
+6701,inspector hearn,332,m,60
+6701,janet mackenzie,520,f,77
+6701,judge,204,m,72
+6701,leonard vole,2818,m,43
+6701,mayhew,460,m,63
+6701,miss plimsoll,410,f,55
+6701,mr. myers,1095,m,52
+6701,sir wilfrid rob,4462,m,58
+6707,cheech,744,m,42
+6707,David Shayne,1358,m,28
+6707,ellen,327,f,46
+6707,helen sinclair,954,f,46
+6707,julian marx,494,m,74
+6707,nick valenti,674,m,57
+6707,olive neal,402,f,36
+6707,rocco,141,m,52
+6707,sheldon flender,107,m,47
+6707,warner purcell,117,m,45
+6709,cookie,147,f,38
+6709,harry block,1171,m,62
+6709,harvey stern,217,m,22
+6709,helen,238,f,35
+6709,hilly,142,m,11
+6709,joan,278,f,46
+6709,ken,199,m,59
+6709,richard,189,m,52
+6709,satan's helper,112,m,NULL
+6712,medieval times ,107,m,31
+6712,rick,497,m,27
+6712,rikki klieman,167,f,48
+6712,robin harris,802,f,24
+6712,steven m. kovac,3064,m,34
+6712,the cable guy,4894,m,34
+6724,abner mercer,184,m,65
+6724,dr. allen paint,851,m,NULL
+6724,francesca chidd,435,f,28
+6724,hale chidduck,903,m,58
+6724,interviewer,135,m,NULL
+6724,jeffers,1453,m,29
+6724,joe sarno,1881,m,60
+6724,mr. longbaugh,984,m,33
+6724,mr. parker,2916,m,26
+6724,obecks,447,m,30
+6724,robin,1443,f,27
+6726,al simmons,762,m,30
+6726,clown,1802,m,33
+6726,cogliostro,476,m,61
+6726,cyan,418,f,7
+6726,jason wynn,911,m,57
+6726,Spawn,1304,m,30
+6726,terry fitzgeral,666,m,36
+6726,wanda blake,512,f,33
+6726,zack,260,m,11
+6727,bigelow,250,m,41
+6727,cliff,2175,m,32
+6727,eddie valentine,447,m,52
+6727,fitch,234,m,53
+6727,howard hughes,493,m,39
+6727,Jenny,1524,f,21
+6727,malcolm,323,m,54
+6727,neville sinclai,811,m,45
+6727,newsreel announ,349,m,74
+6727,patsy,186,f,11
+6727,peevy,1018,m,57
+6727,rusty,291,m,NULL
+6727,skeets,112,m,47
+6731,alice,574,f,22
+6731,chief floyd,184,m,39
+6731,councilman farr,309,m,44
+6731,da priscilla br,416,f,42
+6731,earl talbot bla,1019,m,46
+6731,kim,354,m,20
+6731,larry doyle,619,m,34
+6731,nick styles,2843,m,37
+6731,odessa,166,m,33
+6731,wanda,142,f,NULL
+6742,addy,452,f,45
+6742,caroline howley,183,f,42
+6742,dehl swift,344,m,42
+6742,dub slack,213,m,44
+6742,leon coll,255,m,48
+6742,lieutenant spee,1432,m,54
+6742,mike murphy,2214,m,48
+6742,primo pitt,285,m,53
+6747,borel,193,m,36
+6747,fortis,447,m,21
+6747,henry hamilton,311,m,34
+6747,philippe weis,358,m,32
+6747,rachel salas,201,f,27
+6747,raymond leon,810,m,35
+6747,sylvia weis,1015,f,26
+6747,will salas,2441,m,30
+6752,joe,556,m,35
+6752,Kim Jong Il,102,m,35
+6752,lisa,381,f,28
+6752,sarah,194,f,34
+6752,spottswoode,415,m,40
+6798,archer lincoln,121,m,61
+6798,cynthia,331,f,34
+6798,jeremy talbott,363,m,56
+6798,lady sarah bill,149,f,35
+6798,liz carlson,303,f,34
+6798,mark van meter,127,m,42
+6798,mr. page,408,m,45
+6798,sperry repairma,227,m,32
+6798,terry dolittle,4722,f,31
+6815,alistair hennes,466,m,52
+6815,bill ubell,203,m,56
+6815,eleanor zissou,707,f,53
+6815,festival direct,126,m,42
+6815,jane winslett-r,1114,f,35
+6815,klaus daimler,573,m,49
+6815,ned plimpton,1830,m,36
+6815,oseary drakouli,510,m,64
+6815,steve zissou,7583,m,54
+6815,vladimir woloda,195,m,35
+6816,chas tenenbaum,588,m,36
+6816,etheline tenenb,754,f,50
+6816,henry sherman,419,m,55
+6816,hotel manager,108,m,NULL
+6816,margot tenenbau,827,f,29
+6816,narrator,1029,m,43
+6816,pagoda,143,m,83
+6816,raleigh st. cla,294,m,51
+6816,richie tenenbau,714,m,30
+6816,royal tenenbaum,2721,m,71
+6822,additional fred,898,m,NULL
+6822,additional hank,912,m,NULL
+6822,bob arctor,2857,m,42
+6822,charles freck,1222,m,34
+6822,connie,121,f,NULL
+6822,donna hawthorne,1598,f,35
+6822,ernie luckman,1137,m,45
+6822,fat businessman,214,m,NULL
+6822,James Barris,1907,m,41
+6822,kimberly,199,f,NULL
+6822,little girl,104,f,NULL
+6822,mike,273,m,34
+6822,new path farm m,136,m,NULL
+6822,old lady,149,f,NULL
+6827,bainsley,1498,f,32
+6827,bob,2579,m,NULL
+6827,dr. shrink-rom,403,f,53
+6827,joby,905,m,50
+6827,management,347,m,43
+6827,qohen leth,2663,m,57
+6832,alice,114,f,31
+6832,brendan,166,m,NULL
+6832,francis,3417,m,39
+6832,jack,1457,m,27
+6832,patricia,757,f,56
+6832,peter,1656,m,34
+6832,rita,222,f,23
+6832,the mechanic,102,m,66
+6833,alec hewett,818,m,59
+6833,carol,206,f,34
+6833,chloe hewett wi,3830,f,34
+6833,chris wilton,5333,m,28
+6833,detective banne,542,m,40
+6833,detective parry,306,m,38
+6833,eleanor hewett,1042,f,59
+6833,estate agent,145,m,40
+6833,heather,177,f,28
+6833,henry,268,m,35
+6833,ian,235,m,43
+6833,inspector dowd,356,m,33
+6833,mrs. eastby,215,f,74
+6833,nola rice,2688,f,21
+6833,rod carver,277,m,NULL
+6833,tom hewett,3350,m,27
+6836,annie brackett,985,f,29
+6836,bob simms,196,m,NULL
+6836,dr. sam loomis,605,m,59
+6836,laurie strode,1217,f,20
+6836,marion chambers,106,f,29
+6836,tommy doyle,251,m,NULL
+6837,announcer,275,m,40
+6837,budd,299,m,35
+6837,gary hunt,278,m,37
+6837,gary's mother,110,f,36
+6837,janet,340,f,25
+6837,jill,284,f,24
+6837,jimmy,581,m,21
+6837,karen,278,f,33
+6837,laurie strode,617,f,23
+6837,leigh brackett,191,m,42
+6837,marion,200,f,32
+6837,mrs. alves,266,f,35
+6837,sam loomis,153,m,62
+6845,ali,169,m,NULL
+6845,amanda,143,f,22
+6845,bernie,126,m,47
+6845,bryan mills,3200,m,56
+6845,girl with the j,129,f,24
+6845,gregor,281,m,37
+6845,isabelle,147,f,NULL
+6845,Jean-Claude,517,m,NULL
+6845,kim,655,f,25
+6845,lenore,738,f,44
+6845,peter,188,m,30
+6845,sam,480,m,48
+6845,security stuart,104,m,36
+6845,St-Clair,157,m,43
+6845,stuart,115,m,53
+6846,brian marsh,1298,m,40
+6846,catherine danfo,873,f,30
+6846,frank wyndham,293,m,NULL
+6846,kelly,273,f,39
+6846,lisa,183,f,NULL
+6846,lomax,193,m,NULL
+6846,mullins,123,m,30
+6846,priest,483,m,68
+6846,Prof. Howard Bi,1358,m,60
+6846,susan cabot,107,f,27
+6846,walter,1059,m,35
+6847,Bearded Man,356,m,57
+6847,drifter,601,m,51
+6847,frank,693,m,32
+6847,gilbert,359,m,44
+6847,holly,301,f,40
+6847,nada,2009,m,34
+6847,street preacher,126,m,58
+6852,bobby,292,m,36
+6852,Father Levesque,1090,m,51
+6852,jim,1606,m,29
+6852,molly,1033,f,27
+6852,ned,2897,m,46
+6852,old woman,498,f,NULL
+6852,sheriff,468,m,36
+6852,shopkeeper,419,m,38
+6852,translator,298,m,46
+6852,warden,757,m,63
+6852,young monk,616,m,24
+6854,bernard berkman,2133,m,50
+6854,frank berkman,364,m,14
+6854,joan berkman,1101,f,41
+6854,lili,335,f,23
+6854,sophie greenber,239,f,NULL
+6854,walt berkman,1524,m,22
+6858,barbara chaffee,311,f,NULL
+6858,ben blum,115,m,51
+6858,carlton,133,m,58
+6858,david mcgowan,249,m,8
+6858,dr. alan chaffe,1226,m,43
+6858,dr. susan verne,1230,f,44
+6858,frank mcgowan,147,m,37
+6858,jill mcgowan,842,f,37
+6858,mara,568,f,NULL
+6858,reverend george,373,m,44
+6858,"sarah, george's",215,f,39
+6858,the sheriff,182,m,52
+6858,trooper #1,146,m,NULL
+6864,big joe,365,m,50
+6864,chris d'amico,1022,m,21
+6864,damon macready,749,m,46
+6864,dave lizewski,3693,m,20
+6864,detective gigan,224,m,55
+6864,frank d'amico,866,m,47
+6864,huge goon,102,m,47
+6864,katie deauxma,666,f,23
+6864,marty,295,m,25
+6864,mindy macready,959,f,13
+6864,mr. lizewski,188,m,62
+6864,sergeant marcus,335,m,36
+6864,sporty goon,106,m,49
+6864,todd,250,m,23
+6867,adrian prussia,163,m,71
+6867,agent flatweed,405,m,37
+6867,aunt reet,198,f,65
+6867,clancy charlock,535,f,33
+6867,coy harlingen,772,m,46
+6867,crocker fenway,258,m,57
+6867,deputy d.a. pen,531,f,38
+6867,dr. rudy blatno,283,m,64
+6867,dr. threeply,134,m,49
+6867,hope harlingen,409,f,30
+6867,jade,479,f,NULL
+6867,"larry ""doc"" spo",5199,m,40
+6867,lt. det. christ,1945,m,46
+6867,puck beaverton,290,m,39
+6867,"sauncho smilax,",644,m,47
+6867,shasta fay hepw,1085,f,34
+6867,Sortilege,1651,f,32
+6867,tariq khalil,471,m,48
+6903,ila,1678,f,NULL
+6903,ila's mother,273,f,59
+6903,mr. shroff,266,m,NULL
+6903,rajeev,105,m,NULL
+6903,saajan fernande,1603,m,46
+6903,shaikh,1337,m,NULL
+6905,andrew,2396,m,27
+6905,bassist (nassau,105,m,20
+6905,carl tanner,253,m,NULL
+6905,fletcher,5103,m,59
+6905,mr. kramer,125,m,NULL
+6905,nicole,149,f,26
+6905,rachel bornhold,348,f,52
+6905,ryan,187,m,NULL
+6905,uncle frank,226,m,66
+6907,aimee,209,f,32
+6907,bobbi,477,f,47
+6907,cheryl,5708,f,38
+6907,ed,211,m,69
+6907,frank,316,m,51
+6907,greg,411,m,38
+6907,jimmy carter,209,m,NULL
+6907,jonathan,281,m,33
+6907,lecturer,101,f,NULL
+6907,lou,187,f,NULL
+6907,paul,614,m,38
+6907,ranger,323,m,45
+6907,richie,112,m,28
+6907,rick,155,m,NULL
+6907,saleswoman,138,f,NULL
+6907,stacey,119,f,50
+6907,tattooist,104,m,52
+6907,vera,166,f,76
+6908,c.p. kennedy,232,m,39
+6908,dale palmer,211,m,NULL
+6908,doc morris,204,m,52
+6908,dwight dickham,814,m,59
+6908,glen palmer,348,m,55
+6908,hank palmer,4950,m,49
+6908,Joseph Palmer,2386,m,83
+6908,judge (39),195,m,NULL
+6908,lauren palmer,314,f,NULL
+6908,margare,243,f,NULL
+6908,mike kattan,197,m,36
+6908,samantha powell,704,f,41
+6908,sheriff white,111,m,NULL
+6910,deeann,313,f,33
+6910,dick nolan,153,m,52
+6910,enrico banducci,129,m,64
+6910,john canaday,123,m,76
+6910,judge,328,m,59
+6910,margaret keane,2504,f,40
+6910,ruben,183,m,34
+6910,walter keane,4302,m,58
+6910,young jane,308,f,NULL
+6911,alice howland,3796,f,54
+6911,anna howland-jo,514,f,31
+6911,charlie howland,111,m,37
+6911,dr. benjamin,814,m,NULL
+6911,eric wellman,216,m,63
+6911,john howland,2149,m,56
+6911,lydia howland,1227,f,24
+6911,tom howland,224,m,27
+6912,amelia,3749,f,44
+6912,claire,556,f,40
+6912,doctor,135,m,NULL
+6912,mrs. roach,251,f,NULL
+6912,robbie,141,m,32
+6912,ruby,119,f,NULL
+6912,samuel,1522,m,NULL
+6916,celine,5030,f,35
+6916,jesse,3993,m,34
+6918,jethro,142,m,71
+6918,moses,2504,m,40
+6918,ramses,1352,m,40
+6918,ramses' scribe,119,m,NULL
+6918,scholar,465,m,NULL
+6918,seti,414,m,57
+6918,tuya,114,f,65
+6918,viceroy hegep,471,m,45
+6919,alan russell,576,m,41
+6919,auctioneer,144,f,35
+6919,Dr. Shawn Graha,167,m,62
+6919,eliot,202,m,NULL
+6919,kaylie russell,3449,f,26
+6919,marie russell,369,f,33
+6919,tim russell,1663,m,24
+6922,bandar,312,m,NULL
+6922,barbara bush,184,f,76
+6922,colin powell,181,m,43
+6922,dick cheney,363,m,61
+6922,don evans,229,m,37
+6922,dr. david kay,167,m,NULL
+6922,George H.W. Bus,877,m,68
+6922,george tenet,406,m,58
+6922,george w. bush,4254,m,40
+6922,karl rove,341,m,41
+6922,laura bush,449,f,34
+6922,prime minister ,174,m,35
+6925,doug stauber,3337,m,32
+6925,jen stauber,382,f,34
+6925,man in audience,203,m,NULL
+6925,mitch,280,m,41
+6925,richard wehlner,1410,m,43
+6925,scott fargas,490,m,42
+6930,dave's archery ,6476,m,NULL
+6930,dmv guy,110,m,NULL
+6930,hello america p,124,m,NULL
+6930,mike,464,m,16
+6930,noreen,601,f,41
+6930,robert spritzel,1031,m,72
+6930,shelly,449,f,13
+6930,shelly's archer,162,m,31
+6931,allison jimeno,325,f,29
+6931,antonio rodrigu,108,m,29
+6931,chuck sereika,172,m,43
+6931,dave karnes,269,m,32
+6931,doctor,137,m,25
+6931,dominick pezzul,326,m,28
+6931,donna mcloughli,248,f,39
+6931,inspector field,109,m,59
+6931,jerry,111,m,NULL
+6931,john mcloughlin,2026,m,42
+6931,judy jonas,148,f,47
+6931,will jimeno,1630,m,30
+6958,2nd lieut. jerr,989,m,31
+6958,2nd lieut. mart,579,m,31
+6958,col. ronald bar,796,m,47
+6958,david halloran,2973,m,37
+6958,harry pike,188,m,71
+6958,major trumbo,716,m,54
+6958,margaret sellin,2016,f,25
+6958,sarah sellinger,920,f,11
+6962,alfred,105,m,63
+6962,anchorman,219,m,54
+6962,diane,162,f,45
+6962,dodge,2502,m,50
+6962,frank,138,m,72
+6962,owen,137,m,33
+6962,penny,2628,f,27
+6962,roache,149,m,43
+6962,speck,346,m,38
+6962,trucker,442,m,59
+6962,warren,116,m,41
+6965,bob zelnick,713,m,48
+6965,caroline cushin,492,f,26
+6965,david frost,3457,m,39
+6965,jack brennan,941,m,50
+6965,"james reston, j",1418,m,40
+6965,john birt,1212,m,34
+6965,richard nixon,4865,m,70
+6965,swifty lazar,530,m,41
+6966,anx editor,201,m,51
+6966,arian finch,877,m,33
+6966,ernest rodrigue,632,m,31
+6966,Janine Roth,1282,f,58
+6966,Professor Steph,2212,m,71
+6966,Senator Jasper ,1084,m,45
+6966,skinny,144,m,NULL
+6966,todd hayes,967,m,24
+6966,wirypink,494,m,NULL
+6968,arthur case,637,m,77
+6968,Captain John Da,415,m,51
+6968,chaim,127,m,67
+6968,dalton russell,2413,m,42
+6968,detective bill ,650,m,29
+6968,Detective Keith,4682,m,52
+6968,esu officer her,395,m,33
+6968,madeleine white,1688,f,44
+6968,mayor,154,m,67
+6968,miriam douglas,101,f,NULL
+6968,mobile command ,127,f,29
+6968,paul guitierez,149,m,31
+6968,peltz,196,m,NULL
+6968,sergeant collin,377,m,53
+6968,seth greenblatt,305,m,NULL
+6968,steve,190,m,25
+6973,allegra geller,3471,f,37
+6973,chinese waiter,136,m,NULL
+6973,d'arcy nader,171,m,56
+6973,gas,544,m,44
+6973,kiri vinokur,700,m,68
+6973,merle,281,f,20
+6973,noel dichter,133,m,21
+6973,ted pikul,3358,m,27
+6973,yevgeny nourish,653,m,36
+6992,cici,336,f,20
+6992,cotton weary,656,m,30
+6992,debbie salt,683,f,42
+6992,derek,535,m,23
+6992,dewey riley,476,m,26
+6992,gale weathers,849,f,33
+6992,hallie,458,f,31
+6992,joel,223,m,32
+6992,maureen,224,f,26
+6992,mickey,690,m,29
+6992,phil,113,m,24
+6992,randy meeks,731,m,27
+6992,sidney prescott,869,f,24
+6992,sorority sister,101,f,26
+6992,sorority sister,110,f,24
+7014,annie,121,f,25
+7014,cristal connors,1679,f,33
+7014,dee,141,f,27
+7014,gay carpenter,140,f,31
+7014,henrietta 'mama,382,f,35
+7014,james smith,1117,m,34
+7014,jeff,444,m,24
+7014,julie,256,f,22
+7014,marty jacobsen,225,m,33
+7014,molly abrams,1208,f,29
+7014,mr. karlman,137,m,71
+7014,nomi malone,2989,f,23
+7014,penny,111,f,26
+7014,phil newkirk,301,m,37
+7014,tony moss,620,m,53
+7014,zack carey,1210,m,36
+7034,billy,193,m,30
+7034,bree anderson,125,f,8
+7034,clydie anderson,209,f,34
+7034,Mike 'Mookie' A,123,m,11
+7034,sam gillen,1180,m,33
+7034,sheriff lonnie ,133,m,NULL
+7050,const. frank st,582,m,30
+7050,det. john macke,687,m,66
+7050,dolores claibor,4042,f,47
+7050,joe st. george,984,m,46
+7050,peter,127,m,42
+7050,selena st. geor,1264,f,33
+7050,vera donovan,488,f,60
+7057,detective john ,376,m,58
+7057,frank darbo,2154,m,44
+7057,hamilton,349,m,42
+7057,jacques,753,m,52
+7057,libby,1739,f,23
+7057,nathaniel,120,m,NULL
+7057,newscaster,146,m,NULL
+7057,sarah,492,f,33
+7057,the holy avenge,211,m,39
+7057,toby,158,m,36
+7058,daphne,1020,f,25
+7058,fred,1630,m,26
+7058,garret,324,m,NULL
+7058,isabel,152,f,NULL
+7058,mondavarious,493,m,47
+7058,N' Goo Tuana,257,m,51
+7058,raimondo,184,m,NULL
+7058,scooby,641,m,35
+7058,shaggy,2479,m,32
+7058,velma,1052,f,27
+7067,anton pamchenko,959,m,69
+7067,bud,139,m,NULL
+7067,doug dorsey,2178,m,31
+7067,gordon,226,m,NULL
+7067,hale forrest,218,m,33
+7067,jack moseley,341,m,40
+7067,kate moseley,1560,f,24
+7067,peggy,147,f,NULL
+7067,scott,125,m,NULL
+7075,bart jason,309,m,37
+7075,bull,1264,m,56
+7075,cole thornton,3748,m,59
+7075,dr. charles don,250,m,NULL
+7075,dr. miller,318,m,65
+7075,el dorado sheri,2173,m,49
+7075,elmer - jason's,138,m,47
+7075,josephine (joey,424,f,23
+7075,maria,109,f,20
+7075,maudie,577,f,38
+7075,mississippi,1886,m,26
+7075,nelse mcleod,464,m,35
+7080,anna - housekee,136,f,44
+7080,auctioneer,903,m,46
+7080,charley - chica,309,m,49
+7080,eve kendall,837,f,35
+7080,leonard,268,m,31
+7080,phillip vandamm,370,m,50
+7080,roger o. thornh,2654,m,55
+7080,the professor,397,m,73
+7080,woman,262,f,40
+7089,arthur adamson,1179,m,37
+7089,blanche tyler,1926,f,41
+7089,constantine,172,m,52
+7089,fran,514,f,37
+7089,george lumley,1698,m,40
+7089,helicopter pilo,114,m,32
+7089,julia rainbird,510,f,88
+7089,wheeler,396,m,51
+7093,bear man,155,m,NULL
+7093,col. stonehill,615,m,70
+7093,emmett quincy,172,m,42
+7093,LaBoeuf,1153,m,40
+7093,lucky ned peppe,511,m,40
+7093,mattie ross,3200,f,14
+7093,moon (the kid),152,m,27
+7093,mr barlow,103,m,NULL
+7093,mr goudy,381,m,NULL
+7093,rooster cogburn,676,m,61
+7093,sheriff,252,m,69
+7093,tom chaney,327,m,42
+7093,undertaker,105,m,66
+7102,bearded man,124,m,NULL
+7102,cop,215,m,NULL
+7102,dr. wrenn,191,m,53
+7102,jackson harglow,225,m,71
+7102,john trent,2423,m,47
+7102,linda styles,1374,f,40
+7102,sutter cane,556,m,53
+7104,dr. gerald stri,1013,m,49
+7104,emily,268,f,27
+7104,iris,469,f,23
+7104,kristen,1305,f,24
+7104,nurse lundt,369,f,NULL
+7104,roy,364,m,NULL
+7104,sarah,341,f,23
+7104,zoey,179,f,NULL
+7119,cherry valance,669,f,18
+7119,Dallas Winston,306,m,19
+7119,darrel curtis,561,m,31
+7119,jerry,177,m,37
+7119,johnny cade,1292,m,22
+7119,ponyboy curtis,2760,m,17
+7119,randy anderson,291,m,18
+7119,sodapop curtis,565,m,19
+7119,steve randle,193,m,21
+7119,two-bit matthew,773,m,21
+7120,harry lime,377,m,47
+7120,kate mccalliste,632,f,36
+7120,kevin mccallist,826,m,10
+7120,linnie mccallis,125,f,13
+7120,marv merchants,406,m,33
+7120,peter mccallist,186,m,45
+7124,alvaro de la qu,245,m,30
+7124,bishop gardiner,215,m,61
+7124,duke of norfolk,288,m,34
+7124,earl of arundel,273,m,66
+7124,earl of sussex,267,m,40
+7124,elizabeth i,2912,f,29
+7124,kate,288,f,NULL
+7124,mary of guise,324,f,49
+7124,Monsieur de Foi,454,m,32
+7124,palace chamberl,205,m,78
+7124,"robert dudley, ",635,m,28
+7124,sir francis wal,452,m,47
+7124,sir william cec,1365,m,75
+7124,"waad, chancello",198,m,42
+7126,christie richar,137,f,40
+7126,jeremy,975,m,25
+7126,lisa cramer,391,f,32
+7126,mirabelle,2780,f,26
+7126,mr. agasa,151,m,57
+7126,ray porter,1961,m,60
+7129,george benson,182,m,51
+7129,leona,153,f,56
+7129,leroy mason,141,m,48
+7129,norma rae,2757,f,33
+7129,reuben,2618,m,42
+7129,sam dakin,167,m,60
+7129,sonny,836,m,38
+7129,vernon,149,m,55
+7130,ansel smith,1283,m,51
+7130,chris smith,2596,m,26
+7130,digger soames,298,m,54
+7130,dottie smith,1197,f,22
+7130,killer joe coop,2484,m,42
+7130,sharla smith,1195,f,49
+7132,aurora de la ho,731,f,43
+7132,chester,382,m,24
+7132,fred,139,m,53
+7132,Glenda Parks,364,f,35
+7132,ira parks,2969,m,45
+7132,Nicholas Garden,1901,m,37
+7132,stanley,159,m,NULL
+7134,donna,240,f,30
+7134,elliot garfield,6735,m,30
+7134,linda,109,f,33
+7134,lucy mcfadden,1346,f,10
+7134,mark,585,m,39
+7134,mrs. crosby,105,f,53
+7134,paula mcfadden,4106,f,35
+7135,adele horner,579,f,28
+7135,charley pearl,5488,m,33
+7135,george,666,m,32
+7135,gus,265,m,37
+7135,justice #1,188,m,NULL
+7135,lew horner,1165,m,61
+7135,phil golden,1896,m,34
+7135,sammy,777,m,28
+7135,tony,866,m,27
+7135,vicki anderson,3030,f,38
+7137,abe,116,m,68
+7137,detective #2,538,m,NULL
+7137,felice,227,f,58
+7137,felix ungar,4145,m,73
+7137,frances unger m,103,f,57
+7137,holly,103,f,47
+7137,oscar madison,4911,m,78
+7137,truck driver,130,m,68
+7148,barry william c,400,m,23
+7148,deb,114,f,NULL
+7148,elsa shivers,260,f,24
+7148,emcee,104,m,64
+7148,helen shivers,1086,f,20
+7148,julie james,2699,f,18
+7148,melissa 'missy',424,f,28
+7148,officer david c,280,m,38
+7148,ray bronson,290,m,21
+7149,axel palmer,1203,m,37
+7149,ben foley,653,m,65
+7149,deputy martin,270,m,30
+7149,irene,115,f,NULL
+7149,megan,230,f,26
+7149,officer hinch,227,m,NULL
+7149,sarah palmer,942,f,30
+7149,tom hanniger,914,m,31
+7154,captain severan,831,m,40
+7154,col johnson,204,m,NULL
+7154,franklin sousle,210,m,20
+7154,gurber,871,m,NULL
+7154,hank hansen,159,m,33
+7154,hanks mom,149,f,NULL
+7154,ira hayes,515,m,34
+7154,james bradley,776,m,40
+7154,joe rosenthal,101,m,49
+7154,"john ""doc"" brad",1188,m,32
+7154,keyes beech,356,m,43
+7154,lindberg,171,m,NULL
+7154,mike strank,551,m,36
+7154,"ralph ""iggy"" ig",354,m,20
+7154,rene gagnon,569,m,27
+7157,chip,1261,m,23
+7157,chip's mom,178,f,47
+7157,colin gray,166,m,23
+7157,goth girl,220,f,20
+7157,jennifer,2837,f,23
+7157,jonas kozelle,108,m,NULL
+7157,mr. wroblewski,386,m,54
+7157,needy,4146,f,24
+7157,nikolai,526,m,30
+7167,bo,216,m,36
+7167,carly jones,695,f,23
+7167,dalton chapman,218,m,28
+7167,jennifer,231,f,NULL
+7167,nick jones,524,m,24
+7167,paige edwards,227,f,24
+7167,wade,556,m,23
+7171,ben harpen,466,m,26
+7171,Governor Mike M,2056,m,50
+7171,ida horowicz,587,f,47
+7171,jack stearns,150,m,63
+7171,molly stearns,673,f,24
+7171,paul zara,1718,m,44
+7171,rachel maddow,181,f,38
+7171,Senator Thompso,220,m,46
+7171,stephen meyers,3205,m,31
+7171,tom duffy,1357,m,44
+7174,bree,371,f,22
+7174,chelsea,329,f,28
+7174,Clay,214,f,NULL
+7174,clay miller,1100,m,27
+7174,jenna,536,f,22
+7174,lawrence,367,m,28
+7174,mike,151,m,NULL
+7174,nolan,184,m,28
+7174,officer bracke,152,m,51
+7174,richie,149,m,29
+7174,trent,612,m,27
+7174,wade,243,m,30
+7174,Whitney,221,f,NULL
+7175,ben,715,m,29
+7175,doug shapiro,192,m,43
+7175,jenna,233,f,25
+7175,marcus,505,m,28
+7175,marybeth dunsta,755,f,26
+7175,misty,152,f,26
+7175,mr permatteo,122,m,NULL
+7175,shawn,937,m,33
+7176,avery,212,f,NULL
+7176,bob,432,m,67
+7176,chad,199,m,NULL
+7176,cleatus,321,m,33
+7176,jack cracker,240,m,NULL
+7176,justin,407,m,37
+7176,layton,361,m,33
+7176,marybeth dunsta,531,f,33
+7176,reverend zombie,1639,m,56
+7176,vernon,378,m,33
+7177,amanda perlman,1192,f,56
+7177,andrew,398,m,40
+7177,cory schneiderm,394,m,24
+7177,deputy hamilton,182,m,NULL
+7177,deputy winslow,506,m,NULL
+7177,marybeth dunsta,1012,f,36
+7177,mikaela dougher,283,f,34
+7177,randy,167,?,NULL
+7177,sheriff fowler,480,m,49
+7177,tyler hawes,443,m,41
+7179,charles brubake,1739,m,38
+7179,control room ma,376,m,44
+7179,dr. james kello,1191,m,53
+7179,elliot whitter,140,m,35
+7179,hollis peaker,285,m,48
+7179,houston,596,m,NULL
+7179,john walker,547,m,31
+7179,judy drinkwater,267,f,39
+7179,Kalloway,499,m,NULL
+7179,mrs brubaker,596,f,NULL
+7179,n.a.s.a. usher,119,m,NULL
+7179,peter willis,1092,m,38
+7179,president,256,m,50
+7179,robert caulfiel,1663,m,40
+7179,vice president ,111,m,55
+7179,walter loughlin,616,m,49
+7180,grover,1278,m,26
+7180,grover's dad,281,m,57
+7180,jane,643,f,26
+7180,kate,202,f,24
+7180,max,1136,m,30
+7180,miami,500,f,27
+7180,skippy,976,m,25
+7206,Al Czervik,1203,m,59
+7206,angie d'annunzi,122,m,21
+7206,danny noonan,2437,m,25
+7206,joey d'annunzio,200,f,NULL
+7206,judge elihu sma,1403,m,57
+7206,lacey underall,709,f,26
+7206,lou loomis,330,m,35
+7206,maggie o'hoolig,544,f,22
+7206,motormouth,179,m,NULL
+7206,mr. noonan,318,m,52
+7206,mrs. noonan,310,f,53
+7206,mrs. smails,370,f,58
+7206,ray (old caddy),112,m,NULL
+7206,smoke porterhou,161,m,60
+7206,Spaulding Smail,268,m,NULL
+7206,the bishop,157,m,75
+7206,tony d'annunzio,808,m,28
+7206,ty webb,964,m,37
+7207,baby,379,m,55
+7207,cassandra,122,f,51
+7207,cyrus kinnick,633,m,28
+7207,danny demarco,773,m,38
+7207,dd,308,f,43
+7207,holly,926,f,32
+7207,julian reeves,157,m,45
+7207,nick wild,2562,m,48
+7207,osgood,468,m,48
+7207,pinky,323,m,56
+7209,g.t.o,1866,m,43
+7209,the driver,489,m,23
+7209,the girl,1244,f,18
+7210,billy the kid,848,m,37
+7210,chisum,126,m,61
+7210,holly,224,m,36
+7210,howland,142,m,42
+7210,lemuel,372,m,71
+7210,paco,117,m,70
+7210,pat garrett,731,m,45
+7210,poe,345,m,30
+7210,sheriff kip mck,228,m,47
+7212,bill lee,3654,m,44
+7212,carleton,646,m,NULL
+7212,dr. benway,393,m,59
+7212,fadela,144,f,61
+7212,hank,498,m,39
+7212,hans,569,m,48
+7212,hauser,236,m,NULL
+7212,joan frost,995,f,36
+7212,kiki,558,m,27
+7212,martin,624,m,NULL
+7212,mrs murphy,149,f,NULL
+7214,ava gardner,828,f,31
+7214,doctor,104,m,NULL
+7214,emcee,131,m,53
+7214,errol flynn,106,m,32
+7214,glenn odekirk,874,m,34
+7214,howard hughes,8480,m,30
+7214,jack frye,373,m,42
+7214,johnny meyer,152,m,31
+7214,juan trippe,662,m,46
+7214,Katharine Hepbu,1483,f,35
+7214,mrs. hepburn,169,f,51
+7214,noah dietrich,471,m,39
+7214,professor fitz,104,m,73
+7214,senator ralph o,702,m,68
+7214,woman,128,f,NULL
+7215,cary,292,f,28
+7215,Claire Niveau,2312,f,46
+7215,elliot mantle,3165,m,40
+7215,escort twin,180,f,20
+7215,operating room ,122,f,NULL
+7216,bert,1473,m,NULL
+7216,deputy winston,523,m,30
+7216,herman,107,m,43
+7216,hog lady,245,f,NULL
+7216,jeff,1122,m,NULL
+7216,justin,520,m,NULL
+7216,karen,623,f,24
+7216,marc,593,m,NULL
+7216,paul,1735,m,30
+7216,prom goers - ol,154,f,NULL
+7216,sandy,108,f,NULL
+7216,tommy,247,m,NULL
+7219,carson,465,m,14
+7219,clifford,2035,m,16
+7219,dubrow,113,m,NULL
+7219,gramma,546,f,84
+7219,koontz,127,m,NULL
+7219,linderman,1356,m,18
+7219,mike,137,m,NULL
+7219,moody,1093,m,16
+7219,mr. peache,652,m,37
+7219,ms. jump,689,f,34
+7219,shelley,132,f,18
+7231,cuchillo,122,m,66
+7231,edwin,389,m,32
+7231,isabelle,561,f,27
+7231,nikolai,120,m,43
+7231,noland,298,m,49
+7231,royce,667,m,37
+7231,stans,375,m,39
+7233,captain b. pilg,167,m,48
+7233,captain phil he,122,m,39
+7233,danny archuleta,358,m,42
+7233,leona cantrell,483,f,33
+7233,lieutenant mike,2558,m,44
+7233,peter keyes,561,m,46
+7233,ruth,129,f,NULL
+7233,sato,312,m,NULL
+7233,sergeant,123,m,60
+7233,tony pope,123,m,57
+7235,buddy,141,m,NULL
+7235,carrie,124,f,32
+7235,dale,257,m,35
+7235,dallas,866,m,31
+7235,darcy,161,f,34
+7235,dr. lennon,130,m,NULL
+7235,jesse,230,f,23
+7235,karl,109,m,NULL
+7235,kelly,552,f,35
+7235,molly,400,f,10
+7235,morales,604,m,39
+7235,mr. thomas,133,m,NULL
+7235,predator,201,m,36
+7235,ricky,622,m,24
+7235,tim,453,m,38
+7237,claude lapointe,312,m,45
+7237,dr. dan keloid,1547,m,45
+7237,dr. karl,141,m,NULL
+7237,dr. roxanne kel,218,f,37
+7237,dr. royce gentr,282,m,NULL
+7237,hart read,976,m,31
+7237,judy glasberg,185,f,NULL
+7237,lloyd walsh,309,m,NULL
+7237,man in cinema,147,m,NULL
+7237,mindy kent,213,f,20
+7237,murray cypher,541,m,55
+7237,newscaster,493,m,NULL
+7237,nurse louise,209,f,NULL
+7237,rose,861,f,25
+7237,trucker,265,m,NULL
+7237,young cop in pl,212,m,NULL
+7237,young man in pl,178,m,NULL
+7243,atto,143,m,52
+7243,cribbs,164,m,45
+7243,durant,206,m,36
+7243,eversmann,1370,m,23
+7243,firimbi,118,m,36
+7243,galentine,197,m,37
+7243,garrison,766,m,58
+7243,gordon,130,m,31
+7243,grimes,312,m,30
+7243,harrell,287,m,44
+7243,hoot,412,m,33
+7243,mcknight,662,m,40
+7243,nelson,108,m,29
+7243,pilla,125,m,31
+7243,ruiz,159,m,28
+7243,sanderson,370,m,45
+7243,schmid,350,m,26
+7243,shughart,125,m,NULL
+7243,smith,119,m,20
+7243,steele,772,m,38
+7243,struecker,164,m,32
+7243,twombly,278,m,24
+7243,wolcott,151,m,36
+7243,yurek,159,m,20
+7247,a man,113,m,NULL
+7247,bill sullivan,359,m,63
+7247,dr fredricks,393,m,NULL
+7247,hanna schiller,147,f,45
+7247,kip wiley,294,m,NULL
+7247,laura,235,f,30
+7247,margaret 'clove,398,f,31
+7247,mr. jameson,2882,m,NULL
+7247,petra sanko,462,m,NULL
+7247,petra sanxo,187,m,NULL
+7247,Philip Allen,582,m,56
+7247,ray brocco,813,m,49
+7247,richard hayes,556,m,27
+7247,robert,490,m,NULL
+7247,sam murach,442,m,48
+7247,Senator John Ru,611,m,70
+7247,teletype commun,273,m,NULL
+7247,the man,249,m,NULL
+7247,valentin mirono,506,m,38
+7251,chronic,179,m,39
+7251,cleo,201,f,35
+7251,cliff,2292,m,42
+7251,gina,1187,f,32
+7251,kale,291,m,26
+7251,nick,1923,m,41
+7252,boss johns,379,m,41
+7252,dahl,523,f,33
+7252,diaz,274,m,44
+7252,lockspur,114,m,58
+7252,luna,170,m,27
+7252,riddick,1712,m,46
+7252,santana,1180,m,45
+7252,vaako,204,m,41
+7252,vargas,398,m,47
+7261,brad,990,m,17
+7261,bus driver,137,m,56
+7261,charlie,435,m,39
+7261,harv,300,m,48
+7261,megan,534,f,23
+7261,mr. morgan,231,m,41
+7261,nana,513,f,71
+7261,quigley,110,m,NULL
+7261,reverend fisher,120,m,NULL
+7261,wesley,192,m,23
+7278,Arthur Shaw,747,m,75
+7278,charlie,519,m,36
+7278,director mazin,104,m,54
+7278,enrique dev'rea,472,m,35
+7278,jillian,540,f,NULL
+7278,Josh Kovaks,3177,m,46
+7278,lester,335,m,62
+7278,mr. simon,316,m,76
+7278,slide,647,m,50
+7278,susan braniff,213,f,NULL
+7290,dana barrett,1015,f,35
+7290,dr. egon spengl,1166,m,40
+7290,dr. peter venkm,3763,m,34
+7290,dr. raymond sta,2249,m,32
+7290,janine melnitz,576,f,32
+7290,louis tully,1001,m,31
+7290,walter peck,540,m,37
+7290,winston zeddmor,421,m,39
+7295,angela,2024,f,27
+7295,cop #1,350,m,NULL
+7295,lorraine,197,f,37
+7295,thomas,3976,m,29
+7298,aimee,2318,f,22
+7298,cassidy,757,f,24
+7298,doctor,112,m,42
+7298,holly,154,f,29
+7298,krystal's mom,109,f,NULL
+7298,marcus,191,m,NULL
+7298,mr. aster,141,m,45
+7298,ricky,198,m,20
+7298,sutter,6290,m,26
+7298,tommy,464,m,48
+7302,allison,1149,f,22
+7302,chad,1122,m,27
+7302,chloe,136,f,28
+7302,chuck,151,m,20
+7302,dale,2375,m,32
+7302,naomi,196,f,NULL
+7302,sheriff,309,m,NULL
+7302,tucker,1746,m,39
+7307,agatha weiss,1091,f,25
+7307,benjie weiss,1337,m,NULL
+7307,cammy,110,f,NULL
+7307,Christina Weiss,307,f,46
+7307,clarice taggart,261,f,27
+7307,damien javitz,166,m,NULL
+7307,Dr. Stafford We,910,m,48
+7307,genie,483,f,80
+7307,havana segrand,1606,f,54
+7307,jeb,125,m,NULL
+7307,jerome fontana,337,m,28
+7307,rhett,238,m,22
+7307,sam,278,f,17
+7307,sterl carruth,135,m,NULL
+7307,talkshow host,112,m,NULL
+7308,ben ripley,268,m,11
+7308,buck ripley,587,m,17
+7308,cammie,323,f,17
+7308,chet ripley,2855,m,38
+7308,connie ripley,470,f,36
+7308,kate craig,558,f,30
+7308,roman craig,3790,m,36
+7308,wally,591,m,58
+7311,carol,1050,f,40
+7311,chekov,701,m,46
+7311,david,570,m,23
+7311,joachim,250,m,30
+7311,khan,1213,m,62
+7311,kirk,3480,m,51
+7311,saavik,894,f,31
+7311,scotty,266,m,62
+7311,spock,1390,m,51
+7311,sulu,226,m,45
+7311,terrell,458,m,43
+7311,uhura,354,f,50
+7323,alice monroe,1126,f,32
+7323,cab driver,102,m,NULL
+7323,cathy ditolla,109,f,35
+7323,chairman of the,107,m,45
+7323,david jenkins,1390,m,45
+7323,dr. bernard wac,369,m,54
+7323,ellen,125,f,34
+7323,george talbot,509,m,45
+7323,morrissey,205,m,34
+7323,nick halloway,3965,m,49
+7323,richard,466,m,30
+7323,tyler,113,m,37
+7323,warren singleto,298,m,41
+7324,alma,229,f,27
+7324,david,436,m,27
+7324,edward wanderle,389,m,72
+7324,john jaffrey,326,m,80
+7324,milly,265,f,51
+7324,nettie dedham,113,f,27
+7324,omar norris,170,m,38
+7324,ricky hawthorne,1102,m,82
+7324,sears james,1131,m,79
+7324,sheriff hardest,370,m,50
+7324,stella,162,f,55
+7325,butler,588,m,43
+7325,christina,126,f,NULL
+7325,jen,350,f,34
+7325,lucinda,134,f,NULL
+7325,mendoza,2746,m,37
+7325,officer,139,f,36
+7325,santino,177,m,48
+7325,sarchie,2475,m,46
+7328,amadeo,375,m,NULL
+7328,carlito,2034,m,53
+7328,gail,1209,f,29
+7328,guajiro,208,m,25
+7328,kleinfeld,1969,m,33
+7328,lalin,423,m,35
+7328,norwalk,315,m,45
+7328,pachanga,549,m,37
+7328,quisqueya,139,m,41
+7328,rolando,255,m,58
+7328,saso (ron),377,m,57
+7328,steffie,191,f,25
+7328,tagliaferro,582,m,NULL
+7328,valentin,265,m,48
+7328,walberto,132,m,NULL
+7329,amber,163,f,NULL
+7329,day doorman,1450,m,44
+7329,dr. prashar,180,m,42
+7329,frank,2789,m,45
+7329,gwen,1714,f,42
+7329,night doorman,811,m,NULL
+7329,pincus,4623,m,47
+7329,richard,143,m,49
+7329,surgeon,212,f,35
+7329,ues lady,169,f,NULL
+7330,mac' george mi,847,m,51
+7330,dean charles st,413,m,59
+7330,general ross,105,m,61
+7330,Indiana Jones,5044,m,66
+7330,Irina Spalko,1353,f,39
+7330,marion ravenwoo,624,f,57
+7330,mutt williams,1746,m,22
+7330,professor oxley,407,m,68
+7330,smith,161,m,48
+7332,auctioneer,239,m,60
+7332,emil,161,m,43
+7332,georgina,440,f,35
+7332,jock,275,m,44
+7332,johanna,1143,f,43
+7332,krampf,244,m,63
+7332,martland,1130,m,44
+7332,maurice,103,m,32
+7332,mortdecai,4950,m,52
+7332,romanov,126,m,52
+7332,sir graham,164,m,NULL
+7332,the duke,184,m,72
+7342,ernest,763,m,NULL
+7342,helen sharp,462,f,47
+7342,lisle von rhuma,366,f,40
+7342,madeline ashton,663,f,43
+7344,agent lindsey p,378,f,NULL
+7344,Agent Peter Str,931,m,49
+7344,brett,159,m,NULL
+7344,chang,211,m,NULL
+7344,eric matthews,1091,m,38
+7344,gloria,171,f,NULL
+7344,jeff denlon,260,m,44
+7344,jigsaw,421,m,65
+7344,jill tuck,276,f,44
+7344,lt. daniel rigg,225,m,NULL
+7344,lt. mark hoffma,977,m,42
+7349,clay,874,m,28
+7349,eva,987,f,24
+7349,frank,1900,m,39
+7349,niko,834,m,32
+7349,zoe,1013,f,31
+7351,captain ramirez,121,m,2007
+7351,ed,1320,m,30
+7351,henry,2021,m,29
+7351,lupe,188,f,30
+7351,mario,167,m,29
+7351,phil,798,m,28
+7351,randall,784,m,36
+7351,santillan,303,m,40
+7351,ulises,669,m,54
+7351,valeria,571,f,24
+7355,dennis spencer,750,m,NULL
+7355,deputy governor,621,m,NULL
+7355,des,141,m,NULL
+7355,eric love,1977,m,23
+7355,hassan,531,m,30
+7355,neville love,1833,m,44
+7355,oliver baumer,1189,m,32
+7355,ryan,150,m,NULL
+7355,tyrone,427,m,NULL
+7358,dr. robert,123,m,67
+7358,jane,357,f,35
+7358,john,103,m,NULL
+7358,marcia weller,121,f,47
+7358,martin sixsmith,3257,m,48
+7358,mary,145,f,54
+7358,pete olsson,134,m,46
+7358,philomena,3754,f,79
+7358,sally mitchell,272,f,NULL
+7358,sister hildegar,241,f,83
+7358,young philomena,162,f,NULL
+7361,alistair ryle,1466,m,28
+7361,charlie,148,f,32
+7361,chris,839,m,NULL
+7361,college preside,107,m,74
+7361,dimitri mitropo,639,m,NULL
+7361,ed montgomery,126,m,NULL
+7361,george balfour,383,m,NULL
+7361,guy bellingfiel,260,m,25
+7361,harry villiers,954,m,22
+7361,hugo fraser-tyr,1018,m,27
+7361,james leighton-,786,m,25
+7361,jeremy,549,m,47
+7361,lauren,742,f,26
+7361,miles richards,904,m,29
+7361,rachel,234,f,25
+7361,toby maitland,302,m,24
+7362,bernie,1090,f,NULL
+7362,counsellor,300,f,44
+7362,hospital counse,154,m,NULL
+7362,jax,1979,f,NULL
+7362,jj,577,m,NULL
+7362,lauryn,303,f,NULL
+7362,levi,116,m,31
+7362,mark,1550,m,42
+7362,sandra,792,f,NULL
+7364,adam banjo,640,m,38
+7364,baby,2303,f,35
+7364,billy ray snapp,1025,m,49
+7364,bubba,303,m,30
+7364,Captain Spauldi,2435,m,66
+7364,casey,114,f,53
+7364,charlie altamon,1319,m,57
+7364,george wydell,167,m,55
+7364,gloria sullivan,243,f,50
+7364,maria,110,f,32
+7364,mother firefly,467,f,56
+7364,news reporter,151,m,50
+7364,officer ray dob,926,m,36
+7364,otis,2359,m,54
+7364,rondo,324,m,61
+7364,roy sullivan,415,m,70
+7364,rufus,114,m,39
+7364,sheriff ken dwy,278,m,60
+7364,sheriff wydell,3833,m,50
+7364,wendy banjo,276,f,29
+7378,ahmed,158,m,NULL
+7378,barry,2243,m,NULL
+7378,hassan,699,m,26
+7378,khalid,117,m,NULL
+7378,matt,478,m,NULL
+7378,negotiator,117,m,34
+7378,omar,4549,m,28
+7378,sofia,186,f,30
+7378,waj,1399,m,32
+7382,claude kersek,681,m,55
+7382,danny's girlfri,724,f,15
+7382,karen,928,f,NULL
+7382,lee heller,280,m,75
+7382,lieutenant elga,302,m,74
+7382,lori davis,585,f,26
+7382,max cady,1447,m,48
+7382,sam bowden,2403,m,50
+7382,tom broadbent,168,m,49
+7383,benny rsons,294,m,NULL
+7383,big john,163,m,48
+7383,bob jenkins,397,m,NULL
+7383,cole trickle,1251,m,28
+7383,daytona track a,236,m,NULL
+7383,dr. claire lewi,807,f,23
+7383,harry hogge,2047,m,59
+7383,len dortort,106,m,43
+7383,Ned Jarrett,759,m,NULL
+7383,rowdy burns,768,m,35
+7383,tim daland,422,m,40
+7386,agent donnelly,176,m,NULL
+7386,agent pryzwarra,1109,m,47
+7386,agent stalhuth,396,m,NULL
+7386,beth,260,f,NULL
+7386,carroll oerstad,624,m,38
+7386,claire kuchever,1507,f,31
+7386,claire's father,197,m,57
+7386,claires mother,519,f,NULL
+7386,denny,1329,m,36
+7386,doug carlin,6670,m,52
+7386,ferry captain,118,m,NULL
+7386,gunnars,427,m,29
+7386,jack mccready,615,m,50
+7386,mayor,118,m,NULL
+7386,medical examine,299,m,NULL
+7386,minuti,232,m,50
+7386,shanti,232,f,37
+7386,sheriff reed,151,m,48
+7386,trauma doctor,158,m,45
+7406,curtis,2049,m,32
+7406,edgar,427,m,27
+7406,gilliam,413,m,73
+7406,mason,799,f,53
+7406,namgoong minsoo,840,m,46
+7406,news reporter,170,m,32
+7406,tanya,208,f,43
+7406,teacher,294,f,28
+7406,wilford,1022,m,63
+7406,yona,137,f,21
+7413,biggles,551,m,28
+7413,chris kyle,504,m,39
+7413,dia agent snead,114,m,47
+7413,goat-winston,126,m,28
+7413,instructor roll,286,m,42
+7413,lt. col. jones,164,m,47
+7413,marc lee,545,m,30
+7413,mastef martin,168,m,NULL
+7413,ranger one,116,m,36
+7413,taya,1183,f,33
+7413,terp #1,128,m,NULL
+7413,young jeff kyle,157,m,NULL
+7423,Billy Ray Valen,3027,m,22
+7423,Billy Ray Valen,134,m,79
+7423,clarence beeks,286,m,44
+7423,coleman,351,m,61
+7423,franks,164,m,NULL
+7423,kimberley,180,f,NULL
+7423,louis winthorpe,1882,m,31
+7423,mortimer duke,712,m,75
+7423,mr lawrence,123,m,NULL
+7423,newscaster,153,m,39
+7423,ophelia,254,f,25
+7423,ophelia,243,m,44
+7423,randolph duke,1520,m,79
+7424,beverly wilshir,125,m,47
+7424,bud herman,180,m,55
+7424,charlie,118,m,35
+7424,diana,1080,f,27
+7424,ed okin,1443,m,33
+7424,ellen okin,103,f,NULL
+7424,herb,144,m,33
+7424,host,121,m,NULL
+7424,jack caper,404,m,65
+7424,shameless woman,179,f,24
+7426,amador,910,m,35
+7426,cochran,3170,m,35
+7426,diller,765,m,NULL
+7426,elena,136,f,NULL
+7426,enrique,145,m,NULL
+7426,eric,413,m,NULL
+7426,madam,140,f,43
+7426,mauro,257,m,60
+7426,Miryea,1041,f,32
+7426,texan,979,m,50
+7426,tibey,1895,m,75
+7426,vicki,491,f,NULL
+7427,connie,2238,f,31
+7427,darcy,124,f,24
+7427,dewey,272,m,34
+7427,frank,2340,m,56
+7427,galvin,717,m,54
+7427,gilleece,108,m,29
+7427,inspector werne,410,m,41
+7427,janeway,111,m,NULL
+7427,margo,291,f,NULL
+7427,reporter,421,m,NULL
+7427,vanessa,186,f,NULL
+7427,will,1003,m,30
+7429,Cab Driver,102,m,30
+7429,Cleo McDowell,1393,m,49
+7429,darryl jenks,209,m,26
+7429,hold-up man,160,m,40
+7429,king jaffe joff,708,m,57
+7429,landlord,297,m,39
+7429,lisa mcdowell,1182,f,24
+7429,maurice,289,m,35
+7429,patrice mcdowel,154,f,NULL
+7429,Prince Akeem,1817,m,27
+7429,queen aoleon,107,f,50
+7429,semmi,759,m,32
+7440,capt. frank ram,2714,m,65
+7440,chief of the wa,153,m,38
+7440,cob,616,m,NULL
+7440,lt dougherty,373,m,NULL
+7440,lt hellerman,109,m,NULL
+7440,lt mahoney,122,m,NULL
+7440,lt westergaurd,179,m,NULL
+7440,lt zimmer,467,m,NULL
+7440,lt. commander r,2224,m,41
+7440,lt. peter 'weps,547,m,37
+7440,petty officer t,249,m,19
+7440,pietrllo,436,m,NULL
+7440,tom brokaw,330,m,NULL
+7441,bartender,103,m,NULL
+7441,hunnicut,710,f,43
+7441,kathryn weller,195,f,NULL
+7441,leo watts,250,m,53
+7441,michael tarlow,452,m,47
+7441,nelson,479,m,56
+7441,nicholas,105,m,9
+7441,robert caulfiel,2189,m,60
+7441,sgt. dominick b,187,m,55
+7445,NULL,520,f,NULL
+7445,joey,310,m,64
+7445,margaret ford,938,f,39
+7445,mike,1380,m,40
+7446,abe sapien,653,m,45
+7446,agent clay,379,m,43
+7446,cpl. matlin,176,m,25
+7446,grigori rasputi,673,m,42
+7446,hellboy,1686,m,54
+7446,ilsa haupstein,126,f,NULL
+7446,john myers,683,m,28
+7446,liz sherman,680,f,32
+7446,sgt. whitman,190,m,57
+7446,tom manning,172,m,60
+7446,"trevor ""broom"" ",746,m,64
+7446,von krupt,114,m,61
+7447,avi,204,m,NULL
+7447,big chuck,222,m,42
+7447,bryan,309,m,NULL
+7447,Detective Reill,352,m,44
+7447,diana,2563,f,43
+7447,harold cornish,289,m,47
+7447,kevin,282,m,24
+7447,sandy patterson,3640,m,44
+7447,skiptracer,300,m,55
+7447,trish patterson,270,f,41
+7450,angel,190,m,34
+7450,corp onofrio,202,m,NULL
+7450,hobo prospector,421,m,NULL
+7450,jake,208,m,41
+7450,kowalski,1337,m,33
+7450,old clerk,171,m,NULL
+7450,old trolman,121,m,NULL
+7450,super soul,1658,m,32
+7450,vera thornton,310,f,NULL
+7450,young trolman,125,m,NULL
+7454,berman,125,m,26
+7454,bob blair,747,m,34
+7454,delaney,129,m,56
+7454,det. glover,154,m,39
+7454,instructor,104,m,NULL
+7454,laurie,386,f,28
+7454,leslie,383,f,30
+7454,lombardo,219,m,41
+7454,mc clain,234,m,NULL
+7454,robello,149,m,NULL
+7454,roberts,318,m,NULL
+7454,rub ello,135,m,NULL
+7454,sarno,130,m,51
+7454,serpico,3842,m,33
+7454,sidney green,342,m,58
+7463,1st lt. dobbs,157,m,30
+7463,1st lt. milo mi,522,m,32
+7463,brig. gen. dree,1843,m,55
+7463,capt. aarfy aar,340,m,35
+7463,capt. j.s. mcwa,208,m,32
+7463,capt. john yoss,4086,m,36
+7463,capt. nately,129,m,29
+7463,capt. orr,531,m,25
+7463,chaplain capt. ,1390,m,38
+7463,clevinger,330,m,NULL
+7463,col. cathcart,2300,m,51
+7463,damby,182,m,NULL
+7463,dr. 'doc' danee,1256,m,62
+7463,first sgt. tows,495,m,46
+7463,lt. col. korn,428,m,40
+7463,lt. col. moodus,147,m,30
+7463,maj. major majo,1220,m,41
+7463,nurse duckett,764,f,32
+7463,scheisskopf,661,m,NULL
+7466,dastan,3093,m,30
+7466,farhad,109,m,NULL
+7466,farood,1017,m,NULL
+7466,garsiv,424,m,28
+7466,King Sharaman,110,m,70
+7466,nizam,1024,m,67
+7466,tamina,1558,f,24
+7466,tus,342,m,38
+7474,dennis farell,1367,m,39
+7474,polly watt,893,f,29
+7474,seth belzer,1218,m,30
+7474,shay,223,f,NULL
+7474,sheriff terri f,168,f,NULL
+7475,amy fox,1337,f,34
+7475,david fox,2690,m,36
+7475,mason,578,m,44
+7475,mechanic,269,m,29
+7494,bim' nolan,371,m,40
+7494,don birnam,5253,m,40
+7494,gloria,553,f,22
+7494,headwaiter,214,m,55
+7494,helen st. james,1838,f,28
+7494,mr. st. james,103,m,56
+7494,mrs. deveridge,252,f,66
+7494,nat,706,m,36
+7494,opera cloak roo,249,m,65
+7494,wick birnam,986,m,36
+7499,arthur stegman,543,m,45
+7499,bronson,176,m,63
+7499,carter,664,m,60
+7499,det. hicks,188,m,56
+7499,det. leary,179,m,NULL
+7499,fairfax bodygua,122,m,NULL
+7499,gray,104,m,45
+7499,mrs. lynn porte,220,f,35
+7499,phil,153,m,55
+7499,porter,1855,m,43
+7499,rosie,784,f,32
+7499,val resnick,1234,m,47
+7502,annabeth markum,502,f,39
+7502,boy,126,m,12
+7502,brendan harris,692,m,22
+7502,celeste boyle,435,f,44
+7502,dave boyle,1766,m,45
+7502,driver,142,m,58
+7502,esther harris,114,f,61
+7502,jimmy markum,2142,m,43
+7502,pete,219,m,26
+7502,sean devine,2069,m,45
+7502,theo,124,m,61
+7502,val savage,574,m,NULL
+7502,whitey powers,1715,m,42
+7502,young jimmy,140,m,12
+7508,crepsley,2248,m,44
+7508,darren,2627,m,17
+7508,debbie,317,f,NULL
+7508,evra the snake ,405,m,27
+7508,Gavner Purl,382,m,54
+7508,mr. tall,362,m,50
+7508,mr. tiny,289,m,49
+7508,singing dad,240,m,NULL
+7508,steve,1379,m,17
+7508,steve's mom,177,m,NULL
+7516,billy nolan,448,m,NULL
+7516,carrie white,1143,f,16
+7516,chris hargensen,473,f,25
+7516,dr. dean l. mcd,254,m,NULL
+7516,emma,187,f,NULL
+7516,heather,128,f,18
+7516,johgensen,154,m,NULL
+7516,margaret white,896,f,53
+7516,martin quinlan,133,m,NULL
+7516,ms. desjardin,1036,f,38
+7516,principal morto,400,m,59
+7516,Sheriff Otis Do,302,m,NULL
+7516,sue snell,1317,f,24
+7516,tina,217,f,20
+7516,tommy ross,1075,m,19
+7516,young estelle h,144,f,NULL
+7521,Bob Keene,770,m,NULL
+7521,bob morales,2364,m,25
+7521,buddy holly,106,m,34
+7521,connie valenzue,960,f,37
+7521,donna ludwig,338,f,22
+7521,ritchie valens,1857,m,25
+7521,rosie morales,425,f,28
+7522,ana moreau,252,f,23
+7522,catherine linkl,193,f,39
+7522,daniel kiefer,348,m,54
+7522,david barlow,584,m,57
+7522,harlan whitford,530,m,69
+7522,keller,142,m,33
+7522,matt weston,1886,m,36
+7522,tobin frost,1656,m,58
+7523,beirut: doumet,135,m,36
+7523,charles harker,764,m,44
+7523,elizabeth hadle,330,f,29
+7523,gladys jennip,180,f,34
+7523,harry duncan,225,m,60
+7523,nathan d. muir,5033,m,65
+7523,robert aiken,198,m,40
+7523,tom bishop,1301,m,38
+7526,abby allshard,368,f,44
+7526,capt. nathan cu,2811,m,42
+7526,lt. flint cohil,589,m,28
+7526,narrator,250,m,58
+7526,olivia dandridg,432,f,27
+7526,second lt. ross,212,m,28
+7526,sgt. tyree,723,m,31
+7526,top sgt. quinca,373,m,63
+7535,damon wells,666,m,NULL
+7535,dede tate,2341,f,29
+7535,eddie,942,m,24
+7535,fred tate,2254,m,9
+7535,garth emmerick,559,m,32
+7535,gina,355,f,27
+7535,jane grierson,3024,f,43
+7535,matt montini,128,m,10
+7535,miss nimvel,222,f,40
+7540,benny,540,m,NULL
+7540,bob mcclane,633,m,42
+7540,douglas quaid,1801,m,43
+7540,dr. lull,228,f,38
+7540,george,203,m,48
+7540,harry,148,m,48
+7540,helm,157,m,NULL
+7540,lori,722,f,32
+7540,melina,521,f,32
+7540,newscaster,153,f,28
+7540,richter,468,m,40
+7540,vilos cohaagen,986,m,52
+7544,barry,274,m,24
+7544,glenn,139,m,19
+7544,guido,243,m,32
+7544,jackie,188,m,27
+7544,joel goodsen,3153,m,21
+7544,joel's father,256,m,48
+7544,joel's mother,176,f,43
+7544,lana,1370,f,24
+7544,miles,594,m,30
+7544,vicki,155,f,34
+7545,catelyn conlon,142,f,NULL
+7545,colin,484,m,NULL
+7545,detective john ,961,m,56
+7545,eddie conlon,198,m,74
+7545,flores,235,f,NULL
+7545,jimmy conlon,2208,m,63
+7545,kenan boyle,123,m,NULL
+7545,margaret conlon,161,f,85
+7545,mike conlon,1704,m,36
+7545,sarah,249,f,NULL
+7545,shawn maguire,998,m,65
+7548,andy,2831,m,40
+7548,dennis riley,635,m,38
+7548,dr abott,162,f,NULL
+7548,dr ciaire,183,m,NULL
+7548,dr claire,123,m,NULL
+7548,jed,1915,m,35
+7548,kris,169,m,NULL
+7548,lester adams,523,m,59
+7548,mr leemus,328,m,NULL
+7548,paula bell,154,f,21
+7548,rae,959,f,NULL
+7548,tracy,1861,f,26
+7549,piccolo' pete ,410,m,36
+7549,doctor cozy car,797,m,40
+7549,doug,257,m,30
+7549,frankie,114,m,NULL
+7549,franklyn madson,1859,m,53
+7549,gray baker,588,m,35
+7549,inga,265,f,48
+7549,margaret straus,675,f,32
+7549,roman strauss,101,m,31
+7549,sister madelein,318,f,33
+7549,woman,144,f,NULL
+7554,annie,1078,f,34
+7554,felix,919,m,46
+7554,reiniger,237,m,44
+7554,stanley,933,m,58
+7554,terrier,2434,m,55
+7557,agent,112,m,NULL
+7557,birdmann,372,m,31
+7557,clara,758,f,40
+7557,lecturer,138,m,NULL
+7557,lucy,717,f,23
+7557,man 1,871,m,68
+7557,sophie,128,f,NULL
+7563,beckham,165,m,NULL
+7563,colonel john ca,225,m,37
+7563,colonel reed,104,m,55
+7563,iraqi police ca,102,m,NULL
+7563,sergeant jt san,1527,m,30
+7563,sergeant matt t,254,m,41
+7563,specialist owen,925,m,33
+7563,staff sergeant ,2090,m,37
+7565,baroness kessle,582,f,69
+7565,bernie,274,m,46
+7565,boris balkan,1354,m,61
+7565,dean corso,2353,m,36
+7565,gruber,181,m,68
+7565,liana telfer,342,f,44
+7565,pablo & pedro c,208,m,NULL
+7565,the girl,435,f,33
+7565,victor fargas,450,m,63
+7583,ben bradlee,782,m,54
+7583,bob woodward,2693,m,40
+7583,carl bernstein,2461,m,39
+7583,dardis' secreta,144,f,39
+7583,debbie sloan,459,f,29
+7583,deep throat,552,m,51
+7583,donald segretti,205,m,33
+7583,foreign editor,183,m,47
+7583,harry rosenfeld,590,m,56
+7583,howard simons,182,m,57
+7583,male librarian,116,m,NULL
+7583,national editor,126,m,54
+7593,charles driggs,2930,m,31
+7593,irene,161,f,28
+7593,larry dillman,312,m,35
+7593,lulu,3103,f,NULL
+7593,peaches,245,m,NULL
+7593,ray sinclair,2535,m,32
+7597,andy,241,m,13
+7597,don,577,m,46
+7597,doyle,628,m,36
+7597,flynn,265,m,44
+7597,scarlet,682,f,28
+7597,soldier,146,m,36
+7597,stone,234,m,35
+7597,tammy,337,f,18
+7602,cornelius,386,m,NULL
+7602,enola,611,f,10
+7602,helen,1194,f,32
+7602,helmut,186,m,NULL
+7602,lazlo,580,m,NULL
+7602,Mariner,1579,m,40
+7602,wanda,163,f,NULL
+7607,albert graves,502,m,44
+7607,allan taggert,339,m,36
+7607,betty fraley,121,f,41
+7607,dwight troy,229,m,42
+7607,fay estabrook,202,f,44
+7607,miranda sampson,287,f,24
+7607,mrs. sampson,167,f,42
+7607,puddler,276,m,39
+7607,susan harper,133,f,39
+7610,Bobbie Markowe,2953,f,37
+7610,carol van sant,958,f,41
+7610,claude axhelm,449,m,46
+7610,dale coba,466,m,48
+7610,Dr. Fancher,254,f,38
+7610,ed wimpiris,196,m,47
+7610,j a,221,f,35
+7610,Joanna Eberhart,2386,f,35
+7610,Joanna Eberhart,275,f,37
+7610,kit sunderson,254,f,34
+7610,mrs. kirgassa,196,f,54
+7610,ted van sant,274,m,41
+7610,walter eberhart,3258,m,41
+7623,doctor,115,m,NULL
+7623,jamie,686,f,51
+7623,john,4071,m,45
+7623,Molly,1861,f,46
+7624,carol,152,f,50
+7624,jeff,1684,m,31
+7624,kevin,124,m,23
+7624,linda,460,f,36
+7624,Pat,2396,m,37
+7624,paul,111,m,NULL
+7624,sharon,780,f,65
+7626,doctor banks,156,m,NULL
+7626,hector,212,m,NULL
+7626,henry black,281,m,9
+7626,meredith black,1238,f,49
+7626,norah,2374,f,21
+7626,porter black,2869,m,22
+7626,Vice President,422,f,55
+7626,Walter Black,5220,m,55
+7627,allen gamble,3663,m,43
+7627,bob littleford,119,m,44
+7627,Captain Gene Ma,814,m,59
+7627,christinith,106,f,35
+7627,christopher dan,108,m,38
+7627,david ershon,110,m,45
+7627,derek jeter,173,m,NULL
+7627,don beaman,144,m,NULL
+7627,dr. sheila gamb,219,f,36
+7627,fosse,193,m,28
+7627,francine,198,f,33
+7627,martin,265,m,40
+7627,mayor,109,m,65
+7627,morgan freeman,214,m,NULL
+7627,officer watts,108,m,41
+7627,old lady,102,f,NULL
+7627,terry hoitz,3493,m,39
+7627,therapist,142,f,28
+7627,tim,332,m,NULL
+7630,bill lawson - n,518,m,64
+7630,brian fantana,752,m,35
+7630,brick tamland,193,m,42
+7630,champ kind,783,m,42
+7630,ed harken,875,m,65
+7630,frank vitchard,148,m,33
+7630,garth holliday,150,m,37
+7630,helen,137,f,31
+7630,ron burgundy,4445,m,37
+7630,Veronica Cornin,2069,f,33
+7631,greg hannigan,291,m,NULL
+7631,hugh,340,m,24
+7631,jay height,1435,f,21
+7631,kelly height,606,f,17
+7631,paul,608,m,22
+7631,yara,424,f,25
+7633,arkansasside ma,102,m,59
+7633,chavez,118,m,NULL
+7633,chief deputy ti,247,m,58
+7633,corey,314,m,27
+7633,deputy foster,150,m,39
+7633,devol,194,m,NULL
+7633,dorothy,548,f,NULL
+7633,farmer,137,m,NULL
+7633,jami,2077,f,23
+7633,johnny,118,m,NULL
+7633,kendra,181,f,NULL
+7633,lillian,785,f,65
+7633,lone wolf moral,675,m,44
+7633,mrs. scott,131,f,65
+7633,newscaster,145,m,NULL
+7633,nick,650,m,NULL
+7633,Reverend Cartwr,277,m,71
+7633,roy,302,m,NULL
+7633,Sheriff Underwo,286,m,76
+7633,Texas Mayor,110,f,NULL
+7647,dylan flynn,392,m,45
+7647,guayabera shirt,164,m,30
+7647,hector,475,m,NULL
+7647,jerry weiss,427,m,61
+7647,joe collins,244,m,39
+7647,laura black,614,f,37
+7647,lawyer,225,m,NULL
+7647,mike terry,2075,m,31
+7647,official at are,176,m,38
+7647,richie,369,m,NULL
+7647,ring announcer,101,m,75
+7647,sammy,145,m,NULL
+7647,snowflake,219,m,29
+7647,sondra terry,774,f,25
+7651,david rice,4912,m,27
+7651,griffin,1466,m,22
+7651,millie,1356,f,27
+7651,mr. bowker,880,m,55
+7651,william rice,110,m,53
+7651,young mark,121,m,19
+7657,constable clark,239,m,41
+7657,dr. john watson,2292,m,37
+7657,inspector lestr,269,m,41
+7657,irene adler,969,f,31
+7657,lord blackwood,857,m,46
+7657,lord coward,232,m,34
+7657,mary morstan,231,f,32
+7657,sherlock holmes,4733,m,44
+7659,akkad,481,m,NULL
+7659,ham,331,m,22
+7659,ila,460,f,24
+7659,naameh,881,f,44
+7659,noah,2879,m,50
+7659,og,278,m,76
+7659,samyaza,221,m,73
+7659,shem,547,m,22
+7678,edgar hart,171,m,51
+7678,millie lammorea,883,f,28
+7678,mrs. rose,170,f,72
+7678,pinky rose,478,f,28
+7681,Alma Dray,1764,f,30
+7681,arthur tressler,136,m,80
+7681,dylan rhodes,2205,m,46
+7681,etienne glickma,177,m,NULL
+7681,hernandez,661,m,NULL
+7681,J. Daniel Atlas,2635,m,30
+7681,london,527,m,NULL
+7681,lt thomas,409,m,NULL
+7681,mr kaplan,110,m,NULL
+7681,roderigo,332,m,NULL
+7681,young agent,147,m,NULL
+7682,agent mack,295,m,33
+7682,cassie holmes,1539,f,15
+7682,emily wu,253,f,46
+7682,henry carver,1027,m,45
+7682,hook waters,403,m,41
+7682,kira hudson,768,f,23
+7682,nick's father,130,m,46
+7682,pinky stein,243,m,NULL
+7682,teresa stowe,266,f,35
+7695,beth,710,f,NULL
+7695,holly,364,f,21
+7695,juno,1111,f,24
+7695,rebecca,806,f,32
+7695,sam,506,f,26
+7695,sarah,579,f,24
+7696,bill nelson,1056,m,66
+7696,cally,473,f,29
+7696,chancellor falc,411,m,39
+7696,chandler,220,m,37
+7696,command centre ,135,f,NULL
+7696,doctor,200,m,NULL
+7696,dr. ben stirlin,752,m,35
+7696,dr. talbot,274,m,44
+7696,george dutton,175,m,81
+7696,infected man,132,m,NULL
+7696,jane harris,521,f,NULL
+7696,john hatcher,545,m,43
+7696,kane,963,m,65
+7696,katherine sincl,2262,f,NULL
+7696,michael canaris,1818,m,43
+7696,read,219,f,24
+7696,schaeffer,464,m,NULL
+7696,sol,536,m,33
+7697,barry,359,m,37
+7697,brian stills,717,m,36
+7697,darcy,1236,f,30
+7697,dorita,678,f,33
+7697,lorraine,680,f,34
+7697,mark winslow,454,m,49
+7697,max fielder,1606,m,38
+7698,angelo,127,m,25
+7698,athena,218,f,NULL
+7698,Aunt Voula,480,f,NULL
+7698,cousin nikki,291,f,38
+7698,gus portokalos,970,m,75
+7698,hillary,223,f,NULL
+7698,ian miller,1113,m,41
+7698,maria portokalo,725,f,62
+7698,mike,220,m,38
+7698,nick portokalos,592,m,36
+7698,priest,148,m,NULL
+7698,toula portokalo,2695,f,40
+7698,uncle taki,134,m,52
+7704,claire peterson,4072,f,46
+7704,Garrett Peterso,1318,m,54
+7704,kevin peterson,1031,m,NULL
+7704,noah sandborn,2311,m,28
+7704,princil brodie,146,f,NULL
+7704,Principal Edwar,433,m,49
+7704,rhonda,248,f,NULL
+7704,travis,163,m,NULL
+7704,vicky lansing,744,f,47
+7706,Adrian Doorbal,389,m,35
+7706,Captain Lopez,272,m,61
+7706,Carolyn 'Cissy',182,f,39
+7706,cindy eldridge,108,f,NULL
+7706,daniel lugo,2570,m,42
+7706,ed dubois,905,m,63
+7706,frank griga,202,m,53
+7706,gene tolliver,256,m,NULL
+7706,john mese,210,m,42
+7706,marc schiller,1224,m,NULL
+7706,paul doyle,593,m,41
+7706,sabina petrescu,285,f,NULL
+7709,amelia boynton,107,f,54
+7709,andrew young,698,m,NULL
+7709,archbishop iako,160,m,NULL
+7709,chief wilson ba,121,m,NULL
+7709,col. al lingo,251,m,63
+7709,coretta scott k,876,f,41
+7709,diane nash,380,f,31
+7709,dr. martin luth,4854,m,38
+7709,fred gray,115,m,46
+7709,gov. george wal,489,m,53
+7709,james bevel,309,m,42
+7709,james forman,271,m,31
+7709,james orange,101,m,39
+7709,john doar,236,m,42
+7709,john lewis,750,m,21
+7709,lee white,268,m,40
+7709,malcolm x,221,m,38
+7709,president lyndo,2387,m,66
+7709,ralph abernathy,316,m,45
+7709,registrar,101,m,45
+7709,rev. c.t. vivia,151,m,40
+7709,rev. hosea will,302,m,51
+7716,adrian yates,1833,m,37
+7716,krueger,386,m,62
+7716,laugher,105,m,44
+7716,mike howell,1931,m,32
+7716,otis,226,m,51
+7716,petey douglas,262,m,45
+7716,phoebe larson,1361,f,25
+7716,rose,262,m,51
+7716,sheriff watts,222,m,56
+7716,victoria lasset,1605,f,48
+7730,arthur,1199,m,81
+7730,charlie,358,m,NULL
+7730,church leader,146,m,53
+7730,dean,143,m,51
+7730,gazelle,258,f,32
+7730,jack,3576,m,NULL
+7730,Little Eggsy,2583,m,NULL
+7730,merlin,2084,m,51
+7730,michelle unwin,224,f,42
+7730,roxy,317,f,NULL
+7730,valentine,1424,m,66
+7731,alejandro,2484,m,29
+7731,charles,146,m,55
+7731,jonah,273,m,28
+7731,justine,1358,f,24
+7731,kara,133,f,32
+7731,kaycee,826,f,21
+7731,lars,573,m,21
+7731,samantha,121,f,28
+7731,teacher,309,f,NULL
+7731,tim,545,m,NULL
+7732,amanda cartwrig,144,f,37
+7732,chris briggs,1042,m,23
+7732,duncan,706,m,33
+7732,gertie michaels,606,f,26
+7732,kurt,130,m,32
+7732,lauren,640,f,NULL
+7732,leroy,110,m,NULL
+7732,max cartwright,2197,f,21
+7732,paula,261,f,24
+7732,tina,709,f,34
+7732,vicki summers,1338,f,26
+7733,danny dyson,167,m,NULL
+7733,det cheung,112,m,NULL
+7733,garbage man,293,m,NULL
+7733,guardian,1052,m,68
+7733,jimmy,173,m,NULL
+7733,john connor,1631,m,46
+7733,kyle reese,2194,m,29
+7733,lt. matias,282,m,NULL
+7733,o'brien,337,m,60
+7733,sarah connor,2204,f,29
+7733,young kyle,145,m,NULL
+7737,aimee,132,f,NULL
+7737,aubrey,361,f,53
+7737,crispian,1233,m,34
+7737,drake,511,m,30
+7737,erin,1467,f,28
+7737,felix,945,m,30
+7737,kelly,132,f,28
+7737,paul,727,m,48
+7737,zee,277,f,NULL
+7738,anna peterson,1841,f,21
+7738,craig,213,m,37
+7738,david,3205,m,32
+7738,kristen,318,f,NULL
+7738,laura peterson,674,f,53
+7738,luke peterson,859,m,20
+7738,major carver,887,m,52
+7738,mr. alston,112,m,NULL
+7738,mr. lyles,135,m,NULL
+7738,spencer peterso,684,m,54
+7738,zeke,297,m,26
+7740,alejandro,1900,m,48
+7740,dave jennings,306,m,66
+7740,delta,294,m,NULL
+7740,Kate Macer,1438,f,32
+7740,matt graver,1408,m,47
+7740,migrant #1,212,m,NULL
+7740,phil coopers,130,m,NULL
+7740,reggie wayne,801,m,26
+7740,ted,116,m,38
+7740,us marshal,289,m,NULL
+7742,archie,329,m,NULL
+7742,caleb,164,m,NULL
+7742,cop 1,270,m,NULL
+7742,doc,740,f,NULL
+7742,eric,1811,m,47
+7742,grandma,313,f,67
+7742,henry,312,m,37
+7742,midget,303,m,NULL
+7742,old guy,409,m,NULL
+7742,rey,1005,m,28
+7752,george little,380,m,9
+7752,Mr. Fredrick Li,518,m,40
+7752,mr. reginald 'r,839,m,50
+7752,mrs. camille st,214,f,41
+7752,Mrs. Eleanor Li,761,f,43
+7752,"mrs. keeper, th",281,f,40
+7752,snowbell 'snow',470,m,43
+7752,stuart little,2010,m,38
+7756,bryan turner,432,m,NULL
+7756,dj yella,132,m,35
+7756,dr. dre,933,m,NULL
+7756,eazy-e,4246,m,NULL
+7756,greg mack,102,m,46
+7756,ice cube,807,m,24
+7756,jerry heller,2313,m,48
+7756,lonzo williams,340,m,41
+7756,suge knight,550,m,NULL
+7756,tomica,675,f,NULL
+7759,blackbeard,1969,m,47
+7759,fathe,278,m,NULL
+7759,hook,2700,m,31
+7759,kiowa,277,m,NULL
+7759,mary,153,f,30
+7759,miner,588,m,NULL
+7759,nibs,242,m,NULL
+7759,peter,2516,m,13
+7759,skinny orphan,110,m,NULL
+7759,smee,423,m,NULL
+7759,Tiger Lily,2128,f,30
+7759,turk,546,m,NULL
+7763,Delacourt,846,f,51
+7763,frey,1363,f,30
+7763,head smuggler,173,m,43
+7763,john carlyle,295,m,57
+7763,julio,548,m,34
+7763,kruger,795,m,40
+7763,manuel,120,m,39
+7763,matilda,219,f,NULL
+7763,max,1906,m,43
+7763,nun,258,f,NULL
+7763,sandro,380,m,34
+7763,spider,1671,m,37
+7765,dierdre,247,f,NULL
+7765,frankie,2763,f,38
+7765,hannah,595,f,28
+7765,isaac,236,m,NULL
+7765,josh,1053,m,NULL
+7765,lillian,910,f,54
+7765,richards,339,m,46
+7765,sam,3600,m,32
+7765,ted,123,m,36
+7766,betty ross,1639,f,31
+7766,bruce banner,975,m,39
+7766,cabot,627,m,NULL
+7766,emil blonsky,487,m,47
+7766,general joe gre,157,m,NULL
+7766,reporter,113,f,NULL
+7766,samson,645,m,NULL
+7766,samuel sterns,674,m,44
+7766,stanley,165,m,78
+7769,angela,295,f,NULL
+7769,ben,1442,m,19
+7769,english teacher,129,m,42
+7769,lacey,712,f,22
+7769,margo,2193,f,23
+7769,quentin,4327,m,21
+7769,radar,1469,m,NULL
+7769,student in hall,116,f,NULL
+7770,astinos,150,m,33
+7770,captain,727,m,41
+7770,daxos,110,m,38
+7770,dilios,2540,m,41
+7770,ephialtes,544,m,41
+7770,king leonidas,2684,m,37
+7770,loyalist,250,m,59
+7770,messenger,250,m,NULL
+7770,persian general,238,m,NULL
+7770,queen gorgo,1071,f,33
+7770,spartan general,278,m,NULL
+7770,stelios,246,m,29
+7770,theron,820,m,37
+7770,xerxes,511,m,31
+7779,carl,775,m,53
+7779,dalton lambert,218,m,NULL
+7779,detective senda,265,m,50
+7779,elise rainier,784,f,70
+7779,josh lambert,1403,m,40
+7779,lorraine lamber,1087,f,65
+7779,renai lambert,753,f,34
+7779,specs,408,m,36
+7779,tucker,346,m,34
+7779,young josh,170,m,14
+7780,Albert,493,m,40
+7780,allegra,106,f,31
+7780,brent,449,m,NULL
+7780,cressida,526,f,31
+7780,geoff,228,m,NULL
+7780,hitch,4943,m,37
+7780,liza,345,f,NULL
+7780,sara,2654,f,31
+7780,vance,370,m,37
+7796,bobby - age 10,122,m,11
+7796,brandi,349,f,21
+7796,dooky,146,m,20
+7796,dough boy,1373,m,NULL
+7796,furious styles,1812,m,30
+7796,lewis crump,244,m,44
+7796,monster,214,m,28
+7796,mrs. baker,271,f,29
+7796,mrs. olaf,210,f,NULL
+7796,ms baker,156,f,NULL
+7796,officer coffey,196,m,50
+7796,reva styles,839,f,33
+7796,ricky baker,669,m,22
+7796,shalika,117,f,20
+7796,shanice,171,f,NULL
+7796,tre styles,2194,m,23
+7800,alan,276,m,NULL
+7800,brooke wolfe,1058,f,35
+7800,cheryl lang,473,f,37
+7800,fbi agent whit ,894,m,45
+7800,grant faraday,296,m,12
+7800,michael faraday,5160,m,50
+7800,newswoman,122,f,NULL
+7800,oliver lang,1663,m,41
+7800,student kemp,168,m,NULL
+7800,young mom,450,f,NULL
+7808,dean kansky,1558,m,36
+7808,eve,883,f,37
+7808,halley buchanan,563,f,30
+7808,jonathan trager,2844,m,35
+7808,lars hammond,225,m,40
+7808,sara thomas,2727,f,28
+7814,ab dal,469,m,NULL
+7814,admiral chadwic,123,m,48
+7814,berber,166,m,NULL
+7814,capt. jerome,582,m,29
+7814,dreighton,231,m,27
+7814,eden pedecaris,1792,f,29
+7814,gummere,485,m,40
+7814,john hay,451,m,69
+7814,president's aid,125,m,NULL
+7814,raisuli,2364,m,45
+7814,sir joseph,340,m,46
+7814,the bashaw,158,m,52
+7814,theodore roosev,2539,m,54
+7814,ugly arab,152,m,44
+7814,wa zan,356,m,NULL
+7814,william pedecar,188,m,14
+7818,"bill jarvis, fr",203,m,50
+7818,charles weiss,198,m,32
+7818,dexter,106,m,NULL
+7818,fbi agent andy ,154,m,NULL
+7818,insp. walter co,636,m,57
+7818,joe lambert,174,m,43
+7818,john mcclane,2039,m,40
+7818,ricky walsh,123,m,48
+7818,simon gruber,1185,m,47
+7818,zeus carver,1809,m,47
+7820,carl casper,4551,m,48
+7820,inez,994,f,42
+7820,jen,593,f,53
+7820,martin,582,m,50
+7820,marvin,330,m,49
+7820,molly,391,f,30
+7820,percy,991,m,NULL
+7820,ramsey michel,394,m,54
+7820,riva,505,m,77
+7820,tony,278,m,44
+7822,alby,1005,m,29
+7822,chuck,643,m,NULL
+7822,clint,193,m,NULL
+7822,father,155,m,NULL
+7822,gally,1351,m,21
+7822,minho,1811,m,NULL
+7822,newt,378,m,24
+7822,Teresa,889,f,22
+7822,thomas,2500,m,23
+7822,woman,266,f,NULL
+7822,Zart,133,m,NULL
+7829,denise,270,f,15
+7829,Evelyn Vuoso,164,f,40
+7829,gail monahan,689,f,40
+7829,gil hines,201,m,37
+7829,jasira maroun,2301,f,19
+7829,melina hines,968,f,35
+7829,rifat maroun,2391,m,NULL
+7829,school photogra,106,m,39
+7829,thena panos,187,f,30
+7829,thomas bradley,1028,m,20
+7829,Travis Vuoso,1016,m,39
+7829,zack vuoso,378,m,14
+7830,el scarface,187,m,NULL
+7830,el smiley,164,m,NULL
+7830,el sol,348,m,NULL
+7830,horacio,547,m,39
+7830,lil' mago,576,m,NULL
+7830,martha marlene,225,f,27
+7830,orlando,217,m,NULL
+7830,sayra,660,f,17
+7830,tia toña,219,f,NULL
+7830,willy 'el caspe,514,m,NULL
+7834,annie schmidt,165,f,62
+7834,captain dickson,610,m,45
+7834,deputy chief ha,308,m,44
+7834,dr. murphy,236,m,44
+7834,jenko,2145,m,34
+7834,maya,928,f,28
+7834,mercedes,309,f,NULL
+7834,mr. walters,117,m,44
+7834,professor,189,f,NULL
+7834,schmidt,4130,m,31
+7834,zook,809,m,28
+7836,angela rivera,385,f,39
+7836,billy hope,4027,m,35
+7836,charity announc,160,m,NULL
+7836,eli frost,122,m,NULL
+7836,jim lampley,337,m,66
+7836,jon jon,482,m,NULL
+7836,jordan mains,903,m,40
+7836,judge kayle,507,f,70
+7836,kash's posse,414,m,36
+7836,leila hope,555,f,NULL
+7836,maureen hope,464,f,37
+7836,miguel 'magic' ,296,m,NULL
+7836,mikey,126,m,NULL
+7836,mrs. doyle,140,f,51
+7836,referee,345,m,NULL
+7836,tick wills,1895,m,54
+7836,umpire,128,m,NULL
+7849,chief parker,468,m,72
+7849,connie o'mara,449,f,38
+7849,detective sgt. ,107,m,NULL
+7849,dragna,211,m,63
+7849,jack whalen,429,m,36
+7849,jean,542,f,NULL
+7849,mickey cohen,1334,m,53
+7849,officer conwell,439,m,39
+7849,officer daryl g,135,m,31
+7849,officer max ken,632,m,55
+7849,officer navidad,159,m,37
+7849,sgt. jerry woot,1448,m,33
+7849,sgt. john o'mar,2494,m,45
+7849,thug,124,m,NULL
+7849,washington,494,m,NULL
+7850,cameraman,103,m,52
+7850,Church Preacher,137,m,47
+7850,colored chef,105,m,48
+7850,John L. Sulliva,245,m,36
+7850,judge,242,m,55
+7850,miz zeffie,186,f,49
+7850,mr carson,209,m,NULL
+7850,mr. casalsis,137,m,52
+7850,mr. hadrian,371,m,53
+7850,Sullivan's Butl,312,m,62
+7850,Sullivan's Vale,252,m,54
+7850,the doctor,118,m,57
+7850,the girl,1513,f,19
+7850,trusty,291,m,57
+7856,biff tannen,417,m,26
+7856,dr. emmett brow,2058,m,47
+7856,george mcfly,950,m,21
+7856,lorraine baines,800,f,24
+7856,marty mcfly,3397,m,24
+7856,stella baines,117,f,41
+7858,alissa,513,f,33
+7858,darnell,3034,m,36
+7858,glenn,119,m,NULL
+7858,James,3516,m,48
+7858,jessica,103,f,NULL
+7858,jonald,219,m,NULL
+7858,martin,1019,m,71
+7858,peter penny,293,m,57
+7858,Rico,214,m,NULL
+7858,rita,448,f,NULL
+7858,Russell,772,m,35
+7858,shitnts,144,m,NULL
+7860,alec,4155,m,27
+7860,ben,118,m,NULL
+7860,cedric,124,m,30
+7860,daisy,126,f,24
+7860,faiza,585,f,29
+7860,megan,4897,f,26
+7860,police clerk,189,m,NULL
+7860,rick raines,127,m,44
+7870,adrienne saunde,2551,f,46
+7870,board of educat,240,f,NULL
+7870,evelyn,198,f,41
+7870,harvey,382,m,35
+7870,jack saunders,1906,m,46
+7870,mary saunders,281,f,7
+7870,policeman #1,125,m,NULL
+7870,rosalie,348,f,61
+7871,bert,260,m,60
+7871,elaine,591,f,45
+7871,fran,117,f,65
+7871,hilary,104,f,47
+7871,jack,2967,m,45
+7871,jessica,173,f,29
+7871,nancy,3709,f,36
+7871,sean,929,m,37
+7875,adrian,359,f,33
+7875,announcer,149,m,53
+7875,apollo creed,542,m,31
+7875,apollo's traine,265,m,42
+7875,director,191,m,37
+7875,mickey,761,m,72
+7875,paulie,248,m,39
+7875,rocky balboa,2728,m,33
+7876,adrian,296,f,36
+7876,apollo creed,1836,m,34
+7876,Clubber Lang,1253,m,30
+7876,duke,149,m,45
+7876,mickey goldmill,1270,m,75
+7876,paulie,1390,m,42
+7876,rematch comment,385,m,NULL
+7876,rematch comment,226,m,NULL
+7876,rocky balboa,2379,m,36
+7876,thunderlips,245,m,29
+7876,title commentat,105,m,NULL
+7876,title ring anno,137,m,NULL
+7876,wrestling annou,106,m,NULL
+7876,wrestling comme,172,m,59
+7877,adrian,147,f,44
+7877,duke,289,m,53
+7877,paulie,239,m,50
+7877,rocky balboa,1080,m,44
+7877,rocky jr,198,m,NULL
+7877,tommy 'machine',703,m,21
+7878,andy,232,m,74
+7878,clubber lang   ,269,m,54
+7878,commentator #1,468,m,NULL
+7878,commentator bre,311,m,NULL
+7878,commentator jim,851,m,NULL
+7878,commissioner,106,m,NULL
+7878,duke,436,m,69
+7878,espn commentato,203,m,41
+7878,l.c.,300,m,44
+7878,marie,307,f,36
+7878,martin,298,m,64
+7878,mason 'the line,328,m,38
+7878,paulie,973,m,66
+7878,promoter,365,m,NULL
+7878,ring announcer,159,m,62
+7878,robert jr,499,m,NULL
+7878,rocky balboa,3334,m,60
+7878,steps,183,m,17
+7880,alfredo garcia,237,m,30
+7880,associate bob,273,m,41
+7880,dr. raymond coc,893,m,64
+7880,John Spartan,2194,m,47
+7880,lenina huxley,1556,f,29
+7880,Payne,156,m,NULL
+7880,simon phoenix,1053,m,31
+7880,warden william ,213,m,NULL
+7880,zachary lamb - ,151,m,38
+7882,bertha minnix,602,f,23
+7882,charlie rakes,340,m,45
+7882,cricket pate,477,m,26
+7882,danny,101,m,46
+7882,deputy henry ab,106,m,45
+7882,floyd banner,638,m,54
+7882,forrest bondura,2175,m,35
+7882,gummy walsh,151,m,43
+7882,howard bonduran,1416,m,43
+7882,jack bondurant,3979,m,26
+7882,jimmy turner,304,m,NULL
+7882,maggie beauford,495,f,35
+7882,tizwell minnix,233,m,NULL
+7890,beth raymond,1568,f,30
+7890,brian sousa,287,m,25
+7890,det. jack andre,1223,m,40
+7890,Leann Cole,352,f,27
+7890,mrs. ford,117,f,NULL
+7890,ray purvis,205,m,48
+7890,taylor anthony,196,f,28
+7890,ted summers,284,m,61
+7891,bonnie,492,f,23
+7891,chris hooker,444,m,26
+7891,grace downs,154,f,45
+7891,lirio,241,f,39
+7891,nancy downs,1301,f,22
+7891,rochelle,382,f,30
+7891,sarah bailey,1092,f,24
+7892,fuller,1757,m,34
+7892,lewis,1832,m,28
+7892,ronald ellingho,103,m,NULL
+7892,rusty nail,547,m,44
+7892,venna,909,f,18
+7894,alison natolly,380,f,34
+7894,bill natolly,800,m,32
+7894,chloe,1024,f,21
+7894,freshman girl #,109,f,NULL
+7894,jesse,570,m,25
+7894,kisha,313,f,23
+7894,mr. riley,140,m,NULL
+7894,patrick,412,m,NULL
+7894,roger,210,m,NULL
+7894,shawn,623,m,NULL
+7894,tamara riley,1294,f,25
+7896,Alex,733,f,26
+7896,claire,232,f,NULL
+7896,coach harris,245,m,NULL
+7896,conductor vasyl,427,m,52
+7896,dr. velislava,161,f,NULL
+7896,ishtav,103,m,NULL
+7896,sheldon,319,m,29
+7896,todd,414,m,NULL
+7896,willy,281,m,36
+7897,billy,265,m,28
+7897,doug kendrew,200,m,46
+7897,dr morgan,369,m,NULL
+7897,estelle,604,f,27
+7897,hooper,218,m,NULL
+7897,kelly mccready,324,f,NULL
+7897,mark,1197,m,25
+7897,rose parker,555,f,32
+7897,skullet,105,m,NULL
+7897,tyler,931,m,26
+7897,wolfe,110,m,NULL
+7897,wright,175,m,NULL
+7901,andy,1064,m,26
+7901,cassidy,1971,f,23
+7901,chugs,629,f,23
+7901,claire,721,f,26
+7901,ellie,302,f,21
+7901,garret,175,m,22
+7901,jessica,2431,f,21
+7901,kyle,312,m,26
+7901,maggie,366,f,25
+7901,mickey,310,m,23
+7901,mrs. crenshaw,163,f,53
+7901,senator tyson,132,m,NULL
+7904,carrie dreyer,117,f,31
+7904,erin,175,f,20
+7904,hector,665,m,NULL
+7904,jason wise,297,m,23
+7904,jennifer,300,f,NULL
+7904,jessica,291,f,NULL
+7904,julie christens,327,f,20
+7904,kevin fischer,2155,m,23
+7904,logan,671,m,NULL
+7904,minister,159,m,NULL
+7904,wendy christens,2999,f,22
+7906,beth,238,f,27
+7906,blake,503,m,26
+7906,dennis,622,m,31
+7906,gordon,550,m,34
+7906,malik,574,m,NULL
+7906,maya,111,f,26
+7906,nick,978,m,26
+7906,red,210,m,36
+7906,sabin,668,m,45
+7906,sara,1396,f,23
+7907,abby,197,f,25
+7907,arkin,1731,m,35
+7907,dre,156,m,43
+7907,elena,777,f,27
+7907,lucello,1408,m,47
+7907,missy,198,f,25
+7907,mr. peters,385,m,57
+7907,wally,144,m,44
+7907,zack,174,m,32
+7915,buyer,203,m,50
+7915,counselor,980,m,36
+7915,diamond dealer,152,m,72
+7915,jefe,103,m,65
+7915,laura,158,f,39
+7915,malkina,385,f,41
+7915,man with pistol,121,m,NULL
+7915,reiner,726,m,44
+7915,ruth,113,f,49
+7915,westray,311,m,50
+7922,albert donoghue,214,m,NULL
+7922,angelo bruno,329,m,63
+7922,dr humphries,185,m,60
+7922,frances shea,2753,f,27
+7922,george cornell,103,m,47
+7922,jack mcvitie,283,m,NULL
+7922,leslie payne,557,m,52
+7922,mrs shea,126,f,48
+7922,nipper read,186,m,51
+7922,reggie kray,2587,m,38
+7922,violet kray,122,f,72
+7924,almond,300,f,34
+7924,carvin,682,m,76
+7924,dale,168,m,NULL
+7924,eva,367,f,34
+7924,george gergenbl,4370,m,43
+7924,karen,354,f,39
+7924,kathy,573,f,42
+7924,linda gergenbla,2398,f,43
+7924,rick,764,m,44
+7924,rodney,421,m,33
+7924,seth,1736,m,41
+7924,wayne,850,m,42
+7926,barney coopersm,236,m,37
+7926,hannah stubbs,804,f,28
+7926,vincent 'vinnie,614,m,45
+7930,ben taylor,306,m,NULL
+7930,blake gaines,501,f,29
+7930,emeka,130,m,NULL
+7930,Emma Gaines,535,f,44
+7930,ollie taylor,155,m,NULL
+7930,Patrick,167,m,NULL
+7930,Raymond Gaines,2122,m,43
+7930,roger gentry,593,m,NULL
+7930,tom,849,m,NULL
+7931,armando,138,m,NULL
+7931,big sexy,154,m,27
+7931,demetrius hicks,1644,m,28
+7931,gamboa,716,m,NULL
+7931,gustavo leon,157,m,NULL
+7931,hollywood jack,1073,m,35
+7931,hondo,132,m,50
+7931,overdose,283,m,NULL
+7931,pomona joe,273,m,50
+7931,sean vetter,2213,m,36
+7931,stacey,110,f,NULL
+7931,ty frost,498,m,55
+7935,bryce,136,m,36
+7935,chazz michael m,2889,m,40
+7935,coach,1553,m,63
+7935,darren macelroy,305,m,51
+7935,fairchild van w,455,f,36
+7935,hector,210,m,31
+7935,jimmy macelroy,2398,m,30
+7935,katie van walde,684,f,33
+7935,stranz van wald,1068,m,37
+7937,delilah,316,f,43
+7937,elliot,255,m,59
+7937,frank garcia,812,m,34
+7937,gary,376,m,34
+7937,kenny loftus,599,m,14
+7937,nick halsey,4180,m,43
+7940,beanie,401,m,33
+7940,frank,528,m,36
+7940,goldberg,139,m,51
+7940,mark,168,m,41
+7940,michael,190,m,34
+7940,mitch,1193,m,32
+7940,nicole,379,f,34
+7940,pritchard,259,m,38
+7942,ana pascal,1109,f,29
+7942,dave,195,m,36
+7942,er doctor #1,123,m,NULL
+7942,harold crick,3360,m,39
+7942,kay,1121,f,NULL
+7942,narrator,1685,f,NULL
+7942,penny escher,556,f,36
+7942,Professor Jules,2080,m,69
+7944,bad cop,190,m,62
+7944,batman,272,m,44
+7944,benny,258,m,38
+7944,black falcon,715,m,NULL
+7944,dad,106,m,NULL
+7944,doris,621,m,NULL
+7944,emmet brickowos,3098,m,35
+7944,foreman jim,145,m,43
+7944,king karl,369,m,NULL
+7944,larry the baris,124,m,NULL
+7944,lucy,1631,f,40
+7944,neckbeard,467,m,NULL
+7944,ted,314,m,NULL
+7944,the black falco,722,m,NULL
+7944,vitruvius,1172,m,77
+7955,anne,405,f,48
+7955,charles stratto,356,m,42
+7955,jill,102,f,NULL
+7955,julian,3690,m,31
+7955,julian's lawyer,114,m,61
+7955,leon,559,m,37
+7955,lisa williams,141,f,44
+7955,michelle,1250,f,37
+7955,sunday,674,m,44
+7962,annie hughes,678,f,30
+7962,dean mccoppin,898,m,32
+7962,hogarth hughes,2348,m,13
+7962,kent mansley,1209,m,44
+7973,billy,3709,m,44
+7973,charlie,786,m,51
+7973,dennis,176,m,43
+7973,hans,1475,m,69
+7973,kaya,366,f,30
+7973,larry,139,m,31
+7973,marty,3430,m,36
+7973,myra,268,f,NULL
+7973,paulo,207,m,55
+7973,tommy,211,m,44
+7973,zachariah,581,m,63
+7974,adam sandler,128,m,48
+7974,andre allen,4975,m,49
+7974,benny barnes,457,m,46
+7974,brad,159,m,NULL
+7974,charles,240,m,35
+7974,chelsea brown,2591,f,35
+7974,erica long,639,f,42
+7974,jazzy dee,390,m,50
+7974,michele,159,f,29
+7974,mike,107,m,27
+7974,silk,579,m,49
+7974,vanessa,197,f,47
+7977,agent spolcheck,101,m,41
+7977,det. caroline b,2400,f,46
+7977,eddie 'neck' jo,192,m,45
+7977,floyd morgan,261,m,NULL
+7977,james 'monster',931,m,38
+7977,joe 'grinder' p,446,m,38
+7977,john 'breacher',1506,m,67
+7977,julius 'sugar' ,353,m,45
+7977,lizzy murray,736,f,39
+7977,rygaard,695,m,NULL
+7977,tom 'pyro' robe,138,m,45
+7983,adm. james gree,510,m,63
+7983,Cathy Muller Ry,179,f,47
+7983,col. felix cort,415,m,37
+7983,diaz,155,m,NULL
+7983,ernesto escobed,332,m,43
+7983,fbi director em,111,m,49
+7983,Jack Ryan,1568,m,52
+7983,John Clark,441,m,39
+7983,President Benne,291,m,64
+7983,robert ritter,420,m,35
+7984,baby' brent,297,m,31
+7984,cloudy with a c,525,m,NULL
+7984,earl devereaux,453,m,57
+7984,flint lockwood,2708,m,31
+7984,mayor shelbourn,801,m,51
+7984,sam sparks,1495,f,33
+7984,tim lockwood,469,m,69
+7986,bob,155,m,NULL
+7986,Herb Overkill,354,m,44
+7986,kevin,328,m,NULL
+7986,madge nelson,119,f,56
+7986,narrator,617,m,64
+7986,Scarlet Overkil,1370,f,51
+7986,stuart,152,m,NULL
+7986,the queen,201,f,57
+7986,tina,138,f,34
+7986,walter nelson,194,m,64
+7991,celia,399,f,43
+7991,charlie,128,m,61
+7991,floor manager,130,m,59
+7991,fungus,220,m,57
+7991,george sanderso,148,m,39
+7991,henry j. watern,1192,m,73
+7991,"james p. ""sulle",2625,m,49
+7991,mike wazowski,4653,m,53
+7991,needleman,128,m,35
+7991,randall boggs,734,m,44
+7991,roz,226,m,40
+8000,bob burley,336,m,63
+8000,caroline,2636,f,39
+8000,connie,371,f,42
+8000,gus,3132,m,37
+8000,huff,858,m,55
+8000,john,124,m,NULL
+8000,linda,161,f,52
+8000,lloyd,1932,m,35
+8000,murray,391,m,57
+8000,rose,531,f,71
+8000,santa family #1,182,f,NULL
+8000,siskel,197,m,39
+8000,steve,182,m,NULL
+8007,billy,230,m,33
+8007,bobby singer,227,m,21
+8007,edie stall,2501,f,38
+8007,hank,775,m,NULL
+8007,jack stall,576,m,27
+8007,joey,307,m,NULL
+8007,judy danvers,207,f,19
+8007,leland,287,m,58
+8007,mick,210,m,NULL
+8007,richie cusack,336,m,55
+8007,sarah stall,110,f,NULL
+8007,sheriff sam car,767,m,NULL
+8007,tom stall,3753,m,47
+8007,torrino,423,m,NULL
+8011,art,230,m,75
+8011,audrey,250,f,16
+8011,bill,266,m,37
+8011,clark,3829,m,46
+8011,"clark, sr.",279,m,74
+8011,eddie,1128,m,39
+8011,ellen,985,f,38
+8011,francis,131,f,64
+8011,frank shirley,350,m,44
+8011,lewis,359,m,62
+8011,margo chester,149,f,28
+8011,nora,106,f,54
+8011,ruby sue,182,f,9
+8011,rusty,459,m,14
+8011,todd chester,210,m,38
+8019,bishop garret m,267,m,NULL
+8019,brendan lynch,343,m,48
+8019,dr. frank harte,389,m,46
+8019,father leary,587,m,NULL
+8019,fiona lavelle,3278,f,37
+8019,freddie joyce,304,m,31
+8019,inspector stant,469,m,50
+8019,jack brennan,632,m,35
+8019,leo,245,m,NULL
+8019,michael fitzger,964,m,43
+8019,milo herlihy,185,m,NULL
+8019,teresa,312,f,44
+8019,veronica brenna,413,f,NULL
+8021,aidan mcbride,344,m,NULL
+8021,aoife o'carroll,102,f,NULL
+8021,billy devaney,405,m,NULL
+8021,clive cornell,388,m,48
+8021,colum hennessey,162,m,45
+8021,doctor oleyuwo,103,m,NULL
+8021,eileen boyle,267,f,70
+8021,eugene moloney,174,m,NULL
+8021,fbi agent wende,1487,m,47
+8021,francis sheehy-,633,m,50
+8021,gabriela mcbrid,329,f,35
+8021,gerry boyle,4462,m,56
+8021,gerry stanton,271,m,47
+8021,liam o'leary,475,m,NULL
+8021,photographer,121,m,28
+8025,doctor - vietna,147,m,NULL
+8025,"donna, ron's gi",188,f,24
+8025,infantry colone,107,m,45
+8025,legion commande,278,m,51
+8025,Mrs. Kovic,340,f,40
+8025,Mrs. Kovic,334,m,50
+8025,Recruiting Gunn,367,m,40
+8025,ron kovic,3270,m,27
+8025,steve boyer,332,m,32
+8025,Tommy Kovic,473,m,18
+8025,young radical -,114,m,NULL
+8029,caesar flickerm,539,m,52
+8029,cato,124,m,20
+8029,cinna,332,m,48
+8029,claudius temple,595,m,45
+8029,effie trinket,646,f,38
+8029,gale hawthorne,436,m,22
+8029,haymitch aberna,977,m,51
+8029,katniss everdee,2605,f,22
+8029,peeta mellark,1167,m,20
+8029,primrose everde,283,f,12
+8029,rue,265,f,14
+8029,seneca crane,430,m,34
+8031,danny,305,m,28
+8031,delivery guy,980,m,NULL
+8031,francine,131,f,27
+8031,kim,1103,f,30
+8031,lewis farrell,1191,m,27
+8031,lisa walker,2367,f,30
+8031,mr farrell,110,m,NULL
+8031,mumuu woman,243,f,NULL
+8031,wendy,155,f,35
+8034,biscuit woman,652,f,46
+8034,david,1990,m,39
+8034,female,1321,f,NULL
+8034,heartless woman,323,f,40
+8034,hotel manager,903,f,41
+8034,lisping man,582,m,50
+8034,loner leader's ,2193,m,NULL
+8034,Loner Swimmer,189,m,52
+8034,nosebleed woman,420,f,23
+8034,nosebleed woman,106,f,NULL
+8034,receptionist,298,f,NULL
+8034,shortsighted wo,643,f,NULL
+8034,the limping man,777,m,35
+8034,the maid,413,f,31
+8045,antonio,271,m,42
+8045,april havens,303,f,27
+8045,braces,120,m,NULL
+8045,director george,418,f,45
+8045,fitzgerald,975,m,39
+8045,june havens,3122,f,38
+8045,molly,205,f,59
+8045,rodney,391,m,38
+8045,roy miller,3446,m,48
+8045,simon feck,223,m,26
+8050,atley jackson,643,m,46
+8050,detective dryco,147,m,32
+8050,freb,312,m,28
+8050,helen raines,260,f,59
+8050,kip raines,1337,m,26
+8050,memphis raines,3260,m,36
+8050,mirror man,510,m,NULL
+8050,otto halliwell,863,m,69
+8050,raymond calitri,933,m,36
+8050,sara 'sway' way,1102,f,25
+8050,toby,525,m,27
+8050,tumbler,290,m,24
+8053,alison loeb,216,f,16
+8053,brodsky,136,m,NULL
+8053,devoe,167,m,NULL
+8053,fbi agent #1,212,m,NULL
+8053,jacobs,270,m,NULL
+8053,jonah,137,m,NULL
+8053,lawyer,113,m,NULL
+8053,mercer,146,m,NULL
+8053,riley jeffers,309,f,34
+8053,Tim Harlend,917,m,50
+8053,will montgomery,1270,m,48
+8054,deputy russ bow,139,m,37
+8054,lyle,299,m,57
+8054,michael william,1535,m,29
+8054,suzanne brown,900,f,23
+8054,wayne brown,508,m,50
+8055,abigail chase,1515,f,31
+8055,ben gates,4686,m,43
+8055,connor,565,m,40
+8055,dr. nichols,188,m,70
+8055,mitch wilkinson,1075,m,57
+8055,patrick gates,964,m,69
+8055,riley poole,1614,m,29
+8055,sadusky,677,m,68
+8055,the president,252,m,51
+8056,alan the bounce,124,m,32
+8056,austin jacoby,776,m,56
+8056,de'andre,114,m,NULL
+8056,diggy,367,f,22
+8056,dom,815,m,27
+8056,fidel x,122,m,NULL
+8056,jaleel,370,m,NULL
+8056,jib,420,m,19
+8056,lily,278,f,NULL
+8056,lisa hayes,181,f,48
+8056,malcolm,2458,m,NULL
+8056,mr. bailey,287,m,NULL
+8056,nakia,521,f,27
+8056,narrator,707,m,54
+8056,tannehill james,119,m,53
+8056,will sherwood,532,m,NULL
+8057,abdullah,168,m,67
+8057,annabel richter,1661,f,36
+8057,dieter mohr,250,m,60
+8057,günther bachman,2179,m,47
+8057,irna frey,601,f,39
+8057,issa karpov,842,m,28
+8057,leyla oktay,275,f,55
+8057,martha sullivan,223,f,48
+8057,maximilian,281,m,36
+8057,melik oktay,247,m,40
+8057,michael axelrod,210,m,58
+8057,niki,178,f,31
+8057,the admiral,162,m,52
+8057,tommy brue,1690,m,59
+8058,amanda,327,f,62
+8058,big stan,153,m,23
+8058,bob,1332,m,43
+8058,j.p.,821,m,30
+8058,maggie hayward ,1546,f,29
+8058,victor the clea,104,m,54
+8063,Al Lucero,1285,m,33
+8063,brian kelly,2933,m,20
+8063,Colonel Trac,358,m,NULL
+8063,don,500,m,NULL
+8063,ed lawndale,351,m,57
+8063,gloria,372,f,NULL
+8063,tina trac,818,f,NULL
+8063,vinh kelly,429,m,19
+8063,yabbo,652,m,21
+8073,bob,7031,m,25
+8073,david,326,m,21
+8073,dianne,1817,f,30
+8073,gentry,1020,m,36
+8073,hotel clerk,110,m,NULL
+8073,motel manager,120,m,NULL
+8073,nadine,524,f,19
+8073,neighbor lady,110,f,NULL
+8073,rick,531,m,27
+8073,tom the priest,263,m,75
+8080,armageddon anno,241,m,38
+8080,bateman,172,m,37
+8080,corey woods,1370,m,13
+8080,haley,1147,f,13
+8080,lucas,148,m,13
+8080,nick woods,551,m,20
+8080,putnam,399,m,NULL
+8080,sam woods,401,m,48
+8089,barbara,105,f,52
+8089,ben bradlee jr.,749,m,53
+8089,cardinal law,223,m,76
+8089,eric macleish,440,m,47
+8089,joe crowley,347,m,NULL
+8089,jon albano,110,m,57
+8089,marty baron,1143,m,48
+8089,Matt Carroll,585,m,47
+8089,mike rezendes,3077,m,48
+8089,mitchell garabe,1034,m,55
+8089,patrick mcsorle,197,m,NULL
+8089,petey,138,m,NULL
+8089,phil saviano,725,m,NULL
+8089,richard gilman,227,m,60
+8089,richard sipe,617,m,68
+8089,sacha pfeiffer,797,f,37
+8089,steve kurkjian,124,m,NULL
+8089,tim,365,m,NULL
+8089,walter 'robby' ,3062,m,64
+8094,albright,855,m,37
+8094,anna,105,f,NULL
+8094,anton,231,m,41
+8094,claire,285,f,34
+8094,damian,2242,m,72
+8094,madeleine,774,f,NULL
+8094,martin,406,m,66
+8095,billy ray,207,m,NULL
+8095,earl,168,m,NULL
+8095,marianne graves,963,f,45
+8095,neff,105,m,NULL
+8095,rachel varney,163,f,32
+8095,rick jarmin,1383,m,34
+8099,bala-tik,140,m,NULL
+8099,c-3po,138,m,69
+8099,finn,1447,m,23
+8099,general hux,356,m,32
+8099,han solo,1225,m,73
+8099,kylo ren,618,m,32
+8099,maz kanata,241,f,32
+8099,poe dameron,604,m,36
+8099,princess leia,252,f,59
+8099,rey,1363,f,23
+8099,stormtrooper,114,m,NULL
+8099,supreme leader ,168,m,51
+8103,charles spencer,3132,m,27
+8103,charlie age 5,157,m,NULL
+8103,douglas fairban,513,m,45
+8103,fred karno,293,m,50
+8103,george hayden,638,m,55
+8103,hannah chaplin,285,f,48
+8103,j. edgar hoover,245,m,36
+8103,joan barry,136,f,31
+8103,joseph scott,225,m,45
+8103,mack sennett,495,m,40
+8103,paulette goddar,170,f,27
+8103,stage manager,116,m,47
+8103,sydney chaplin,621,m,29
+8112,burke,243,m,32
+8112,Cimoski,242,m,27
+8112,Diaz,1112,m,48
+8112,flannery,816,m,29
+8112,henrick,999,m,41
+8112,lewenden,116,m,33
+8112,ottway,2855,m,59
+8112,talget,455,m,48
+8115,capt. john boyd,856,m,32
+8115,col. hart,1573,m,53
+8115,colburn,544,m,NULL
+8115,gen. slauson,666,m,53
+8115,knox,344,m,43
+8115,pvt. cleaves,109,m,28
+8115,pvt. reich,191,m,33
+8115,pvt. toffler,127,m,30
+8120,Bear Claw,398,m,70
+8120,caleb,111,m,13
+8120,chief two-tongu,140,m,52
+8120,del gue,1672,m,46
+8120,jeremiah johnso,2030,m,36
+8120,officer,141,m,NULL
+8120,robidoux,215,m,47
+8127,ahmad rashad,157,m,47
+8127,announcer,162,m,NULL
+8127,bill murray,240,m,46
+8127,charles barkley,209,m,33
+8127,daffy duck,534,m,34
+8127,jeffrey,143,m,NULL
+8127,larry bird,103,m,40
+8127,michael jordan,1607,m,33
+8127,muggsy bogues,124,m,31
+8127,nada,102,m,NULL
+8127,porky pig,153,m,32
+8127,psychiatrist,138,m,76
+8127,stan podolak,969,m,41
+8127,swackhammer,188,m,52
+8127,sylvester,111,m,44
+8127,zilch,317,m,NULL
+8151,bob,2221,m,37
+8151,chovka,222,m,NULL
+8151,cousin marv,1483,m,53
+8151,detective romse,215,f,34
+8151,detective torre,1132,m,46
+8151,dottie,159,f,58
+8151,eric deeds,638,m,37
+8151,fitz,269,m,NULL
+8151,jimmy,121,m,NULL
+8151,nadia,1123,f,35
+8157,boy with dog,112,m,NULL
+8157,captain john ge,814,m,62
+8157,carmine,183,m,69
+8157,charles,268,m,49
+8157,doug von horne,2472,m,42
+8157,ernie fortunato,1931,m,46
+8157,hymie,226,m,57
+8157,irving,163,m,NULL
+8157,louise webster,930,f,42
+8157,man with cigars,152,m,52
+8157,ramon,738,m,33
+8157,society lady #1,118,f,56
+8158,basketball play,265,m,26
+8158,daisy,112,f,NULL
+8158,daryl zero,6302,m,45
+8158,gloria sullivan,1776,f,33
+8158,gregory stark,1352,m,57
+8158,jess,328,f,33
+8158,steve arlo,3792,m,33
+8164,david mann,2660,m,47
+8164,david mann,101,m,74
+8164,gas station att,130,m,57
+8164,old man,128,m,74
+8169,annie marchand,1991,f,34
+8169,arthur parkinso,1279,m,20
+8169,barb petite,686,f,46
+8169,don parkinson,627,m,52
+8169,frank marchand,147,m,63
+8169,glenn marchand,1699,m,39
+8169,lila raybern,900,f,21
+8169,louise parkinso,518,f,53
+8169,may van dorn,319,f,54
+8169,mr. chervenick,376,m,56
+8169,olive marchand,112,f,NULL
+8169,trooper #1,106,m,NULL
+8169,warren hardesky,467,m,17
+8170,chris munn,1420,m,18
+8170,deel munn,1485,m,33
+8170,george,156,m,NULL
+8170,irene,200,f,NULL
+8170,john munn,1015,m,41
+8170,lilly,702,f,NULL
+8170,tim munn,576,m,13
+8174,ann darrow,793,f,26
+8174,capt. englehorn,744,m,58
+8174,carl denham,3134,m,43
+8174,charles weston,138,m,50
+8174,john driscoll,1310,m,29
+8174,native chief,123,m,52
+8177,abbott,251,m,NULL
+8177,beard,125,m,46
+8177,devil's reaper,162,m,38
+8177,edward crowthor,168,m,26
+8177,father michael,231,m,38
+8177,henry telford,345,m,28
+8177,malachi,138,m,43
+8177,marcus kane,112,m,29
+8177,meredith crowth,330,f,19
+8177,older monk,127,m,NULL
+8177,raider,175,m,NULL
+8177,samuel crowthor,147,m,14
+8177,solomon kane,2942,m,45
+8177,stable master,117,m,NULL
+8177,william crowtho,539,m,63
+8189,buddy repperton,256,m,24
+8189,christine,289,f,NULL
+8189,chuck,265,m,NULL
+8189,dennis guilder,2211,m,22
+8189,george lebay,313,m,59
+8189,leigh cabot,1103,f,20
+8189,michael cunning,117,m,53
+8189,Moochie,259,m,21
+8189,mr. casey,155,m,44
+8189,regina cunningh,301,f,34
+8189,will darnell,624,m,53
+8192,beth mcintyre,927,f,23
+8192,hudson 'hud' pl,1804,m,27
+8192,jason hawkins,782,m,29
+8192,lily ford,737,f,23
+8192,marlena diamond,541,f,26
+8192,rob hawkins,2026,m,26
+8192,staff sgt. pryc,128,m,NULL
+8194,ben anderson,1172,m,36
+8194,mission control,365,m,50
+8194,Nate Walker,1041,m,45
+8196,christie,133,f,NULL
+8196,chrystal,419,f,NULL
+8196,dante,207,m,NULL
+8196,doug briggs,400,m,NULL
+8196,johgny,701,m,NULL
+8196,joy,5903,f,25
+8196,judge,344,m,NULL
+8196,male host,242,m,NULL
+8196,matty,277,m,NULL
+8196,mattys lawyer,192,m,NULL
+8196,parking lot wom,203,f,42
+8196,ronnie,1631,m,NULL
+8196,rudy,1370,m,72
+8196,tony,1179,m,38
+8196,toots,743,f,NULL
+8196,valerie,225,f,NULL
+8196,viv,146,f,NULL
+8197,alice,928,f,35
+8197,arkady federov,173,m,62
+8197,celia,206,f,33
+8197,denisov,207,m,46
+8197,devereaux,2145,m,61
+8197,hanley,1062,m,67
+8197,mason,1465,m,NULL
+8197,newscaster (o,204,f,NULL
+8197,perry weinstein,352,m,60
+8197,sarah,243,f,25
+8199,constance sack,391,f,34
+8199,dennis dupree,713,m,54
+8199,drew boley,1110,m,22
+8199,justice,227,f,41
+8199,lonny,371,m,37
+8199,mayor's secreta,160,f,NULL
+8199,paul gill,165,m,45
+8199,stacee jaxx,274,m,50
+8199,tour manager - ,421,m,42
+8208,albanian intell,116,m,NULL
+8208,bryan mills,3204,m,60
+8208,jamie,159,m,28
+8208,kim,969,f,29
+8208,lenore,939,f,48
+8208,murad krasniqi,655,m,66
+8209,christine renne,1178,f,49
+8209,ethan renner,4917,m,59
+8209,hugh,110,m,NULL
+8209,jules,548,m,47
+8209,sumia,103,f,NULL
+8209,vivi delay,1447,f,28
+8209,zooey renner,1845,f,18
+8210,andrew cronin,359,m,NULL
+8210,archie,170,m,45
+8210,billy 'pet' pet,327,m,37
+8210,craig,105,m,NULL
+8210,harry furst,186,m,68
+8210,ivan block,3808,m,41
+8210,professor horst,106,m,NULL
+8210,richie furst,4372,m,32
+8210,sergeant barran,229,m,39
+8210,shecky,221,m,NULL
+8210,wilson,116,m,NULL
+8215,anna,308,f,31
+8215,christopher da ,366,m,47
+8215,cybil bennett,760,f,37
+8215,dahlia gillespi,119,f,42
+8215,officer gucci,286,m,NULL
+8215,rose da silva,1922,f,33
+8216,dewey finn,1942,m,34
+8216,freddys father,163,m,NULL
+8216,kevin,185,m,NULL
+8216,Lori's Mother,117,f,NULL
+8216,mrs dunham,139,f,NULL
+8216,ned schneebly,357,m,33
+8216,Rosalie Mullins,521,f,41
+8216,summer hathaway,337,f,10
+8216,Theo,311,m,33
+8218,anatoly,145,m,34
+8218,boris,422,m,50
+8218,lionel withersp,1106,m,31
+8218,lucia lombardo,910,f,27
+8218,orlando ramirez,324,m,54
+8218,vladimir ivanof,2776,m,33
+8218,vladimir's gran,265,m,80
+8219,charlie,511,m,42
+8219,claire,180,f,31
+8219,dr. jacobs,124,m,45
+8219,edward,108,m,39
+8219,elaine,434,f,34
+8219,erica,4639,f,34
+8219,jeannette,497,f,36
+8219,martin,890,m,40
+8219,patti,777,f,17
+8219,saul kaplan,1196,m,44
+8219,sue,493,f,41
+8219,tanya,423,f,61
+8220,carmen,229,f,27
+8220,cop,165,m,NULL
+8220,dave whiteman,3183,m,39
+8220,jenny whiteman,362,f,23
+8220,jerry baskin,1968,m,45
+8220,max whiteman,195,m,16
+8220,orvis goodnight,208,m,54
+8230,alejandra villa,708,f,26
+8230,captain raul,671,m,45
+8230,cole,457,m,42
+8230,don hector de l,241,m,52
+8230,doña alfonsa,736,f,64
+8230,girl,115,f,NULL
+8230,j.c. franklin,110,m,57
+8230,jimmy blevins,1213,m,18
+8230,john grady cole,5285,m,30
+8230,judge,358,m,64
+8230,lacey rawlins,2843,m,29
+8230,manuel,114,m,NULL
+8230,orlando,102,m,NULL
+8232,lisa',189,f,33
+8232,bruce winston,555,m,50
+8232,california man,109,m,61
+8232,doctor,170,m,NULL
+8232,dr. helen randa,147,f,NULL
+8232,gina,154,f,40
+8232,jamie randall,2958,m,30
+8232,josh randall,702,m,29
+8232,la boheme recep,137,f,NULL
+8232,maggie murdock,2575,f,28
+8232,trey hannigan,569,m,38
+8233,brendan,2471,m,NULL
+8233,cory,3279,m,30
+8233,Cynthia,210,f,35
+8233,gabbi,1920,f,26
+8233,Heather,630,f,32
+8233,kris,152,f,NULL
+8233,laura,227,f,26
+8233,mr. ehrlick,110,m,61
+8233,mrs. ehrlick,110,f,59
+8233,old man,110,m,NULL
+8233,Steve,168,m,40
+8234,brad whitaker,3923,m,48
+8234,dusty mayron,3302,m,44
+8234,dylan,188,m,NULL
+8234,sara,1790,f,40
+8237,barbara 'ms. ma,417,f,59
+8237,billy's mother,107,f,NULL
+8237,dana,502,f,24
+8237,heather fitzger,372,f,22
+8237,kelli presley,901,f,20
+8237,kyle autry,534,m,30
+8237,lauren hannon,395,f,25
+8237,leigh colvin,573,f,38
+8237,melissa,557,f,21
+8239,beatrix emery,784,f,20
+8239,dr. henry jekyl,2457,m,41
+8239,Dr. John Lanyon,407,m,41
+8239,footman,259,m,55
+8239,girl,406,f,NULL
+8239,ivy peterson,1032,f,26
+8239,manager,113,m,NULL
+8239,marcia,123,f,25
+8239,poole,445,m,42
+8239,sir charles eme,725,m,59
+8239,the bishop,249,m,78
+8239,young woman,107,f,27
+8241,anderson,172,m,NULL
+8241,botanist,1679,m,40
+8241,colonel mitamur,203,m,55
+8241,conklin,284,m,44
+8241,dynamite dave,190,m,49
+8241,Ferguson,174,m,50
+8241,learoyd,740,m,48
+8241,yoo,131,f,36
+8243,claire,163,f,NULL
+8243,dale arbus,2656,m,38
+8243,"Dean ""MF"" Jones",327,m,47
+8243,denny,517,m,NULL
+8243,Detective Hatch,214,m,67
+8243,kurt buckman,2566,m,39
+8243,mr nagopian,683,m,NULL
+8243,nick hendricks,2625,m,45
+8243,oscar,213,m,NULL
+8243,Patrolman,187,m,NULL
+8243,rhonda,214,f,NULL
+8253,bill gambini,325,m,31
+8253,jim trotter iii,317,m,56
+8253,john gibbons,164,m,52
+8253,judge chamberla,583,m,66
+8253,mona lisa vito,409,f,28
+8253,sam tipton,124,m,43
+8253,stan rothenstei,451,m,28
+8253,vinny gambini,1764,m,49
+8257,anderson,172,m,NULL
+8257,brazeau,155,m,NULL
+8257,bridger,411,m,22
+8257,captain andrew ,833,m,32
+8257,hugh glass,1148,m,41
+8257,john fitzgerald,1722,m,38
+8257,murphy,137,m,43
+8257,pig,381,m,NULL
+8257,runty man,221,m,NULL
+8257,yellow horse,216,m,NULL
+8268,deputy pool,183,m,NULL
+8268,Dr. Bill Raymon,1019,m,53
+8268,judge,353,m,60
+8268,kim,113,f,NULL
+8268,lila loomis,540,f,54
+8268,mary loomis,3046,f,23
+8268,Mrs. Emma Spool,141,f,65
+8268,norman bates,3105,m,51
+8268,Ralph Statler,204,m,NULL
+8268,sheriff john hu,711,m,58
+8268,Warren Toomey,422,m,39
+8272,bellman,387,m,NULL
+8272,brad tooley,120,m,42
+8272,david howard,9813,m,38
+8272,employment agen,224,m,57
+8272,front desk cler,143,m,33
+8272,jack,397,m,NULL
+8272,jim,210,m,NULL
+8272,Linda Howard,3381,f,30
+8272,patty,194,f,33
+8272,paul dunn's sec,503,f,NULL
+8272,pharmacist,236,m,71
+8272,redneck,209,m,NULL
+8272,shuster,397,m,NULL
+8272,skippy,117,m,NULL
+8274,bob diamond,3648,m,60
+8274,comedian,108,m,NULL
+8274,daniel miller,4458,m,44
+8274,eduardo,195,m,52
+8274,frank,155,m,NULL
+8274,jim,359,m,NULL
+8274,julia,1462,f,42
+8274,lena foster,1827,f,66
+8274,man judge,370,m,NULL
+8274,mr. wadworth,109,m,NULL
+8274,peter,110,m,40
+8274,porter,162,m,35
+8274,stan,148,m,NULL
+8274,tram guide,230,f,44
+8274,woman judge,318,f,NULL
+8275,abbey tyler,2580,f,34
+8275,abel campos,722,m,48
+8275,ashley tyler,182,f,12
+8275,Awolowa Odusami,1047,m,47
+8275,deputy ryan,140,m,NULL
+8275,ronnie tyler,170,m,15
+8275,scott stracinsk,468,m,35
+8275,sheriff august,1026,m,55
+8275,the real dr tyl,1507,f,NULL
+8275,tommy fisher,275,m,48
+8275,will tyler,138,m,39
+8277,becky,245,f,32
+8277,bo,349,m,28
+8277,brooke,209,f,26
+8277,ellie,1851,f,25
+8277,james myers,227,m,NULL
+8277,jenny,162,f,27
+8277,jimmy,1262,m,22
+8277,joannie,148,f,NULL
+8277,kyle,208,m,33
+8277,mark,146,m,NULL
+8277,mr winston,161,m,NULL
+8277,scott baio,313,m,45
+8277,toby,104,m,NULL
+8277,vince,1068,m,NULL
+8277,wolf man,129,m,NULL
+8282,attorney willia,183,m,NULL
+8282,david,2876,m,43
+8282,emma,416,f,31
+8282,father,453,m,NULL
+8282,kristen,230,f,23
+8282,lawyer,1505,m,NULL
+8282,likeable brothe,257,m,NULL
+8282,spokesman,196,m,NULL
+8282,straightforward,132,f,NULL
+8282,uptight brother,540,m,NULL
+8282,viggo,313,m,NULL
+8287,billy ace,294,m,37
+8287,eve,2545,f,38
+8287,hospital admini,117,m,42
+8287,ida,163,f,37
+8287,mickey,2084,m,35
+8287,nancy,2741,f,42
+8287,pearl antoine,959,f,23
+8287,ralph chomsky,133,m,NULL
+8287,zack antoine,568,m,46
+8297,barney rubble,1274,m,41
+8297,betty rubble,435,f,32
+8297,fred flintstone,2448,m,42
+8297,headmistress,158,f,NULL
+8297,herdmaster,181,m,NULL
+8297,leach,166,m,NULL
+8297,mr. slate,612,m,44
+8297,mrs slate,256,f,NULL
+8297,mrs. pyrite,110,f,38
+8297,piltdown,343,m,NULL
+8297,wilma flintston,439,f,34
+8301,bart,2057,m,35
+8301,charlie,181,m,52
+8301,hedley lamarr,722,m,47
+8301,howard johnson,182,m,42
+8301,lili von shtupp,309,f,32
+8301,lyle,327,m,36
+8301,mongo,190,m,39
+8301,olson johnson,213,m,44
+8301,taggart,767,m,55
+8301,van johnson,114,m,42
+8307,artemidorus,118,m,55
+8307,brutus,4085,m,44
+8307,calpurnia,198,f,49
+8307,casca,864,m,38
+8307,cassius,2853,m,49
+8307,cinna,206,m,35
+8307,decius brutus,231,m,48
+8307,julius caesar,1119,m,58
+8307,lucilius,114,m,56
+8307,lucius,228,m,NULL
+8307,mark antony,2185,m,29
+8307,marullus,178,m,54
+8307,octavius caesar,224,m,32
+8307,portia,450,f,32
+8307,servant to anto,169,m,31
+8308,aunt kissy,290,f,48
+8308,Aunt Kissy,105,f,62
+8308,Brig. Gen. Fole,113,m,48
+8308,Capt. Doreen Le,1221,f,48
+8308,Col. Clay Thorn,835,m,56
+8308,harriet benjami,212,f,49
+8308,henri alan trem,1150,m,31
+8308,judy benjamin,5949,f,35
+8308,liz lemish,222,f,NULL
+8308,mike,399,m,NULL
+8308,pvt. gianelli,233,f,30
+8308,pvt. gloria moe,302,f,27
+8308,pvt. mary lou g,292,f,33
+8308,pvt. wanda wint,151,f,30
+8308,rabbi,145,m,50
+8308,Sgt. L.C. Ross,476,m,42
+8308,teddy benjamin,745,m,61
+8308,yale goodman,297,m,33
+8323,dusty,567,m,37
+8323,george tanner,417,m,53
+8323,goro,1084,m,45
+8323,hanako,251,f,24
+8323,harry kilmer,1413,m,57
+8323,kato,191,m,38
+8323,tanaka ken,918,m,43
+8323,tono,116,m,54
+8323,wheat,360,m,41
+8350,barbossa,1780,m,52
+8350,elizabeth swann,1273,f,18
+8350,jack sparrow,3248,m,40
+8350,joshamee gibbs,585,m,47
+8350,lt. gillette,143,m,26
+8350,mullroy,197,m,NULL
+8350,murtogg,139,m,NULL
+8350,norrington,985,m,30
+8350,pintel,521,m,41
+8350,twigg,107,m,NULL
+8350,will turner,845,m,26
+8351,bootstrap bill,685,m,55
+8351,captain bellamy,376,m,56
+8351,cutler beckett,920,m,39
+8351,davy jones,731,m,57
+8351,elizabeth swann,825,f,21
+8351,gibbs,884,m,50
+8351,jack sparrow,1858,m,43
+8351,norrington,420,m,33
+8351,pintel,304,m,44
+8351,ragetti,269,m,35
+8351,tia dalma,428,f,30
+8351,will turner,1380,m,29
+8352,captain hector ,1284,m,56
+8352,captain sao fen,678,m,52
+8352,cutler beckett,311,m,40
+8352,davy jones,287,m,58
+8352,elizabeth swann,1374,f,22
+8352,gibbs,349,m,51
+8352,jack sparrow,1499,m,44
+8352,norrington,500,m,34
+8352,pintel,502,m,45
+8352,tia dalma,305,f,31
+8352,will turner,943,m,30
+8360,april,155,f,26
+8360,jeff,330,m,32
+8360,john van horn,121,m,65
+8360,julie,638,f,33
+8360,les,497,m,59
+8360,rita,319,f,56
+8360,ron,304,m,50
+8360,sandy,492,f,35
+8382,almaric,269,m,35
+8382,Balian de Ibeli,2312,m,28
+8382,english sergean,118,m,32
+8382,godfrey de ibel,491,m,53
+8382,guy de lusignan,742,m,39
+8382,hospitaler,586,m,42
+8382,imad,360,m,40
+8382,priest,221,m,36
+8382,reynald de chat,372,m,50
+8382,saladin,354,m,47
+8382,sibylla,864,f,25
+8382,tiberias,693,m,57
+8392,arthur,1508,m,42
+8392,brooder,895,m,49
+8392,buddy,295,m,76
+8392,chicory,1769,m,68
+8392,clarence,117,m,59
+8392,deputy nick,136,m,NULL
+8392,purvis,193,m,44
+8392,samantha,736,f,22
+8392,Sheriff Hunt,2234,m,64
+8395,driver,1000,m,NULL
+8395,glasses,457,m,41
+8395,red plainclothe,151,m,42
+8395,teeth,114,m,28
+8395,the detective,2097,m,42
+8395,the driver,136,m,37
+8395,the kid,103,m,NULL
+8395,the player,194,f,23
+8404,caesare,171,m,NULL
+8404,chaney,899,m,54
+8404,gandil,487,m,41
+8404,lucy simpson,427,f,39
+8404,pettibon,295,m,47
+8404,poe,662,m,56
+8404,speed,2650,m,47
+8405,dennis slayne,275,m,NULL
+8405,james douglas c,2566,m,27
+8405,layla moore,728,f,32
+8405,walter burke,2954,m,63
+8406,charlie,1168,m,NULL
+8406,curator,186,m,NULL
+8406,donny,236,m,NULL
+8406,doris,1086,f,NULL
+8406,george mclendon,2120,m,59
+8406,needlebaum,319,m,NULL
+8406,roger barlow,3325,m,66
+8406,starving artist,172,m,35
+8409,annie dwyer,873,f,36
+8409,beeze dwyer,185,f,NULL
+8409,concierge,136,m,NULL
+8409,hammond,1266,m,62
+8409,jack dwyer,2667,m,47
+8409,jerry,104,m,NULL
+8409,kenny rogers,120,m,NULL
+8409,lucy dwyer,481,f,NULL
+8409,recruiter,179,m,52
+8410,berringer,227,m,NULL
+8410,damien collier,2656,m,41
+8410,george the gree,490,m,53
+8410,grandfather col,182,m,78
+8410,k2,449,m,NULL
+8410,lino,1420,m,41
+8410,lola,547,f,NULL
+8410,major reno,230,m,NULL
+8410,mayor,400,m,48
+8410,rayzah,181,f,NULL
+8410,tremaine alexan,1788,m,45
+8411,charlotte forte,220,f,NULL
+8411,col. james m. m,502,m,44
+8411,col. robert gou,3313,m,27
+8411,cpl. thomas sea,464,m,27
+8411,edward l. pierc,131,m,NULL
+8411,frederick dougl,249,m,59
+8411,gen. charles ga,142,m,44
+8411,hospital stewar,116,m,34
+8411,maj. cabot forb,730,m,27
+8411,pvt. jupiter sh,258,m,33
+8411,pvt. trip,720,m,35
+8411,quartermaster,117,m,41
+8411,sarah blake stu,423,f,50
+8411,sgt. maj. john ,822,m,52
+8411,sgt. maj. mulca,150,m,37
+8412,capt. tom picke,682,m,56
+8412,doyle,680,m,45
+8412,gorgio,254,m,NULL
+8412,hickey,423,m,53
+8412,jack mccool,338,m,1996
+8412,joe monday,505,m,52
+8412,john smith,2232,m,41
+8412,lucy kolinski,658,f,29
+8412,rossi,690,m,NULL
+8412,sheriff ed galt,974,m,60
+8412,wanda,161,f,24
+8417,abdul elijah,201,m,NULL
+8417,art ridzik,3391,m,34
+8417,Cat Manzetti,570,f,26
+8417,gregor moussors,157,m,54
+8417,ivan danko,1854,m,41
+8417,Lou Donnelly,1130,m,53
+8417,lt. stobbs,677,m,27
+8417,sgt. gallagher,461,m,51
+8417,viktor rostavil,362,m,42
+8420,bob pigeon,666,m,49
+8420,brother,958,m,NULL
+8420,budd,198,m,29
+8420,denise,252,f,NULL
+8420,dirtman,113,m,NULL
+8420,gary,280,m,24
+8420,hans,159,m,47
+8420,marty,101,m,NULL
+8420,mike waters,2245,m,21
+8420,scott favor,1311,m,27
+8420,scottie,222,m,NULL
+8423,johnny,335,m,NULL
+8423,roberto pepper,154,m,NULL
+8423,walt,2093,m,NULL
+8431,farmer manzo,233,m,49
+8431,farmer mosuke,174,m,51
+8431,farmer rikichi,319,m,27
+8431,gorobei katayam,400,m,34
+8431,heihachi,435,m,37
+8431,kambei shimada,1568,m,49
+8431,katsushiro,481,m,31
+8431,kikuchiyo,1181,m,34
+8431,kyuzo,198,m,41
+8431,old man gisaku,126,m,67
+8431,shichiroji,190,m,44
+8431,shino,112,f,28
+8434,ieyasu tokugawa,194,m,33
+8434,katsusuke atobe,362,m,36
+8434,katsuyori taked,356,m,30
+8434,masakage yamaga,610,m,55
+8434,masatoyo naito,156,m,NULL
+8434,nobufusa baba,208,m,43
+8434,nobukado takeda,802,m,44
+8434,nobunaga oda,355,m,23
+8434,shingen takeda,252,m,48
+8434,sohachiro tsuch,198,m,33
+8434,takemaru,132,m,NULL
+8446,betty ann,266,f,NULL
+8446,brannigan,227,m,NULL
+8446,brother-in-law,118,m,31
+8446,candy,105,f,26
+8446,cliff,188,m,31
+8446,janet,205,f,36
+8446,johnny vohden,622,m,31
+8446,linda forchet,1559,f,30
+8446,major charles r,3720,m,38
+8446,mark,211,m,NULL
+8446,maxwell,590,m,45
+8446,mexican,414,m,NULL
+8446,sanchez,239,m,NULL
+8446,sister,148,f,NULL
+8450,david brinks,263,m,44
+8450,dianne cruise,3914,f,33
+8450,dylan turrin,290,f,15
+8450,eric katz,963,m,30
+8450,fisherman,119,m,NULL
+8450,mary,228,f,NULL
+8450,mrs vantil,207,f,NULL
+8450,pamela shaw,147,f,52
+8450,sandy,106,f,29
+8450,simon,379,m,NULL
+8450,wayne van til,451,m,30
+8452,allie fox,1442,m,44
+8452,charlie fox,296,m,16
+8452,emily spellgood,117,f,16
+8452,mother fox,277,f,41
+8453,bu montgomery,786,m,40
+8453,dr. gould,123,m,NULL
+8453,father,213,m,NULL
+8453,huevel,172,m,NULL
+8453,joe rasnick,2516,m,26
+8453,mother,1009,f,NULL
+8453,patti rasnick,2067,f,29
+8453,smittie,244,m,32
+8471,ashley,255,f,NULL
+8471,deputy,1267,m,33
+8471,ellison oswalt,3031,m,42
+8471,fran,567,f,NULL
+8471,professor jonas,540,m,53
+8471,sheriff,354,m,70
+8471,tracy,1424,f,33
+8471,trevor,133,m,NULL
+8479,augie,217,m,56
+8479,chili,169,m,43
+8479,dwight,347,m,42
+8479,ginger,503,f,37
+8479,hal,151,m,55
+8479,jasmine,2133,f,44
+8479,jasmine's frien,111,f,NULL
+8480,claire bartel,5185,f,32
+8480,emma bartel,627,f,7
+8480,lawyer,124,m,42
+8480,"maria, dr. mott",143,f,NULL
+8480,marlene craven,622,f,32
+8480,marlene's assis,112,m,NULL
+8480,peyton flanders,2246,f,33
+8480,"roth, the schoo",104,m,NULL
+8480,solomon,286,m,47
+8484,karen carr,1097,f,34
+8484,officer pete da,3637,m,38
+8484,officer roy col,363,m,54
+8484,roger graham,181,m,44
+8488,al d'andrea,785,m,32
+8488,bill watts,325,m,37
+8488,booth's landlad,1294,f,64
+8488,cia agent david,207,m,48
+8488,frank horrigan,4081,m,63
+8488,harry sargent,186,m,51
+8488,lilly raines,772,f,39
+8488,sam campagna,349,m,53
+8488,sanford riggs,148,m,54
+8488,woman at bank,162,f,NULL
+8490,ben,449,m,21
+8490,female reporter,110,f,NULL
+8490,leonard palladi,644,m,42
+8490,margaret mathes,2332,f,63
+8490,michael sidgwic,231,m,NULL
+8490,monica hansen,111,f,47
+8490,paul shackleton,1661,m,45
+8490,presenter #1,168,m,47
+8490,psychic surgery,188,m,NULL
+8490,sally owen,585,f,23
+8490,simon silver,1122,m,69
+8490,tom buckley,2535,m,36
+8490,traci northrop,113,f,30
+8500,Colonel Chester,1073,m,65
+8500,Dr. Abraham Ers,585,m,51
+8500,dr. arnim zola,283,m,44
+8500,howard stark,534,m,33
+8500,james buchanan ,319,m,29
+8500,Johann Schmidt,562,m,51
+8500,nick fury,228,m,63
+8500,peggy carter,747,f,29
+8500,red skull,302,m,51
+8500,senator brandt,153,m,66
+8500,steve rogers,1769,m,30
+8505,bentley,147,m,NULL
+8505,bucky,604,m,NULL
+8505,dr. lily sincla,1142,f,26
+8505,eddie kasalivic,1232,m,32
+8505,fbi agent leon ,494,m,54
+8505,larry,279,m,NULL
+8505,lu chen,325,m,NULL
+8505,lyman earl coll,457,m,50
+8505,maggie mcdermot,237,f,51
+8505,paul shannon,1321,m,59
+8505,rita bliss,159,f,NULL
+8505,scientist,113,m,NULL
+8506,calamity jane,461,f,41
+8506,california joe,667,m,55
+8506,carl mann,122,m,54
+8506,charley prince,497,m,55
+8506,donnie lonigan,158,m,42
+8506,jack mccall,578,m,24
+8506,james butler 'w,1562,m,46
+8506,preacher,439,m,51
+8506,will plummer,234,m,59
+8508,cab driver,216,m,NULL
+8508,claude,351,m,28
+8508,eric,2931,m,38
+8508,jean,323,m,38
+8508,oge,166,m,NULL
+8508,oliver,709,m,34
+8508,ricardo,360,m,27
+8508,zed,1418,m,32
+8508,zoe,708,f,24
+8510,bev kilmartin,451,f,32
+8510,calvin hart,358,m,47
+8510,frank zioli,732,m,35
+8510,Jimmy Kilmartin,3084,m,39
+8510,kid selling inf,109,m,26
+8510,little junior b,165,m,31
+8510,omar,194,m,36
+8510,ronnie gannon,610,m,25
+8510,rosie kilmartin,568,f,30
+8513,det. shirley vo,487,f,48
+8513,guy baran,892,m,44
+8513,mia baran,1477,f,41
+8513,nicole horner,2670,f,38
+8513,pingel,371,m,NULL
+8513,simon veatch,323,m,55
+8514,charles morse,2786,m,60
+8514,mickey morse,246,f,33
+8514,robert green,2761,m,39
+8514,stephen,710,m,34
+8514,styles,454,m,70
+8515,bill harding,1351,m,41
+8515,dr. jo harding,2595,f,33
+8515,dr. jonas mille,603,m,34
+8515,dr. melissa ree,921,f,31
+8515,dusty,300,m,NULL
+8515,jim,143,m,NULL
+8515,margaret,113,m,NULL
+8516,agent lonnie ha,700,m,44
+8516,cub by,134,m,NULL
+8516,det. jimmy shak,654,m,41
+8516,halloran,246,m,NULL
+8516,kate mullen,356,f,42
+8516,maris conner,133,f,29
+8516,tj,143,m,NULL
+8516,tom mullen,2112,m,40
+8521,baron frankenst,390,m,73
+8521,doctor waldman,844,m,49
+8521,elizabeth,425,f,21
+8521,henry frankenst,1282,m,31
+8521,victor moritz,858,m,36
+8524,allan,231,m,33
+8524,barnaby,123,m,NULL
+8524,captain haddock,2339,m,47
+8524,mr. crabtree,155,m,61
+8524,sakharine,863,m,43
+8524,silk,179,m,44
+8524,thompson,485,m,33
+8524,tintin,1037,m,25
+8524,tom,219,m,40
+8525,bree,557,f,31
+8525,evelyn caster,2483,f,32
+8525,joseph tagger,858,m,77
+8525,lance,341,m,NULL
+8525,martin,101,m,44
+8525,max waters,2126,m,43
+8525,will caster,1907,m,51
+8526,abe petrovsky,175,m,70
+8526,jo,372,f,26
+8526,joey knish,296,m,41
+8526,Mike McDermott,3611,m,28
+8526,petra,103,f,34
+8526,teddy kgb,454,m,45
+8526,worm,630,m,29
+8526,zagosh,115,m,52
+8530,Captain Eszterh,701,m,NULL
+8530,gal,399,f,NULL
+8530,jim halsey,3405,m,29
+8530,john ryder,955,m,48
+8530,n.m. state troo,214,m,NULL
+8530,waitress,160,f,NULL
+8532,braithwaite,596,m,NULL
+8532,han,1177,m,69
+8532,lee,1576,m,33
+8532,old man,144,m,NULL
+8532,roper,1113,m,38
+8532,tania,107,f,29
+8532,williams,418,m,27
+8533,blind man,165,m,68
+8533,charlie,334,m,NULL
+8533,Jordan,814,m,NULL
+8533,kristen,728,f,38
+8533,mike lawford,1795,m,51
+8533,priestess,654,f,NULL
+8533,reynolds,343,m,NULL
+8543,andrew,338,m,NULL
+8543,Ben,3230,m,30
+8543,dylan,210,m,NULL
+8543,fisher,781,m,NULL
+8543,jill,732,f,25
+8543,martinez,822,m,NULL
+8543,micky rosa,1832,m,49
+8543,miles,871,m,27
+8543,mr lewis,389,m,NULL
+8543,planet hollywoo,185,m,NULL
+8543,stuart,154,m,NULL
+8543,vincen,276,m,NULL
+8552,agent dana scul,1939,f,30
+8552,agent fox mulde,2532,m,38
+8552,assistant direc,253,m,46
+8552,bronschweig,262,m,51
+8552,cassidy,573,f,55
+8552,field agent,167,m,NULL
+8552,kurtzweil,1134,m,70
+8552,strughold,265,m,68
+8552,the well-manicu,971,m,73
+8556,bodyguard #1,179,m,47
+8556,brikowski,722,m,46
+8556,elvis,274,m,30
+8556,fat joe,562,m,NULL
+8556,lindsey,1764,f,38
+8556,marty,262,m,43
+8556,max,212,m,NULL
+8556,mr. goodkat,355,m,51
+8556,murphy,195,m,65
+8556,nick fisher,422,m,29
+8556,saul,176,m,30
+8556,slevin kelevra,4743,m,28
+8556,sloe,321,m,49
+8556,smith,426,m,NULL
+8556,the boss,1453,m,69
+8559,aaron,1040,m,27
+8559,abel stenner,126,m,50
+8559,alex,132,m,26
+8559,bud yancy,170,m,44
+8559,jack connerman,102,m,32
+8559,janet venable,2222,f,32
+8559,joey pinero,288,m,40
+8559,martin vail,6106,m,47
+8559,martinez,163,m,44
+8559,molly,471,f,39
+8559,naomi chance,186,f,31
+8559,shaughnessy,918,m,56
+8559,shoat,746,f,44
+8559,tommy goodman,465,m,34
+8559,woodside,254,m,NULL
+8560,bonnie macmahon,155,f,29
+8560,cassandra,241,f,NULL
+8560,denzel,953,m,NULL
+8560,dwayne hoover,3378,m,44
+8560,francine pefko,921,f,44
+8560,fred t. barry,1501,m,69
+8560,geranium,226,m,NULL
+8560,grace le sabre,182,f,39
+8560,harry le sabre,258,m,58
+8560,kenneth,410,m,NULL
+8560,kilgore trout,2673,m,63
+8560,kyle,219,m,NULL
+8560,lottie,214,f,58
+8560,lyle,365,m,NULL
+8560,max,192,m,NULL
+8560,minos,134,m,NULL
+8560,reverend hardy,146,m,NULL
+8560,ukwende,329,m,NULL
+8560,wayne hoobler,1057,m,26
+8562,crabbe,269,m,60
+8562,felix happer,801,m,70
+8562,geddes,294,m,59
+8562,gideon,139,m,NULL
+8562,mac,1254,m,36
+8562,marina,255,f,26
+8562,moritz,603,m,NULL
+8562,mrs fraser,140,f,47
+8562,oldsen,859,m,25
+8562,rev macpherson,150,m,42
+8562,roddy,199,m,25
+8562,urquhart,1471,m,36
+8562,victor,411,m,40
+8564,alex vogel,378,m,40
+8564,annie montrose,542,f,42
+8564,beth johanssen,671,f,32
+8564,bruce ng,622,m,45
+8564,chris beck,487,m,33
+8564,guo ming,154,m,78
+8564,mark watney,2068,m,45
+8564,melissa lewis,1471,f,38
+8564,mike watkins,158,m,41
+8564,mindy park,180,f,28
+8564,mitch henderson,332,m,56
+8564,rich purnell,240,m,32
+8564,rick martinez,519,m,39
+8564,teddy sanders,969,m,60
+8564,tim grimes,131,m,NULL
+8564,timer controlle,127,m,40
+8564,Vincent Kapoor,1168,m,38
+8572,gloria swenson,2030,f,50
+8572,heavy set man,132,m,39
+8572,jack dawn,243,m,50
+8572,jeri dawn,182,f,26
+8572,phil dawn,1593,m,8
+8572,tony tanzini,102,m,66
+8572,uncle joe,142,m,NULL
+8597,Alicia,326,f,27
+8597,benigno martín,1597,m,35
+8597,lydia gonzález,381,f,39
+8597,marco zuluaga,1290,m,43
+8597,Nino de Valenci,114,m,44
+8597,presenter,309,f,NULL
+8597,rosa,183,f,32
+8601,Crown Prince Le,1346,m,39
+8601,eisenheim,2313,m,37
+8601,inspector uhl,2192,m,39
+8601,josef fischer,587,m,38
+8601,jurka,186,m,34
+8601,sophie,718,f,24
+8602,bessie,325,f,53
+8602,district attorn,740,m,38
+8602,elsa bannister,1616,f,29
+8602,george grisby,1714,m,58
+8602,jake bjornsen,203,m,35
+8602,man,113,m,52
+8602,michael o'hara,2302,m,32
+8602,sidney broome,675,m,42
+8604,bob anderson,131,m,36
+8604,bruce smith,894,m,32
+8604,ida smith,754,f,38
+8604,terry,1033,f,25
+8604,vincent smith,1004,m,58
+8605,black clan ninj,236,m,NULL
+8605,kenuichio,472,m,NULL
+8605,logan,3071,m,45
+8605,mariko,607,f,28
+8605,noburo,191,m,36
+8605,shingen,1091,m,53
+8605,silver samurai,195,m,48
+8605,sinatra,465,m,NULL
+8605,square jaw,209,m,NULL
+8605,yukio,630,f,NULL
+8605,zen,1274,m,NULL
+8612,belle blake,900,f,27
+8612,caputo,166,m,37
+8612,chubbycheeked b,179,m,NULL
+8612,don mimino,257,m,NULL
+8612,fred blake,3617,m,70
+8612,henri,364,m,NULL
+8612,maggie blake,1429,f,55
+8612,manager,110,m,45
+8612,mayor,169,m,NULL
+8612,mr. chambard,131,m,NULL
+8612,mr. lemercier,541,m,NULL
+8612,neighbor with r,118,m,NULL
+8612,plumber,272,m,NULL
+8612,priest,118,m,NULL
+8612,quintiliani,547,m,NULL
+8612,rocco,173,m,63
+8612,wahlberg,121,m,NULL
+8612,warren blake,1278,m,18
+8613,alison,461,f,22
+8613,diego,1390,m,23
+8613,grant,1167,m,24
+8613,lauren,2528,f,21
+8613,melina,1054,f,NULL
+8613,syd,271,m,NULL
+8614,anna,1457,f,25
+8614,eleanor,787,f,58
+8614,lucie,811,f,30
+8614,professor,109,m,74
+8616,adele stanton,242,f,32
+8616,carl leffert,115,m,NULL
+8616,congressman doy,223,m,76
+8616,doc stanton,432,m,59
+8616,elvin clyde,419,m,56
+8616,emmett smith,276,m,NULL
+8616,ernie cole,439,m,54
+8616,harry trimble,1061,m,73
+8616,irene terwillig,174,f,76
+8616,kevin bannerman,379,m,62
+8616,leo kubelsky,414,m,62
+8616,luke trimble,1004,m,31
+8616,newsreel announ,123,m,56
+8616,peter appleton,2225,m,39
+8616,sheriff cecil c,101,m,40
+8618,ace,137,m,11
+8618,captain hook,1799,m,54
+8618,granny wendy,401,f,57
+8618,jack 'jackie' b,164,m,13
+8618,"liza, wendy's h",106,f,52
+8618,maggie banning,198,f,7
+8618,moira banning,190,f,32
+8618,peter banning,2193,m,40
+8618,rufio,380,m,16
+8618,smee,499,m,49
+8618,tinkerbell,1440,f,24
+8627,dead man,446,m,34
+8627,edith,603,f,61
+8627,everly,1516,f,48
+8627,taiko,1026,m,59
+8627,the sadist,507,m,68
+8627,zelda,171,f,40
+8628,anne garrett,591,f,NULL
+8628,dr. alan harris,300,m,50
+8628,dr. nick cavana,3228,m,35
+8628,helena,2376,f,28
+8628,russell,150,m,NULL
+8628,uncle charlie,108,m,NULL
+8633,ceo,117,m,51
+8633,dan,5187,m,46
+8633,dave,1179,m,34
+8633,gretta,3882,f,28
+8633,jill,105,f,40
+8633,miriam,528,f,54
+8633,saul,941,m,40
+8633,steve,579,m,35
+8633,troublegum,315,m,38
+8633,violet,555,f,17
+8634,angela,254,f,NULL
+8634,bart bookman,426,m,49
+8634,boxer santaros,986,m,34
+8634,clark,241,m,NULL
+8634,cyndi pinziki,1385,f,54
+8634,david clark,438,m,NULL
+8634,dion element,360,m,37
+8634,dr. inga von we,187,f,57
+8634,hideo takehashi,915,m,63
+8634,jerri,413,f,NULL
+8634,kevin,222,m,NULL
+8634,krysta kapowski,635,f,29
+8634,larry,113,m,NULL
+8634,priestess,135,f,NULL
+8634,rashad,302,m,NULL
+8634,robinson,132,f,NULL
+8634,starla von luft,434,f,NULL
+8634,tera,165,f,NULL
+8634,terrence clark,382,m,NULL
+8634,vaughn smallhou,775,m,59
+8634,vincenzo,276,m,NULL
+8634,zora charmichae,1085,f,44
+8645,anne-marie mcco,214,f,29
+8645,bernadette 'ber,642,f,31
+8645,billy,128,m,27
+8645,detective frank,308,m,51
+8645,helen lyle,2316,f,31
+8645,henrietta mosel,177,f,48
+8645,jake,239,m,11
+8645,kitty culver,113,f,44
+8645,monica,137,f,25
+8645,professor phili,469,m,NULL
+8645,the candyman,728,m,38
+8645,trevor lyle,423,m,37
+8649,donkey,442,m,43
+8649,Fairy Godmother,395,f,46
+8649,king,612,m,65
+8649,prince charming,401,m,45
+8649,princess fiona,284,f,32
+8649,puss in boots,181,m,44
+8649,queen,211,f,69
+8649,shrek,938,m,41
+8652,ben,311,m,53
+8652,englishmen,119,m,NULL
+8652,governor ratcli,1185,m,53
+8652,grandmother wil,360,f,50
+8652,John Smith,1284,m,39
+8652,lon,206,m,67
+8652,nakoma,230,f,NULL
+8652,pocahontas,1518,f,28
+8652,powhatan,668,m,43
+8652,thomas,263,m,21
+8653,aurora,1048,f,16
+8653,diaval,569,m,34
+8653,faerie king kin,116,m,NULL
+8653,flittle,554,f,58
+8653,human queen mar,115,f,NULL
+8653,king henry,742,m,70
+8653,kinloch,381,m,NULL
+8653,knotgrass,1155,f,58
+8653,leah,304,f,NULL
+8653,maleficent,5688,f,39
+8653,prince phillip,148,m,25
+8653,queen mary,129,f,NULL
+8653,shepherd,228,m,41
+8653,stefan,2582,m,41
+8653,Thistletwit,632,f,25
+8653,ulla,438,f,NULL
+8655,aubrey,1547,f,30
+8655,beca,1776,f,27
+8655,benji,261,m,19
+8655,bumper,418,m,29
+8655,chloe,685,f,26
+8655,cynthia rose,153,f,NULL
+8655,donald,191,m,29
+8655,dr. mitchell,621,m,49
+8655,fat amy,500,f,32
+8655,gail,324,f,38
+8655,jesse,939,m,25
+8655,john,454,m,49
+8655,justin,226,m,NULL
+8655,luke,261,m,25
+8655,stacie,185,f,23
+8655,tommy,220,m,23
+8671,beau brower,231,m,52
+8671,billy kitka,276,m,38
+8671,carter davies,299,m,NULL
+8671,denise,270,f,29
+8671,doug hertz,315,m,36
+8671,eben oleson,2409,m,29
+8671,helen munson,147,f,NULL
+8671,jake oleson,327,m,19
+8671,lucy ikos,146,f,NULL
+8671,stella oleson,1150,f,31
+8671,the stranger,164,m,27
+8671,wilson bulosan,140,m,NULL
+8672,andy,3567,m,43
+8672,beth,310,f,31
+8672,cal,381,m,23
+8672,david,1151,m,36
+8672,jay,1535,m,37
+8672,marla,161,f,19
+8672,nicky,547,f,33
+8672,paula,186,f,45
+8672,trish,1420,f,46
+8682,Blue Mecha,163,f,52
+8682,david,1181,m,13
+8682,Dr. Know,295,m,50
+8682,gigolo joe,1029,m,29
+8682,henry swinton,527,m,40
+8682,lord johnson-jo,313,m,46
+8682,martin swinton,335,m,11
+8682,monica swinton,1037,f,34
+8682,prof. hobby,403,m,51
+8682,specialist,126,m,58
+8682,teddy,106,m,71
+8683,alfie,5852,m,32
+8683,joe,114,m,75
+8683,julie,394,f,40
+8683,liz,182,f,58
+8683,lonette,187,f,34
+8683,marlon,174,m,31
+8683,nikki,174,f,23
+8683,wing,105,m,49
+8699,alphonse paquet,640,m,36
+8699,army sergeant 1,127,m,34
+8699,asst. state att,2369,m,32
+8699,court clerk,132,m,NULL
+8699,dist. atty. mit,1369,m,43
+8699,dr. raschid,131,m,60
+8699,dr. w. gregory ,184,m,71
+8699,duane 'duke' mi,153,m,39
+8699,george lemon,243,m,67
+8699,judge weaver,1702,m,69
+8699,laura manion,1989,f,24
+8699,maida rutledge,563,f,51
+8699,mary pilant,376,f,26
+8699,parnell emmett ,951,m,51
+8699,paul biegler,7296,m,51
+8703,affa football c,116,m,76
+8703,christina pagni,2359,f,27
+8703,cindy rooney,261,f,36
+8703,dr. harvey mand,1451,m,52
+8703,dr. ollie power,352,m,40
+8703,field photograp,124,m,NULL
+8703,jack 'cap' roon,1124,m,45
+8703,jack rose,697,m,40
+8703,jimmy sanderson,413,m,34
+8703,julian washingt,753,m,31
+8703,kevin branson -,470,m,NULL
+8703,luther 'shark' ,940,m,40
+8703,margaret pagnia,197,f,58
+8703,montezuma monro,640,m,63
+8703,nick crozier,765,m,31
+8703,patrick 'madman,231,m,30
+8703,tony d'amato,5932,m,59
+8703,tug kowalski - ,1027,m,53
+8703,vanessa struthe,443,f,35
+8703,willie beamen,3401,m,32
+8727,Celine,5701,f,26
+8727,jesse,5319,m,25
+8727,liz,134,f,NULL
+8727,rose peddler,122,f,NULL
+8727,tex,148,m,NULL
+8743,benjamin kapana,383,m,NULL
+8743,black woman,104,f,NULL
+8743,captain poison,330,m,41
+8743,Colonel Coetzee,338,m,44
+8743,Danny Archer,1341,m,32
+8743,fawaz,177,m,NULL
+8743,joost,259,m,NULL
+8743,maddy bowen,1102,f,36
+8743,rupert simmons,203,m,37
+8743,solomon vandy,1804,m,42
+8743,son,240,m,NULL
+8744,detective jaye ,520,f,NULL
+8744,detective ronal,525,m,47
+8744,Dr. Bonnie Fox,303,f,51
+8744,graciella river,554,f,44
+8744,jasper 'buddy' ,527,m,47
+8744,mrs. cordell,153,f,33
+8760,amy taylor,460,f,43
+8760,billy,225,m,28
+8760,earl,294,m,49
+8760,jeff taylor,1958,m,46
+8760,red barr,941,m,54
+8760,sheriff boyd,322,m,41
+8765,alma,223,f,25
+8765,cassie,188,f,30
+8765,ennis del mar,1396,m,26
+8765,jack twist,1449,m,25
+8765,joe aguirre,166,m,55
+8770,curt,877,m,29
+8770,dana,1432,f,32
+8770,hadley,723,m,53
+8770,holden,879,m,31
+8770,jules,922,f,26
+8770,lin,202,f,36
+8770,marty,1223,m,31
+8770,sitterson,637,m,65
+8770,the director,108,f,63
+8786,adam ewing,1001,m,34
+8786,archivist,473,m,37
+8786,captain molyneu,163,m,63
+8786,catkin,112,f,10
+8786,ernie,364,m,73
+8786,Isaac Sachs,306,m,56
+8786,javier gomez,295,m,15
+8786,joe napier,491,m,56
+8786,luisa rey,1300,f,46
+8786,madame horrox,243,f,66
+8786,mrs judd,131,f,NULL
+8786,old georgie,538,m,52
+8786,old man,351,m,NULL
+8786,robert frobishe,2737,m,32
+8786,rose,103,f,38
+8786,sonmi-451,1301,f,33
+8786,veronica,136,f,77
+8786,zachry,1509,m,56
+8802,a man,116,m,NULL
+8802,benjamin button,3142,m,45
+8802,Captain Mike,959,m,47
+8802,caroline,883,f,43
+8802,daisy,3182,f,39
+8802,doctor at benja,131,m,56
+8802,dorothy baker,114,f,32
+8802,elizabeth abbot,801,f,48
+8802,grandma fuller,175,f,65
+8802,mr. daws,168,m,82
+8802,ngunda oti,550,m,NULL
+8802,preacher,172,m,53
+8802,queenie,995,f,38
+8802,the girl,151,f,NULL
+8802,the man,162,m,NULL
+8802,the woman,241,f,NULL
+8802,thomas button,696,m,42
+8802,tizzy,306,m,34
+8807,alfred,954,m,79
+8807,bane,1268,m,35
+8807,blake,1435,m,31
+8807,bruce wayne,1978,m,38
+8807,commissioner go,1085,m,54
+8807,daggett,311,m,43
+8807,dr. jonathan cr,103,m,36
+8807,foley,370,m,53
+8807,fox,707,m,75
+8807,mayor,215,m,45
+8807,miranda,508,f,37
+8807,selina,1029,f,30
+8807,stryver,150,m,38
+8807,wayne's lawyer,106,m,57
+8809,benny,680,m,18
+8809,carl,198,m,17
+8809,cynthia,373,f,19
+8809,darla,201,f,25
+8809,don,992,m,29
+8809,jodi,764,f,23
+8809,julie,135,f,17
+8809,kaye,660,f,25
+8809,mike,1219,m,23
+8809,mitch,447,m,17
+8809,o'bannion,389,m,21
+8809,pickford,771,m,22
+8809,pink,1359,m,21
+8809,sabrina,385,f,17
+8809,tommy,363,m,15
+8809,tony,955,m,22
+8809,wooderson,123,m,24
+8826,destroyer,247,m,NULL
+8826,goat,275,m,41
+8826,john grimm,1354,m,33
+8826,lt. huengs,145,m,NULL
+8826,pinky,384,m,39
+8826,portman,527,m,41
+8826,samantha grimm,1824,f,26
+8826,sarge,1575,m,33
+8826,the kid,399,m,24
+8827,father brendan ,2812,m,41
+8827,mrs. miller,853,f,43
+8827,Sister Aloysius,2919,f,59
+8827,sister james,1347,f,34
+8831,bela lugosi,2229,m,66
+8831,bunny breckinri,177,m,44
+8831,conrad brooks,158,m,32
+8831,criswell,573,m,48
+8831,dolores fuller,918,f,29
+8831,ed reynolds,320,m,51
+8831,ed wood,7291,m,31
+8831,georgie weiss,735,m,44
+8831,kathy o'hara,373,f,26
+8831,loretta king,182,f,29
+8831,orson welles,109,m,36
+8831,paul marco,293,m,27
+8831,reverend lemon,157,m,74
+8831,tor johnson,549,m,57
+8831,vampira,453,f,26
+8835,charles dean,206,m,59
+8835,claire colburn,1324,f,23
+8835,david tan,158,m,NULL
+8835,drew baylor,2990,m,28
+8835,etown veteran,112,m,NULL
+8835,hollie baylor,787,f,59
+8845,art,119,m,26
+8845,edgar reese,333,m,37
+8845,gretta milano,780,f,33
+8845,john hobbes,3197,m,44
+8845,jonesy,892,m,46
+8845,lou,251,m,37
+8845,lucius,125,m,NULL
+8845,maguire,486,m,NULL
+8845,sam,131,m,NULL
+8848,andy wayne,376,m,12
+8848,Dan The Weather,391,m,NULL
+8848,elizabeth willi,169,f,22
+8848,father malone,572,m,NULL
+8848,kathy williams,978,f,54
+8848,machen,416,m,NULL
+8848,mrs kobritz,115,f,NULL
+8848,nick castle,727,m,28
+8848,Stevie Wayne,1754,f,33
+8850,brian bretter,577,m,30
+8850,dr. rosenbaum,128,m,72
+8850,peter bretter,4128,m,28
+8850,rachel jansen,1947,f,25
+8850,sarah marshall,1163,f,28
+8850,william,913,m,NULL
+8850,yoga instructor,144,f,35
+8871,bobby joe hill,1119,m,32
+8871,david lattin,420,m,NULL
+8871,don haskins,4628,m,35
+8871,dr. ray,354,m,54
+8871,harry flournoy,680,m,26
+8871,herman carr,184,m,NULL
+8871,jerry armstrong,268,m,26
+8871,Judd Milton,225,m,53
+8871,louis 'flip' ba,140,m,NULL
+8871,mary haskins,341,f,30
+8871,moe iba,494,m,NULL
+8871,nevil shed,541,m,29
+8871,orsten artis,212,m,NULL
+8871,ross moore,345,m,70
+8871,togo railey,117,m,NULL
+8871,wade richardson,330,m,NULL
+8871,willie 'scoops',529,m,27
+8871,willie worsley,485,m,23
+8880,amis,115,m,34
+8880,charlie willis,1165,m,39
+8880,christie robert,1363,f,24
+8880,fanny chenal,624,f,31
+8880,gemma,517,f,34
+8880,kenny,177,m,23
+8880,nathalie auzet,769,f,42
+8880,series o,101,f,40
+8880,uncle henry,757,m,70
+8880,young max,4209,m,14
+8881,debbie reynolds,103,f,NULL
+8881,don hewitt,243,m,42
+8881,don hollenbeck,438,m,58
+8881,eddie scott,143,m,35
+8881,edward r. murro,3761,m,56
+8881,fred friendly,1298,m,44
+8881,jesse zousmer,101,m,42
+8881,john aaron,128,m,38
+8881,mccarthy,843,m,NULL
+8881,natalie,186,f,32
+8881,shirley wershba,1149,f,46
+8881,stanton,258,m,NULL
+8887,Abin Sur,316,m,51
+8887,carl ferris,245,m,58
+8887,carol ferris,1384,f,24
+8887,gala partier,198,f,NULL
+8887,hal jordan,2528,m,35
+8887,Hammond,329,m,53
+8887,Hector Hammond,1444,m,40
+8887,martin jordan,298,m,50
+8887,nathan,211,m,NULL
+8887,sinestro,1311,m,48
+8887,tom kalmaku,758,m,36
+8887,tomar-re,105,m,NULL
+8901,big bob carter,176,m,54
+8901,bobby carter,1224,m,NULL
+8901,brenda carter,340,f,30
+8901,doug wood,1009,m,36
+8901,ethel carter,422,f,59
+8901,lynne wood,434,f,29
+8901,pluto,111,m,29
+8902,dc andy cartwri,225,m,24
+8902,ds andy wainwri,282,m,33
+8902,inspector frank,1265,m,58
+8902,james reaper,111,m,63
+8902,janine,139,f,38
+8902,joyce cooper,187,f,75
+8902,leslie tiller,301,f,72
+8902,martin blower,142,m,54
+8902,met chief inspe,134,m,58
+8902,met sergeant,204,m,36
+8902,nicholas angel,4896,m,37
+8902,sergeant tony f,239,m,47
+8902,simon skinner,782,m,61
+8902,tom weaver,565,m,77
+8911,aronson,139,m,NULL
+8911,baldez,124,m,59
+8911,del spooner,3439,m,36
+8911,dr. alfred lann,111,m,64
+8911,hogenmiller,281,m,NULL
+8911,lawrence robert,569,m,48
+8911,Lt. John Bergin,327,m,43
+8911,sonny,526,m,33
+8911,susan calvin,2086,f,33
+8911,toller,142,m,NULL
+8911,victor,549,m,NULL
+8916,canadian guy,145,m,51
+8916,chloe,601,f,26
+8916,harry,1804,m,46
+8916,jimmy,220,m,35
+8916,ken,2861,m,53
+8916,marie,219,f,33
+8916,ray,4338,m,32
+8916,yuri,174,m,49
+8934,crowne,912,f,NULL
+8934,diggs,566,m,NULL
+8934,dr sanger,1567,m,NULL
+8934,dr. bernard mer,1697,m,46
+8934,ester,510,f,NULL
+8934,james mccord,167,m,48
+8934,jones three ech,278,m,50
+8934,katherine,560,f,NULL
+8934,lincoln six ech,1492,m,34
+8934,ozzie,397,m,NULL
+8934,scheer,789,m,NULL
+8935,aissa,624,f,22
+8935,assassimon,106,m,50
+8935,azazello,173,m,36
+8935,davis,185,m,NULL
+8935,dr. moreau,1481,m,72
+8935,hyena-swine,118,m,30
+8935,kiril,181,m,48
+8935,m'ling,170,m,27
+8935,montgomery,2100,m,37
+8935,prendick,1947,m,NULL
+8935,Sayer of the La,226,m,NULL
+8958,benedict,136,m,47
+8958,danny madigan,802,m,12
+8958,jack slater,1091,m,46
+8958,lieutenant dekk,252,m,51
+8958,ripper,101,m,42
+8958,tony vivaldi,203,m,78
+8961,alex,958,m,37
+8961,andy,329,m,35
+8961,joanna,3344,f,25
+8961,laura,1152,f,36
+8961,michael,1404,m,34
+8961,sandra,150,f,41
+8961,truman,629,m,55
+8963,aurora ruiz,205,f,NULL
+8963,gloria conovan,1336,f,NULL
+8963,john macdonald,961,m,38
+8963,ned beaumont,1165,m,NULL
+8963,sam masterson,178,m,52
+8963,tom conovan,843,m,NULL
+8970,admiral ohsugi,241,m,NULL
+8970,baron nishi,755,m,43
+8970,Captain Iwasaki,214,m,45
+8970,captain tanida,476,m,NULL
+8970,Colonel Adachi,129,m,NULL
+8970,general kuribay,2393,m,47
+8970,Lieutenant Fuji,233,m,NULL
+8970,Lieutenant Ito,333,m,34
+8970,lieutenant okub,387,m,NULL
+8970,Nozaki,300,m,25
+8970,saigo,1853,m,23
+8970,shimizu,728,m,32
+8971,audrey reede,868,f,32
+8971,dana appleton,223,f,53
+8971,fletcher reede,4105,m,35
+8971,greta,324,f,63
+8971,jerry,338,m,35
+8971,Judge Marshall ,542,m,59
+8971,max reede,442,m,9
+8971,miranda,263,f,35
+8971,mr. allan,121,m,69
+8971,philip,166,m,NULL
+8971,Samantha Cole,367,f,39
+8972,charlie,153,m,NULL
+8972,denise di fiori,2628,f,33
+8972,derek,186,m,NULL
+8972,eleanor,869,f,NULL
+8972,gil,261,m,62
+8972,lucy zane,496,f,52
+8972,marion,107,f,NULL
+8972,rick spencer,1476,m,26
+8972,sam,345,m,12
+8992,abigail,955,f,54
+8992,angie,363,f,NULL
+8992,annette,148,f,NULL
+8992,becky,202,f,23
+8992,curtis,122,m,NULL
+8992,darren,489,m,27
+8992,dave the lawyer,1362,m,38
+8992,david,257,m,NULL
+8992,deutsch,929,m,63
+8992,emily,2416,f,62
+8992,joan,3249,f,NULL
+8992,john,520,m,49
+8992,karl,761,m,49
+8992,lionel,106,m,NULL
+8992,lisa cohen,9447,f,29
+8992,mitchell,839,m,NULL
+8992,monica,288,f,25
+8992,mr. klein,225,m,76
+8992,mr. lewis,127,m,NULL
+8992,mrs. maretti,161,f,40
+8992,paul,772,m,29
+8992,ramon,1121,m,63
+8992,rob,166,m,61
+8992,rodrigo,125,m,32
+9004,captain tony st,2770,m,48
+9004,colonel stuart ,207,m,47
+9004,dale martin,117,m,52
+9004,kelly,284,f,25
+9004,monica washingt,105,f,27
+9004,olivia pitterso,577,f,32
+9004,recruiter brown,116,m,26
+9004,recruiter olson,155,m,29
+9004,returning soldi,183,m,NULL
+9004,staff sergeant ,1975,m,29
+9008,adriana,1082,f,36
+9008,carol,135,f,27
+9008,ernest hemingwa,875,m,35
+9008,f. scott fitzge,183,m,30
+9008,gabrielle,119,f,26
+9008,gertrude stein,640,f,63
+9008,gil,4519,m,43
+9008,helen,438,f,63
+9008,inez,1656,f,33
+9008,john,307,m,58
+9008,paul,565,m,42
+9008,paul gauguin,108,m,NULL
+9008,salvador dalí,204,m,38
+9008,zelda fitzgeral,345,f,26
+9015,alan,138,m,NULL
+9015,art howe,580,m,44
+9015,billy beane,7066,m,48
+9015,casey beane,202,f,13
+9015,chad bradford,108,m,NULL
+9015,game announcer,130,m,NULL
+9015,grady fuson,907,m,NULL
+9015,joe morgao,113,m,NULL
+9015,john,296,m,NULL
+9015,mark shapiro,140,m,44
+9015,peter brand,2187,m,28
+9015,pittaro,122,m,55
+9015,ron washington,110,m,NULL
+9015,schott,649,m,NULL
+9015,scott boras,147,m,NULL
+9015,scout martinez,214,m,NULL
+9015,tara,309,f,NULL
+9015,umpire - game 2,116,m,NULL
+9015,young jongewaar,246,m,NULL
+9017,art,169,m,37
+9017,chet,133,m,35
+9017,dean hardscrabb,598,f,68
+9017,greek council p,279,f,29
+9017,greek council v,379,m,35
+9017,johnny,362,m,42
+9017,mike,2226,m,65
+9017,professor knigh,325,m,60
+9017,randy,177,m,56
+9017,squishy,411,m,NULL
+9017,sulley,1195,m,61
+9017,terri,114,m,43
+9017,terry,113,m,50
+9017,young mike,129,m,NULL
+9021,dr. wexler - ma,125,m,49
+9021,eddie,352,m,35
+9021,jane smith,1794,f,30
+9021,jasmine,204,f,28
+9021,john smith,2257,m,42
+9021,julie - associa,106,f,31
+9025,ali,335,m,31
+9025,andreas,127,m,34
+9025,avner,2657,m,37
+9025,avner's mother,190,f,66
+9025,carl,845,m,52
+9025,daphna,277,f,36
+9025,ephraim,1487,m,54
+9025,general zamir,111,m,NULL
+9025,german reporter,146,m,32
+9025,golda meir,290,f,72
+9025,hans,752,m,58
+9025,hotel aristides,148,m,64
+9025,israeli soldier,116,m,40
+9025,louis,768,m,40
+9025,mossad accounta,206,m,NULL
+9025,robert,940,m,38
+9025,steve,891,m,37
+9025,tony - andreas',184,m,40
+9025,wael zwaiter,177,m,60
+9025,yvonne,118,f,36
+9051,alessandra,136,f,31
+9051,braddon,1263,m,42
+9051,dr. thorpe,217,m,39
+9051,julz,1782,f,26
+9051,matthew,146,m,32
+9051,paul,2568,m,35
+9051,roland,685,m,60
+9051,yvonne,330,f,63
+9056,anne stewart,546,f,11
+9056,charles stewart,170,m,37
+9056,grace,149,f,NULL
+9056,grace stewart,4356,f,34
+9056,mrs. bertha mil,1210,f,60
+9056,nicholas stewar,566,m,NULL
+9056,victor marlish,118,m,NULL
+9057,dr iwabi,212,m,NULL
+9057,dr. drew reynol,188,m,64
+9057,dr. lisa aronso,114,f,NULL
+9057,dr. mascelli,151,m,47
+9057,general billy f,1314,m,58
+9057,izzy,852,m,NULL
+9057,jimbo scott,126,m,29
+9057,major salt,650,m,27
+9057,robby keough,866,f,41
+9057,rudy alvarez,106,m,NULL
+9057,Sam Daniels,2693,m,58
+9062,ahmad,2733,m,47
+9062,fouad,417,m,NULL
+9062,Lea,270,f,NULL
+9062,lucie,679,f,17
+9062,marie brisson,2327,f,37
+9062,Naima,652,f,25
+9062,samir,1484,m,32
+9062,shahryar,222,m,NULL
+9083,detective loki,2355,m,33
+9083,eliza birch,223,f,NULL
+9083,forensics guy,313,m,NULL
+9083,franklin birch,371,m,44
+9083,grace dover,609,f,46
+9083,holly jones,127,f,53
+9083,keller dover,1991,m,45
+9083,mrs. milland,181,f,73
+9083,nancy birch,476,f,48
+9083,police station ,154,f,NULL
+9083,ralph dover,385,m,17
+9098,billy,228,m,NULL
+9098,david patrick,161,m,35
+9098,frankie,215,m,61
+9098,gary barker,710,m,59
+9098,glen,252,m,35
+9098,jimmy,151,m,NULL
+9098,lynn sheridan,1074,f,27
+9098,mark,185,m,NULL
+9098,mr. henderson,125,m,51
+9098,steve barker,1788,m,34
+9098,thomas,105,m,36
+9104,cherie currie,1387,f,16
+9104,cherie's mom,304,f,47
+9104,joan jett,1181,f,20
+9104,kim fowley,1686,m,36
+9104,lita ford,191,f,21
+9104,marie currie,608,f,21
+9104,sandy west,293,f,21
+9104,tammy,122,f,17
+9111,arnau,363,m,NULL
+9111,belinda,269,f,32
+9111,bridget,132,f,41
+9111,darius,1937,f,28
+9111,jeff,2132,m,34
+9111,jones,159,m,NULL
+9111,kenneth,2149,m,36
+9111,liz,366,f,38
+9111,mr. britt,120,m,50
+9111,smith,138,m,NULL
+9116,albert hujar,109,m,47
+9116,amon goeth,963,m,31
+9116,itzhak stern,552,m,50
+9116,julian scherner,141,m,47
+9116,oskar schindler,3258,m,41
+9116,poldek pfefferb,227,m,34
+9121,albin grau,1435,m,56
+9121,friedrich wilhe,4437,m,47
+9121,fritz arno wagn,921,m,38
+9121,greta schröder,550,f,28
+9121,gustav von wang,604,m,38
+9121,Henrik Galeen,1224,m,42
+9121,max schreck,1150,m,45
+9121,micheline,750,f,37
+9121,paul,142,m,NULL
+9121,Wolfgang Muller,156,m,36
+9123,barbara,457,f,58
+9123,david,993,m,33
+9123,dianne,681,f,31
+9123,ed,1459,m,32
+9123,liz,1405,f,32
+9123,pete,434,m,32
+9123,philip,283,m,55
+9123,rabid monkeys n,177,m,30
+9123,shaun,3562,m,34
+9123,yvonne,174,f,32
+9135,buddy wallace,179,m,55
+9135,carl arbogast,446,m,22
+9135,college-aged bi,2788,m,28
+9135,cosmo,1031,m,49
+9135,darren 'mother',863,m,40
+9135,dick gordon,409,m,35
+9135,donald crease,1027,m,65
+9135,dr. elena rhyzk,121,f,39
+9135,dr. gunter jane,149,m,26
+9135,dr. werner bran,344,m,41
+9135,gregor,342,m,58
+9135,irwin 'whistler,761,m,43
+9135,liz,729,f,40
+9135,martin 'marty' ,127,m,56
+9135,nsa agent berna,153,m,61
+9156,amy sumner,1480,f,28
+9156,bic,253,m,35
+9156,charlie,1589,m,35
+9156,chris,190,m,30
+9156,coach milkens,199,m,38
+9156,daniel niles,130,m,40
+9156,david sumner,2587,m,38
+9156,janice heddon,224,f,20
+9156,john burke,119,m,37
+9156,norman,218,m,32
+9156,pastor,121,m,NULL
+9156,tom heddon,522,m,64
+9177,1st lt. band,882,m,NULL
+9177,1st sgt. edward,1787,m,38
+9177,2nd lt. gore,105,m,38
+9177,Capt. James 'Bu,2201,m,37
+9177,capt. john gaff,716,m,32
+9177,cpl. fife,1459,m,25
+9177,cpl. queen,303,m,NULL
+9177,cpl. thorne,274,m,NULL
+9177,lt. col. gordon,2456,m,57
+9177,medic #2,158,m,27
+9177,pfc - beade,399,m,19
+9177,pfc. doll,1254,m,24
+9177,pvt. ash,117,m,29
+9177,pvt. bell,890,m,28
+9177,pvt. charlie da,824,m,32
+9177,pvt. coombs,130,m,22
+9177,pvt. mazzi,852,m,35
+9177,pvt. tella,192,m,27
+9177,pvt. tills,296,m,34
+9177,pvt. weld,113,m,30
+9177,pvt. witt,1567,m,30
+9177,sgt. becker,218,m,38
+9177,sgt. keck,410,m,37
+9177,sgt. storm,855,m,33
+9195,father haynes,3647,m,NULL
+9195,grandmother,2325,f,53
+9195,jack,1881,m,51
+9195,r.l.,433,m,NULL
+9195,robert,126,m,NULL
+9195,steve,228,m,15
+9199,alan mann,963,m,52
+9199,amy wilson,238,f,25
+9199,barbara everett,480,f,47
+9199,beachum,952,m,NULL
+9199,bob findley,757,m,42
+9199,bonnie beechum,225,f,35
+9199,bridget rossite,117,f,46
+9199,counter woman a,139,f,NULL
+9199,d.a. cecilia nu,273,f,47
+9199,dale porterhous,522,m,47
+9199,frederick rober,154,m,53
+9199,gail beechum,170,f,9
+9199,jane march,279,f,26
+9199,kate everett,201,f,6
+9199,leesha mitchell,157,f,39
+9199,michelle ziegle,317,f,30
+9199,mrs russel,444,f,NULL
+9199,patricia findle,112,f,40
+9199,pussy man,159,m,NULL
+9199,reedy,188,m,47
+9199,reverend shille,408,m,52
+9199,steve everett,3841,m,69
+9199,tom donaldson,102,m,40
+9199,warden luther p,978,m,55
+9199,wilma francis,113,f,34
+9204,Ally Leon,219,f,27
+9204,guy lapointe,624,m,51
+9204,howard howe,4732,m,74
+9204,teddy craft,397,m,26
+9204,wallace bryton,1824,m,36
+9214,captain gruber,250,m,NULL
+9214,casey brenner,1079,f,NULL
+9214,darcy gold,1000,f,20
+9214,deputy bracken,101,m,45
+9214,detective charl,2946,m,32
+9214,forensic examin,619,m,NULL
+9214,jeff,186,m,NULL
+9214,leanne,525,f,NULL
+9214,michael,554,m,NULL
+9214,mr gold,1066,m,NULL
+9214,mrs gold,828,f,NULL
+9214,ms newman,492,f,NULL
+9214,sheriff dan pat,1820,m,56
+9216,clyde reilly,209,m,32
+9216,elizabeth deane,428,f,61
+9216,lindenmeyer,429,m,39
+9216,lt. parker barn,1789,m,41
+9216,madison carter,1505,f,36
+9216,sid 6.7,1405,m,31
+9216,wallace,225,m,39
+9216,William Cochran,533,m,40
+9222,claire cleary,1807,f,27
+9222,Father O'Neil,243,m,70
+9222,flower girl,101,f,NULL
+9222,gloria cleary,564,f,29
+9222,grandma mary cl,359,f,92
+9222,groomsman #5,238,m,NULL
+9222,jeremy grey,6380,m,35
+9222,john beckwith,6163,m,37
+9222,kathleen cleary,294,f,54
+9222,michael,187,m,NULL
+9222,randolph,213,m,56
+9222,sack lodge,1210,m,30
+9222,Secretary Clear,1413,m,62
+9222,todd cleary,412,m,27
+9222,woman,197,f,NULL
+9223,alice,203,f,34
+9223,amanda,138,f,29
+9223,barry,1067,m,NULL
+9223,harry burns,3668,m,41
+9223,jess,510,m,40
+9223,marie,860,f,33
+9223,older woman cus,323,f,75
+9223,sally albright,3858,f,28
+9230,aidan bloom,6382,m,39
+9230,alan,256,m,44
+9230,audition actor ,174,m,56
+9230,grace bloom,1277,f,15
+9230,janine,170,f,27
+9230,jerry,118,m,41
+9230,jesse,112,m,NULL
+9230,jonah,1044,m,NULL
+9230,mrs luis,128,f,NULL
+9230,Rabbi Rosenberg,496,m,43
+9230,Rabbi Twersky,363,m,88
+9230,sarah bloom,1585,f,35
+9230,saul,1236,m,NULL
+9230,tucker bloom,598,m,NULL
+9231,alexandra medfo,1642,f,41
+9231,carol medford,110,f,NULL
+9231,clyde alden,359,m,40
+9231,daryl van horne,3359,m,50
+9231,doctor #1,112,f,NULL
+9231,felicia alden,708,f,38
+9231,jane spofford,1328,f,41
+9231,mrs. biddle,177,f,76
+9231,sukie ridgemont,1149,f,29
+9236,andrew fassbach,128,m,30
+9236,burt,299,m,NULL
+9236,captain speke,368,m,35
+9236,gerry lane,2563,m,50
+9236,Jurgen Warmbrun,507,m,NULL
+9236,karin lane,412,f,38
+9236,Naval Commander,150,m,61
+9236,simon,288,m,NULL
+9236,thierry umutoni,266,m,42
+9241,beth slade,374,f,36
+9241,book associate,129,m,NULL
+9241,buddy slade,1245,m,38
+9241,david gary,178,m,57
+9241,girl,125,f,20
+9241,hedda gary,457,f,64
+9241,jan,120,f,63
+9241,matt freehauf,1801,m,42
+9241,mavis gary,4271,f,36
+9241,vicki,202,f,NULL
+9241,wheelchair mike,139,m,NULL
+9245,Assistant Plane,178,m,37
+9245,carlo,368,m,42
+9245,district manage,237,m,51
+9245,jonnie goodboy ,1961,m,30
+9245,ker,395,m,39
+9245,mickey,267,m,22
+9245,Planetship,209,m,NULL
+9245,terl,2210,m,46
+9246,bill django,836,m,60
+9246,bob wilton,4202,m,38
+9246,General Holtz,199,m,50
+9246,General Hopgood,125,m,57
+9246,gus lacey,327,m,58
+9246,larry hooper,619,m,50
+9246,Lyn Cassady,2780,m,48
+9246,todd nixon,299,m,51
+9247,carol hammie,194,f,31
+9247,carter wilson,494,m,45
+9247,cecil gaines,3259,m,52
+9247,charlie gaines ,332,m,NULL
+9247,freddie fallows,179,m,44
+9247,gina,145,f,57
+9247,gloria gaines,1638,f,59
+9247,helen holloway,124,f,NULL
+9247,howard,417,m,44
+9247,james holloway,298,m,49
+9247,james lawson,266,m,32
+9247,lbj aide,317,m,NULL
+9247,louis gaines,771,m,37
+9247,maynard,237,m,74
+9247,nancy reagan,129,f,76
+9247,richard nixon,354,m,47
+9247,senator kasseba,129,f,NULL
+9253,abby,515,f,13
+9253,girl in pool,118,f,NULL
+9253,kenny,285,m,14
+9253,kenny's brother,137,m,18
+9253,mark,114,m,14
+9253,mr. zoric,229,m,43
+9253,owen,1123,m,14
+9253,owen's mother,286,f,39
+9253,the father,101,m,63
+9253,the policeman,445,m,49
+9254,beast,1162,m,35
+9254,belle,2183,f,35
+9254,chip,446,m,9
+9254,cogsworth,1658,m,49
+9254,gaston,1326,m,38
+9254,lefou,415,m,NULL
+9254,lumiere,1063,m,56
+9254,maurice,1107,m,71
+9254,monsieur d'arqu,114,m,58
+9254,mrs. potts,564,f,66
+9254,wardrobe,121,f,54

@@ -1,0 +1,8 @@
+name, movie, percent of dialogue, percent of fanworks, age, gender,  year, script ID, imdb ID, movie words, gross, AO3 works, AO3 fandom, title similarity
+ripley,Alien³,1.0,0.0,43,f,1992,1582,tt0103644,1846,116,0,Alien Series,0.416666666667
+yoda,Star Wars: Episode VI - Return of the Jedi,1.0,0.0,19,m,1983,1359,tt0086190,163,853,-1,,0
+elaine,Airplane!,1.0,0.0,25,f,1980,648,tt0080339,904,269,-1,,0
+buckaroo banzai,The Adventures of Buckaroo Banzai Across the 8th Dimension,1.0,0.0,37,m,1984,640,tt0086856,1723,None,-1,,0
+mimi,A Serious Man,1.0,0.0,None,f,2009,633,tt1019452,219,10,-1,,0
+simon,25th Hour,0.643076923077,0.0,32,m,2002,630,tt0307901,325,19,-1,,0
+trey,25th Hour,0.356923076923,0.0,None,m,2002,630,tt0307901,325,19,-1,,0
