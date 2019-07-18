@@ -8,15 +8,16 @@ if you want to modify them for a class project, go for it, but please
 don't make a bunch of improvements/additions without sharing with
 the community.)
 
-For details on how to use AO3 scripts, see AO3/README.
+For details on how to use AO3 scripts, see [AO3/AO3_README](AO3/AO3_README).
 These scripts include:
-CASE 1: FINDING THE BIGGEST FANDOMS ON AO3
-CASE 2: GETTING SUMMARY STATS FOR AO3 TAGS
-CASE 3: TRACKING AO3 TAG ACTIVITY OVER TIME
-CASE 4: TRACKING OVERALL AO3 ACTIVITY OVER TIME
-CASE 5: FIND TOP SHIPS AND FANDOMS FOR A TAG 
+
+* CASE 1: FINDING THE BIGGEST FANDOMS ON AO3
+* CASE 2: GETTING SUMMARY STATS FOR AO3 TAGS
+* CASE 3: TRACKING AO3 TAG ACTIVITY OVER TIME
+* CASE 4: TRACKING OVERALL AO3 ACTIVITY OVER TIME
+* CASE 5: FIND TOP SHIPS AND FANDOMS FOR A TAG 
 
 For details on how to sample random fanworks from AO3, FFN, or
-Wattpad, see Sampler/README.
+Wattpad, see [Sampler/README](Sampler/README).
 
-For details on how to use Tumblr scripts, see Tumblr/TAGSTATS_README.
+For details on how to use Tumblr scripts, see [Tumblr/TAGSTATS_README](Tumblr/TAGSTATS_README).
