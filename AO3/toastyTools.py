@@ -21,7 +21,7 @@ def getArguments(args, numArgs, errorMsg):
 #####
 def setupUrllib():
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    reload(sys)  
+    reload(sys)
     sys.setdefaultencoding('utf8')
     return urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
 
@@ -59,19 +59,23 @@ def getAO3SearchURL(tag, includeTags, excludeTags):
     return url
 
 ##### mergeDictionaries
-# this merges two dictionaries, with primaryDict taking precedence in case of repeat keys  
+# this merges two dictionaries, with primaryDict taking precedence in case of repeat keys
 def mergeDictionaries(primaryDict, secondaryDict):
     tmp = {}
     tmp.update(secondaryDict)
     tmp.update(primaryDict)
     return tmp
 
-#### 
+def getBiggestKeyByValue(mydict):
+    return max(mydict.items(), key=operator.itemgetter(1))[0]
+
+def getSmallestKeyByValue(mydict):
+    return min(mydict.items(), key=operator.itemgetter(1))[0]
+
+####
 def writeDictToCSV(mydict, filename):
     with open(filename, 'w') as csv_file:
         writer = csv.writer(csv_file)
         for key, value in sorted(mydict.items(), key=operator.itemgetter(1), reverse=True):
-#            key=key.encode('utf-8') 
+#            key=key.encode('utf-8')
             writer.writerow([key, value])
-
-
