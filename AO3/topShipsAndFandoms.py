@@ -39,6 +39,10 @@ def AddNewTagToDict(tagName, tagDict):
     return tagDict[tagName]
 
 def FetchTopTagInfo(primaryTag, includeTags, excludeTags):
+#    print "including " +  str(len(includeTags)) + " tags: "
+#    print includeTags
+#    print "excluding " + str(len(excludeTags)) + " tags: "
+#    print excludeTags
     url = getAO3SearchURL(primaryTag, includeTags, excludeTags)
     primaryTagData = AO3search.AO3data()
     primaryTagData.searchURL = url
@@ -97,6 +101,7 @@ def AddFandom(fandomName, include, exclude, pastFandoms, pastShips, minShipSize)
         else:
             belowSizeThreshold = False
 
+        originalExcludeTags = exclude
         searchDepth = 1
         while not belowSizeThreshold:
 #            print "FANDOM: " + fandomName + " recursion depth: " + str(recursionDepth)
@@ -104,7 +109,7 @@ def AddFandom(fandomName, include, exclude, pastFandoms, pastShips, minShipSize)
             i = 1
             for shipName in topS:
                 print "FANDOM DEEP DIVE: " + fandomName + "; depth " + str(searchDepth) + "; ship " + str(i) + "/" + str(len(topS))
-                ship = AddShip(shipName, include, exclude, pastShips)
+                ship = AddShip(shipName, include, originalExcludeTags, pastShips)
                 if ship.qualifyingWorks < minShipSize:
                     print "~~~ship below size threshold"
                     belowSizeThreshold = True
@@ -170,6 +175,11 @@ def getTopShipsAndFandoms(primaryTag, includeTags, excludeTags, minShipSize, shi
             # fetch the tag page for the primary tag (e.g., "F/F")
             ships, fandoms = FetchTop10ShipsAndFandoms(primaryTag, includeTags, excludeTags)
             if DEBUG:
+                print "including " + str(len(includeTags)) + " tags: "
+                print includeTags
+                print "excluding " + str(len(excludeTags)) + " tags: "
+                print excludeTags
+                print " "
                 print iter + ". fandoms"
                 print fandoms
                 print iter + ". ships"
@@ -181,10 +191,13 @@ def getTopShipsAndFandoms(primaryTag, includeTags, excludeTags, minShipSize, shi
             for shipName in ships:
                 if DEBUG:
                     print "BIG LOOP ITERATION " + iter + "; SHIP " + str(s)
-                ship = AddShip(shipName, includeTags, excludeTags, topShips)
+
+                ship = AddShip(shipName, completeIncludeTags, originalExcludeTags, topShips)
                 if ship.qualifyingWorks >= minShipSize:
                     numShipsAboveThreshold += 1
                 else:
+                    #if DEBUG:
+                    #    print "smaller than minShipSize"
                     if ship.qualifyingWorks < smallestShip:
                         smallestShip = ship.qualifyingWorks
                 s += 1
@@ -197,7 +210,7 @@ def getTopShipsAndFandoms(primaryTag, includeTags, excludeTags, minShipSize, shi
                 for fandomName in fandoms:
                     if DEBUG:
                         print "BIG LOOP ITERATION " + iter + "; FANDOM " + str(f)
-                    fandom = AddFandom(fandomName, includeTags, excludeTags, topFandoms, topShips, minShipSize)
+                    fandom = AddFandom(fandomName, completeIncludeTags, originalExcludeTags, topFandoms, topShips, minShipSize)
                     f += 1
 
                 # exclude these ships and fandoms next time through the BIG LOOP
