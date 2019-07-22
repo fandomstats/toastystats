@@ -39,11 +39,13 @@ def AddNewTagToDict(tagName, tagDict):
     return tagDict[tagName]
 
 def FetchTopTagInfo(primaryTag, includeTags, excludeTags):
-#    print "including " +  str(len(includeTags)) + " tags: "
-#    print includeTags
-#    print "excluding " + str(len(excludeTags)) + " tags: "
-#    print excludeTags
     url = getAO3SearchURL(primaryTag, includeTags, excludeTags)
+#    if DEBUG:
+#       print "including " +  str(len(includeTags)) + " tags: "
+#       print includeTags
+#       print "excluding " + str(len(excludeTags)) + " tags: "
+#       print excludeTags
+#        print url
     primaryTagData = AO3search.AO3data()
     primaryTagData.searchURL = url
     primaryTagData.getTopInfo()
@@ -60,12 +62,20 @@ def FetchTop10ShipsAndFandoms(primaryTag, includeTags, excludeTags):
 def AddNumWorksAndTopFandom(tag, include, exclude):
     tagDataWithoutRestrictions = FetchTopTagInfo(tag.name, [], [])
     tag.totalWorks = tagDataWithoutRestrictions.numworks
-    unrestrictedFandoms = tagDataWithoutRestrictions.categories["fandom"]["top"]
-    tag.topFandomOverall = getBiggestKeyByValue(unrestrictedFandoms)
+    try:
+        unrestrictedFandoms = tagDataWithoutRestrictions.categories["fandom"]["top"]
+        tag.topFandomOverall = getBiggestKeyByValue(unrestrictedFandoms)
+    except:
+        # this should never happen unless some tags are malformed
+        tag.topFandomOverall = "(No fandoms)"
     qualifyingTagData = FetchTopTagInfo(tag.name, include, exclude)
     tag.qualifyingWorks = qualifyingTagData.numworks
-    qualifyingFandoms = qualifyingTagData.categories["fandom"]["top"]
-    tag.topFandomQualifying = getBiggestKeyByValue(qualifyingFandoms)
+    try:
+        qualifyingFandoms = qualifyingTagData.categories["fandom"]["top"]
+        tag.topFandomQualifying = getBiggestKeyByValue(qualifyingFandoms)
+    except:
+        # this should never happen unless some tags are malformed
+        tag.topFandomQualifying = "(No fandoms)"
     tag.ratio = float(tag.qualifyingWorks)/float(tag.totalWorks)
     if DEBUG:
         print "Qualifying works: " + str(tag.qualifyingWorks) + "/" + str(tag.totalWorks) + " (" + str(round(100*tag.ratio)) + "%)"
