@@ -13,6 +13,7 @@ class AO3data:
     searchParams = {}
     numworks = -1
     popularity = {"kudos": -1, "hits": -1, "comments": -1, "bookmarks": -1}
+    canonicalTagName = ""
     categories = {"rating": {"num": 5, "top": {}}, "warning": {"num": 6, "top": {}}, "category": {"num": 6, "top": {}}, "fandom": {"num": 10, "top": {}}, "character": {"num": 10, "top": {}}, "relationship": {"num": 10, "top": {}}, "freeform": {"num": 10, "top": {}}}
     htmlData = {}
 
@@ -22,7 +23,7 @@ class AO3data:
     def printAll(self):
         print self.searchParams, ", ", self.numworks
         print self.categories
-    
+
     # METHOD: printCSV
     def printCSV(self, fo):
         for k in self.searchParams.keys():
@@ -41,7 +42,7 @@ class AO3data:
             currlist = self.categories[cat]["top"]
             sortedkeys = sorted(currlist, key=currlist.get, reverse=True)
             count = 0
-            for k in sortedkeys: 
+            for k in sortedkeys:
                 fo.write(k.encode("utf-8") + ", ")
 #                print k.encode("utf-8") + ", "
                 fo.write(str(currlist[k]) + ", ")
@@ -50,7 +51,7 @@ class AO3data:
             for i in range(count, num):
                 fo.write(", , ")
 #                print ", , "
-                
+
         #NEWLINE
         fo.write("\n")
 
@@ -66,7 +67,7 @@ class AO3data:
         except:
             pdb.set_trace()
             print "COULDN'T WRITE TO FILE: ", self.numworks
-            
+
 
 
     # METHOD: printShortCSVHeaders
@@ -93,13 +94,13 @@ class AO3data:
                 tmp = "Top " + cat + " " + str(i) + ", "
                 fo.write(tmp)
                 fo.write("count, ")
- 
+
         #NEWLINE
         fo.write("\n")
-    
+
     # METHOD: fetchHTML
     def fetchHTML(self):
-        if self.htmlData == {}:            
+        if self.htmlData == {}:
             http = urllib3.PoolManager()
             r = {}
             if DEBUG:
@@ -107,36 +108,34 @@ class AO3data:
             try:
                 r = http.request('GET', self.searchURL)
                 soup = BeautifulSoup(r.data, features="html.parser")
-                soup.prettify()                
+                soup.prettify()
                 self.htmlData = soup
                 return soup
             except: #urllib.error.HTTPError as e:
                 print "failure to fetch URL: ", self.searchURL
         else:
             return self.htmlData
-                                
 
 
-    # METHOD: getNumWorks
-    # the second parameter indicates if this is a Sort and Filter type search or the other kind of search
-    def getNumWorks(self, isSorted):
+
+    # METHOD: getNumWorksAndTagName
+    # Because sometimes the tag name is different than what you
+    # searched for (if you didn't search for the canonical version of a tag)
+    def getNumWorksAndTagName(self, isSorted):
         if self.searchURL == '':
             sys.exit("empty searchURL field!")
-
-        
         # extract the number of works returned by this search
         soup = self.fetchHTML()
         try:
             if isSorted:
-                tag = soup.find_all(text=re.compile("Work(s)*( found)* in"))
+                tag = soup.find_all(text=re.compile("[0-9]+ Work(s)*( found)* in "))
             else:
                 tag = soup.find_all(text=re.compile("[0-9]+ Found"))
-                
+
         except AttributeError:
             print "ERROR: empty HTML data: ", self.searchURL
             self.numworks = -2
             return
-            
 
         try:
             line =  tag[0]
@@ -151,11 +150,30 @@ class AO3data:
 #            sys.exit("No numbers found in H2 tag content")
         elif len(nums) == 1:
             self.numworks = int(nums[0])
-        else: 
+        else:
             self.numworks = int(nums[2])
 
         if DEBUG:
             print self.numworks
+
+        if isSorted:
+#            print "*****************"
+#            print line
+#               1 - 20 of 239480 Works in <a class="tag" href="/tags/F*s*F">F/F</a>
+            tagHTML = soup.find_all("a", {"class": "tag"})
+            tagHTML = tagHTML[0]
+#            print tagHTML
+            tagName = tagHTML.text
+#            print tagName
+            self.canonicalTagName = tagName
+        else:
+            # no tag name for a non-sorted page
+            self.canonicalTagName = ""
+
+    # METHOD: getNumWorks
+    # the second parameter indicates if this is a Sort and Filter type search or the other kind of search
+    def getNumWorks(self, isSorted):
+        self.getNumWorksAndTagName(isSorted)
 
 
     # METHOD: getTopInfo -- scrape the top 10 ratings, etc from sidebar
@@ -181,15 +199,15 @@ class AO3data:
                 print "ERROR: empty HTML data: ", self.searchURL
                 self.numworks = -2
                 return
-            
+
             try:
                 top = topList[0]
 #                print "@@@@@@@"
 #                print top
             except:
-                print "ERROR! " + k  
+                print "ERROR! " + k
                 return
-            
+
             try:
                 labels = top.find_all("label")
 #                print "%%%%%%%"
@@ -203,7 +221,7 @@ class AO3data:
                 print "ERROR! label issue " + k
                 return
 
-                    
+
 
     # METHOD: createSearchURL
     def createSearchURL(self):
@@ -220,7 +238,7 @@ class AO3data:
             dummy = ''
 
         # fetch the category(ies)
-        c = ''        
+        c = ''
         try:
             c = self.searchParams['category']
             tmp = convert.convertToAO3(c, 'cat', False)
@@ -228,9 +246,9 @@ class AO3data:
         except:
             dummy = ''
             #print "no category in searchParams: ", self.searchParams
-        
+
         # fetch the warning(s)
-        w = ''        
+        w = ''
         try:
             w = self.searchParams['warning']
             tmp = convert.convertToAO3(w, 'warn', False)
@@ -238,12 +256,12 @@ class AO3data:
         except:
             dummy = ''
             #print "no warning in searchParams ", self.searchParams
-            
+
         # fetch the tag(s)
         t = unicode('&tag_id=')
         try:
             tag = self.searchParams['tag']
-            tmp = convert.convertToAO3(tag, 'tag', False)    
+            tmp = convert.convertToAO3(tag, 'tag', False)
             t += unicode(tmp[0])
         except:
             dummy = ''
@@ -253,7 +271,7 @@ class AO3data:
         swr = '&work_search%5Bquery%5D='
         try:
             within = self.searchresults['search within results']
-            tmp = convert.convertToAO3(within, 'within', False)    
+            tmp = convert.convertToAO3(within, 'within', False)
             swr += tmp[0]
         except:
             dummy = ''
@@ -264,15 +282,15 @@ class AO3data:
         urlprequery = '&work_search%5Bother_tag_names%5D='
         urlpredate = '&work_search%5Brevised_at%5D='
         urlpretag = '&work_search%5Blanguage_id%5D=&work_search%5Bcomplete%5D=0'
-        
+
         tmp = unicode(urlprefix + c + w + urlpredate + d + urlprequery + swr + urlpretag + t)
         self.searchURL = tmp.encode('utf-8')
-        
-        
+
+
     # METHOD: createUnsortedSearchURL
     # this will only be useful for doing a getNumWorks call; does not include all the top X info
     # in the Sort & Filter sidebar
-    # but it's better (?) for searching time slices and multiple tags 
+    # but it's better (?) for searching time slices and multiple tags
     def createUnsortedSearchURL(self):
         if self.searchParams == {}:
             print("ERROR: empty searchParams field!")
@@ -290,7 +308,7 @@ class AO3data:
         fan = ''
         try:
             fan = self.searchParams['fandom']
-            tmp = convert.convertToAO3(fan, 'unsorted', False)    
+            tmp = convert.convertToAO3(fan, 'unsorted', False)
             fan = tmp[0]
             # also replace the original version of the fandom tag with the new version
             # to remove any commas in the CSV outfile
@@ -302,7 +320,7 @@ class AO3data:
         free = ''
         try:
             free = self.searchParams['freeform']
-            tmp = convert.convertToAO3(free, 'unsorted', False)    
+            tmp = convert.convertToAO3(free, 'unsorted', False)
             free = tmp[0]
             # also replace the original version of the freeform tag with the new version
             # to remove any commas in the CSV outfile
@@ -318,14 +336,14 @@ class AO3data:
         urlprefandom = '&work_search%5Bcomplete%5D=0&work_search%5Bsingle_chapter%5D=0&work_search%5Bword_count%5D=&work_search%5Blanguage_id%5D=&work_search%5Bfandom_names%5D='
         urlprefreeform = '&work_search%5Brating_ids%5D=&work_search%5Bcharacter_names%5D=&work_search%5Brelationship_names%5D=&work_search%5Bfreeform_names%5D='
         urlsuffix = '&work_search%5Bhits%5D=&work_search%5Bkudos_count%5D=&work_search%5Bcomments_count%5D=&work_search%5Bbookmarks_count%5D=&work_search%5Bsort_column%5D=&work_search%5Bsort_direction%5D=&commit=Search'
-        
+
         tmp = unicode(urlpredate + d + urlprefandom + fan + urlprefreeform + free + urlsuffix)
         self.searchURL = tmp.encode('utf-8')
-        
-        
 
 
-#" " " 
+
+
+#" " "
 #notes on goals:
 #Sample searches:
 #* all fandoms: proportion of femslash
@@ -333,7 +351,7 @@ class AO3data:
 #* all fandoms: mean word count
 #* the number of fics with each pairing in a given fandom
 #* all fandoms: ratio of Gen to Shipping
-#* subset of fandoms: " " 
+#* subset of fandoms: " "
 #* activity over time in a given fandom (vs. in AO3)
 
 
@@ -346,4 +364,4 @@ class AO3data:
 #* method: print headers in CSV format
 #* method: fetch number of works
 #* method: fetch median number of X
-#" " " 
+#" " "

@@ -61,6 +61,9 @@ def FetchTop10ShipsAndFandoms(primaryTag, includeTags, excludeTags):
 
 def AddNumWorksAndTopFandom(tag, include, exclude):
     tagDataWithoutRestrictions = FetchTopTagInfo(tag.name, [], [])
+    if tagDataWithoutRestrictions.canonicalTagName != tag.name:
+        tag.name = tagDataWithoutRestrictions.canonicalTagName
+
     tag.totalWorks = tagDataWithoutRestrictions.numworks
     try:
         unrestrictedFandoms = tagDataWithoutRestrictions.categories["fandom"]["top"]
@@ -89,6 +92,10 @@ def AddShip(shipName, include, exclude, pastShips):
     if shipName not in pastShips.keys():
         ship = AddNewTagToDict(shipName, pastShips)
         ship = AddNumWorksAndTopFandom(ship, include, exclude)
+        if ship.name != shipName:
+            # the original ship name was non-canonical
+            shipName = ship.name
+            pastShips[shipName] = ship
     else:
         if DEBUG:
             print "~~~~~~ship previously found: " + shipName
@@ -104,6 +111,11 @@ def AddFandom(fandomName, include, exclude, pastFandoms, pastShips, minShipSize)
         # get the basic fandom stats
         fandom = AddNewTagToDict(fandomName, pastFandoms)
         fandom = AddNumWorksAndTopFandom(fandom, include, exclude)
+        if fandom.name != fandomName:
+            # the original fandom name was non-canonical
+            fandomName = fandom.name
+            pastFandoms[fandomName] = fandom
+
 
         # now get the info for all the ships -- unless the fandom is too small
         if fandom.qualifyingWorks < minShipSize:
@@ -131,23 +143,24 @@ def AddFandom(fandomName, include, exclude, pastFandoms, pastShips, minShipSize)
     return pastFandoms[fandomName]
 
 # note: this OVERWRITES the file
-def writeShipsToFile(ships, filename):
+def writeShipsToFile(ships, minSize, filename):
     with open(filename, 'w') as csv_ships:
         swriter = csv.writer(csv_ships)
         swriter.writerow(["Ship", "Num works meeting requirements", "Top fandom meeting requirements", "Total works", "Top fandom overall", "Ratio of works meeting requirements"])
         for key in sorted(ships, key = lambda name: ships[name].qualifyingWorks, reverse=True):
             s = ships[key]
-            if s.qualifyingWorks >= minShipSize:
-                swriter.writerow([s.name, s.qualifyingWorks, s.topFandomQualifying, s.totalWorks, s.topFandomOverall, s.ratio])
+            if s.qualifyingWorks >= minSize:
+                swriter.writerow([key, s.qualifyingWorks, s.topFandomQualifying, s.totalWorks, s.topFandomOverall, s.ratio])
 
 # note: this OVERWRITES the file
-def writeFandomsToFile(fandoms, filename):
+def writeFandomsToFile(fandoms, minSize, filename):
     with open(filename, 'w') as csv_fandoms:
         fwriter = csv.writer(csv_fandoms)
         fwriter.writerow(["Fandom", "Num works meeting requirements", "Total works", "Ratio of works meeting requirements"])
         for key in sorted(fandoms, key = lambda name: fandoms[name].qualifyingWorks, reverse=True):
             f = fandoms[key]
-            fwriter.writerow([f.name, f.qualifyingWorks, f.totalWorks, f.ratio])
+            if f.qualifyingWorks >= minSize:
+                fwriter.writerow([key, f.qualifyingWorks, f.totalWorks, f.ratio])
 
 
 
@@ -225,8 +238,9 @@ def getTopShipsAndFandoms(primaryTag, includeTags, excludeTags, minShipSize, shi
 
                 # exclude these ships and fandoms next time through the BIG LOOP
                 excludeTags = list(set().union(excludeTags,ships.keys(),fandoms.keys()))
-                writeShipsToFile(topShips, shipOut)
-                writeFandomsToFile(topFandoms, fandomOut)
+                writeShipsToFile(topShips, minShipSize, shipOut)
+                # don't include fandoms that don't cross min ship size
+                writeFandomsToFile(topFandoms, minShipSize, fandomOut)
             else:
                 print "********** no ships surpassed size threshold!  Ending main fn."
                 break
