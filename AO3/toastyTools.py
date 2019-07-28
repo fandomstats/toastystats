@@ -42,6 +42,9 @@ def getAO3TagURL(tag):
     formattedTag = convertToAO3(tag, "tag", False)
     return("https://archiveofourown.org/tags/" + formattedTag[0] + "/works")
 
+def getAO3TagStructureURL(tag):
+    formattedTag = convertToAO3(tag, "tag", False)
+    return("https://archiveofourown.org/tags/" + formattedTag[0] + "/")
 
 ##### getSearchURL
 # creates a search URL for a given combination of tags and tag
@@ -65,6 +68,9 @@ def mergeDictionaries(primaryDict, secondaryDict):
     tmp.update(secondaryDict)
     tmp.update(primaryDict)
     return tmp
+
+def unionOfLists(list1, list2):
+    return list(set().union(list1,list2))
 
 def getBiggestKeyByValue(mydict):
     return max(mydict.items(), key=operator.itemgetter(1))[0]

@@ -16,6 +16,10 @@ class AO3data:
     canonicalTagName = ""
     categories = {"rating": {"num": 5, "top": {}}, "warning": {"num": 6, "top": {}}, "category": {"num": 6, "top": {}}, "fandom": {"num": 10, "top": {}}, "character": {"num": 10, "top": {}}, "relationship": {"num": 10, "top": {}}, "freeform": {"num": 10, "top": {}}}
     htmlData = {}
+    tagHtmlData = {}
+    metaTags = []
+    searchURL = ""
+    metaURL = ""
 
     # ********* METHODS
 
@@ -116,6 +120,23 @@ class AO3data:
         else:
             return self.htmlData
 
+    def fetchMetaHTML(self):
+        if self.tagHtmlData == {}:
+            http = urllib3.PoolManager()
+            r = {}
+            if DEBUG:
+                print self.metaURL
+            try:
+                r = http.request('GET', self.metaURL)
+                soup = BeautifulSoup(r.data, features="html.parser")
+                soup.prettify()
+                self.tagHtmlData = soup
+                return soup
+            except: #urllib.error.HTTPError as e:
+                print "failure to fetch URL: ", self.metaURL
+        else:
+            return self.tagHtmlData
+
 
 
     # METHOD: getNumWorksAndTagName
@@ -173,8 +194,32 @@ class AO3data:
     # METHOD: getNumWorks
     # the second parameter indicates if this is a Sort and Filter type search or the other kind of search
     def getNumWorks(self, isSorted):
-        self.getNumWorksAndTagName(isSorted)
+        try:
+            self.getNumWorksAndTagName(isSorted)
+        except:
+            self.numworks = -2
+            self.canonicalTagName = ""
 
+    #METHOD: getMetaTags
+    def getMetaTags(self):
+        self.metaTags = []
+        soup = self.fetchMetaHTML()
+        metaDiv = soup.find("div", {"class" : "meta listbox group"})
+        if metaDiv != None:
+#            print metaDiv
+            #print metaDiv.contents
+            for d in metaDiv.descendants:
+#                print d
+                try:
+#                    print d.attrs
+                    if d.has_attr('class'):
+#                        print d['class'][0]
+                        if d['class'][0] == "tag":
+#                            print d.string
+#                            print "!!!!!!!!!!!!!!!!!!!!"
+                            self.metaTags.append(d.string)
+                except:
+                    errorMsg = "no attributes"
 
     # METHOD: getTopInfo -- scrape the top 10 ratings, etc from sidebar
     def getTopInfo(self):

@@ -10,7 +10,7 @@ import codecs
 import operator
 #import convert
 import AO3search
-from toastyTools import setupUrllib, getAO3SearchURL, mergeDictionaries, writeDictToCSV, getAO3TagURL, getBiggestKeyByValue
+from toastyTools import setupUrllib, getAO3SearchURL, getAO3TagStructureURL, mergeDictionaries, writeDictToCSV, getAO3TagURL, getBiggestKeyByValue
 
 # GLOBAL VARIABLES
 DEBUG = 1
@@ -52,6 +52,16 @@ def FetchTopTagInfo(primaryTag, includeTags, excludeTags):
     primaryTagData.getNumWorks(True)
     return primaryTagData
 
+def FetchMetaTags(tagName):
+    url = getAO3TagStructureURL(tagName)
+    tagData = AO3search.AO3data()
+    tagData.metaURL = url
+    tagData.getMetaTags()
+    if DEBUG:
+        print "Meta tags:"
+        print tagData.metaTags
+    return(tagData.metaTags)
+
 ###### FetchTop10ShipsAndFandoms
 # fetches the top ships and fandoms in the Sort & Filter sidebar for a given tag
 def FetchTop10ShipsAndFandoms(primaryTag, includeTags, excludeTags):
@@ -89,6 +99,7 @@ def AddNumWorksAndTopFandom(tag, include, exclude):
 # Returns number of qualifying works (factoring in include/exclude restrictions)
 def AddShip(shipName, include, exclude, pastShips):
 #    print "~~~~~~adding Ship: " + shipName
+
     if shipName not in pastShips.keys():
         ship = AddNewTagToDict(shipName, pastShips)
         ship = AddNumWorksAndTopFandom(ship, include, exclude)
@@ -96,6 +107,13 @@ def AddShip(shipName, include, exclude, pastShips):
             # the original ship name was non-canonical
             shipName = ship.name
             pastShips[shipName] = ship
+
+        # if there is a meta tag, also add it
+        metas = FetchMetaTags(shipName)
+        for metaName in metas:
+#            print "~~~~~ meta tag found: " + metaName
+            AddShip(metaName, include, exclude, pastShips)
+
     else:
         if DEBUG:
             print "~~~~~~ship previously found: " + shipName
@@ -138,6 +156,12 @@ def AddFandom(fandomName, include, exclude, pastFandoms, pastShips, minShipSize)
                 i += 1
             exclude = exclude + list(topS.keys())
             searchDepth += 1
+
+        # if there is a meta tag, also add it
+        metas = FetchMetaTags(fandomName)
+        for metaName in metas:
+#           print "~~~~~ meta tag found: " + metaName
+            AddFandom(metaName, include, exclude, pastFandoms, pastShips, minShipSize)
     else:
         print "~~~~~~fandom previously found!"
     return pastFandoms[fandomName]
