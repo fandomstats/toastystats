@@ -8,8 +8,11 @@ import csv
 import time
 import codecs
 import operator
-from convert import convertToAO3
+import io
+from convert import convertToAO3#, convertFromAO3
 import AO3search
+
+PAUSE_INTERVAL = 10
 
 #####
 def getArguments(args, numArgs, errorMsg):
@@ -17,6 +20,36 @@ def getArguments(args, numArgs, errorMsg):
         sys.exit(errorMsg)
     else:
         return args[1:numArgs+1]
+
+#####
+# Take in a file with a separate tag/fandom/language/etc on each line,
+# in UTF encoding, and return it as a list
+def getListFromTextFile(filename):
+    fp = io.open(filename, "r", encoding="utf-8")
+    lines = fp.read().splitlines() 
+#    lines = fp.readlines()
+    return lines
+
+#####
+# Setup and return a file pointer to an outfile that writes UTF
+# strings; also write the header row to the CSV
+def prepCSVOutfile(filename, headers):
+    outfp = io.open(filename, "w", encoding="utf-8")
+    outfp.write(headers.decode('utf-8'))
+    outfp.write("\n".decode('utf-8'))
+    return outfp
+
+#####
+# Write to CSV with correct encoding handling and add comma. strips whitespace.
+def writeFieldToCSV(outfp, text):
+    # added this to try to fix some special characters weirdness Feb 2021
+    # at best this is a patch on issues somewhere else with string formatting though :-/
+#    text = convertFromAO3(text, False)
+    outfp.write(text.decode('utf-8'))
+    outfp.write(",".decode('utf-8'))
+
+def writeEndlineToCSV(outfp):
+    outfp.write("\n".decode('utf-8'))
 
 #####
 def setupUrllib():
@@ -38,7 +71,7 @@ def addListOfTags(url, tagList):
     return url
 
 #####
-def getAO3TagURL(tag):
+def getAO3SimpleTagURL(tag):
     formattedTag = convertToAO3(tag, "tag", False)
     return("https://archiveofourown.org/tags/" + formattedTag[0] + "/works")
 
@@ -46,20 +79,58 @@ def getAO3TagStructureURL(tag):
     formattedTag = convertToAO3(tag, "tag", False)
     return("https://archiveofourown.org/tags/" + formattedTag[0] + "/")
 
-##### getSearchURL
+##### getAO3TagURL and getAO3TagTimeframeURL
 # creates a search URL for a given combination of tags and tag
 # exclusions.  the "main" tag is first argument, but any of the
 # include tags can also be the main tag (duplication okay).  either
-# include or exclude can also be empty.
+# include or exclude can also be empty.  The "timeframe" function
+# includes a start date and end date as well (either can be empty).
+# dates must be strings in format YYYY-MM-DD.
 
-def getAO3SearchURL(tag, includeTags, excludeTags):
+def getAO3TagTimeframeURL(tag, includeTags, excludeTags, startDate, endDate):
     url = "https://archiveofourown.org/works?utf8=%E2%9C%93&commit=Sort+and+Filter&work_search%5Bsort_column%5D=revised_at&work_search%5Bother_tag_names%5D="
     url = addListOfTags(url, includeTags)
     url += "&work_search%5Bexcluded_tag_names%5D="
     url = addListOfTags(url, excludeTags)
     ao3tag = convertToAO3(tag, "tag", False)
-    url = url + "&work_search%5Bcrossover%5D=&work_search%5Bcomplete%5D=&work_search%5Bwords_from%5D=&work_search%5Bwords_to%5D=&work_search%5Bdate_from%5D=&work_search%5Bdate_to%5D=&work_search%5Bquery%5D=&work_search%5Blanguage_id%5D=&tag_id=" + ao3tag[0]
+    url = url + "&work_search%5Bcrossover%5D=&work_search%5Bcomplete%5D=&work_search%5Bwords_from%5D=&work_search%5Bwords_to%5D=&work_search%5Bdate_from%5D="
+    url = url + startDate
+    url = url + "&work_search%5Bdate_to%5D="
+    url = url + endDate
+    url = url + "&work_search%5Bquery%5D=&work_search%5Blanguage_id%5D=&tag_id=" + ao3tag[0]
     return url
+    
+######
+# this is a special case of the above function in which start and end date are empty
+def getAO3TagURL(tag, includeTags, excludeTags):
+    url = getAO3SearchTimeframeURL (tag, includeTags, excludeTags, "", "")
+    return url
+
+######
+# this is just a wrapper because this was the old (confusing) name of the function
+def getAO3SearchURL(tag, includeTags, excludeTags):
+    return getAO3TagURL(tag, includeTags, excludeTags)
+def getAO3SearchTimeframeURL(tag, includeTags, excludeTags,startDate,endDate):
+    return getAO3TagTimeframeURL(tag, includeTags, excludeTags,startDate,endDate)
+
+##### getAO3LanguageTimeframeURL
+# Specify a language code, a timeframe string like AO3 takes in Works
+# Search (e.g., "< 200 days"), and a True/False parameter specifying
+# whether to limit to single work chapters. Returns an unstructured
+# Search format (no sort and filter)
+
+def getAO3LanguageTimeframeURL(langCode, timeframeString, singleChapterOnly):
+    url = "https://archiveofourown.org/works/search?utf8=%E2%9C%93&commit=Search&work_search%5Bquery%5D=&work_search%5Btitle%5D=&work_search%5Bcreators%5D=&work_search%5Brevised_at%5D="
+    timeframeString, tmp = convertToAO3(timeframeString, "unsorted", False) 
+    url += timeframeString
+    url += "&work_search%5Bcomplete%5D=&work_search%5Bcrossover%5D=&work_search%5Bsingle_chapter%5D="
+    if singleChapterOnly:
+        url += "1"
+    url += "&work_search%5Bword_count%5D=&work_search%5Blanguage_id%5D="
+    url += langCode
+    url += "&work_search%5Bfandom_names%5D=&work_search%5Brating_ids%5D=&work_search%5Bcharacter_names%5D=&work_search%5Brelationship_names%5D=&work_search%5Bfreeform_names%5D=&work_search%5Bhits%5D=&work_search%5Bkudos_count%5D=&work_search%5Bcomments_count%5D=&work_search%5Bbookmarks_count%5D=&work_search%5Bsort_column%5D=_score&work_search%5Bsort_direction%5D=desc"
+    return url
+
 
 ##### mergeDictionaries
 # this merges two dictionaries, with primaryDict taking precedence in case of repeat keys
@@ -85,3 +156,15 @@ def writeDictToCSV(mydict, filename):
         for key, value in sorted(mydict.items(), key=operator.itemgetter(1), reverse=True):
 #            key=key.encode('utf-8')
             writer.writerow([key, value])
+
+##### getNumWorksFromURL
+# a wrapper for confusing AO3Search process.  takes in an AO3 url and
+# bool specifying whether or not it's a Sort and Filter url.
+            
+def getNumWorksFromURL(url, isSortAndFilterURL):
+    data = AO3search.AO3data()
+    data.searchURL = url
+    time.sleep(6)
+    data.getNumWorks(isSortAndFilterURL)
+    return data.numworks
+ 

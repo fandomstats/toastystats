@@ -36,7 +36,10 @@ fout.write("{ \"searches\": [\n")
 
 # iterate through all items except the last one
 for f in tags[:-1]:
-    f = re.sub("\"", '%22', f)
+    if verbose:
+        print f
+#    f = re.sub("\"", '%22', f)
+    f = re.sub("\"", '\\\"', f)
     f = f.rstrip("\n")
 
     if verbose:
@@ -49,7 +52,8 @@ for f in tags[:-1]:
 
 # treat the last item differently -- no final comma
 f = tags[-1]
-f = re.sub("\"", '%22', f)
+#f = re.sub("\"", '%22', f)
+f = re.sub("\"", '\\\"', f)
 f = f.rstrip("\n")
 if verbose:
     print "tag: ", f

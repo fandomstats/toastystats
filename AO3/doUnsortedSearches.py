@@ -3,6 +3,9 @@ import importJSON
 import AO3search
 import time
 import pdb
+import toastyTools
+
+
 
 if len(sys.argv) < 3:
     sys.exit('Usage: %s JSONfile csvfile [-verbose]' % sys.argv[0])
@@ -29,7 +32,7 @@ for s in searchList:
     if verbose:
         print "Pausing so as not to DOS AO3..."
     
-    time.sleep(1.8)
+    time.sleep(toastyTools.PAUSE_INTERVAL)
 
 
     s.createUnsortedSearchURL()

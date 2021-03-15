@@ -148,6 +148,7 @@ CASE 5: FIND TOP SHIPS AND FANDOMS FOR A TAG
 REQUIRED TOASTY FILES:
 toastyTools.py
 topShipsAndFandoms.py
+getTopShipsAndFandomsLibrary.py
 AO3search.py
 convert.py
 
@@ -160,7 +161,7 @@ easy to find.
     the "F/F" tag.  
 
 > python topShipsAndFandoms.py "F/F" includeTags.txt excludeTags.txt 
-  100 shipOutfile.csv fandomOutfile.csv
+  100 shipOutfile.csv fandomOutfile.csv shipDiscards.csv fandomDiscards.csv
 
 includeTags and excludeTags: Extra tags that should also be included
 or excluded in the search can be listed -- one per line -- in the
@@ -172,3 +173,79 @@ The number (100 in the example) is the minimum ship size you're
 interested in finding. This algorithm doesn't guarantee that all ships
 near the threshold will be returned, but most ships over the threshold
 should be.
+
+I've added shipDiscards and fandomDiscards outfiles because it can be
+very useful to look at which other ships and fandoms were evaluated
+but failed to meet the criteria.
+
+NOTE: I recently realized that many fandoms were accidentally going
+missing, and I rewrote this function in an attempt to fix the error.
+It now does a depth-first search through fandoms (don't worry if that
+doesn't make sense), and potentially takes much longer to do its
+search.  But I believe it returns a better set of results. However, I
+have not finished verifying that it now returns a complete list of
+ships and fandoms that meet the criteria, so still be aware that some
+may be missing.
+
+********************************************
+CASE 6: FIND FEMSLASH DATA FOR A SET OF TAGS
+********************************************
+
+REQUIRED TOASTY FILES:
+getFemslashInfo.py
+toastyTools.py
+AO3search.py
+convert.py
+
+This function takes in a list of tags from a file, and for each tag,
+finds a bunch of relevant info for femslash stats -- how many works
+does the tag have?  How many F/F works? How many exclusive F/F works
+(F/F works after excluding F/M and M/M)?  How many exclusive F/F works
+within a given time frame?  It outputs the results to CSV.
+
+*** EXAMPLE: Get femslash stats that include number of exclusive F/F works in 2020:
+
+> python getFemslashInfo.py fftags.txt outfile.csv "2020-01-01" "2020-12-31"
+
+
+**************************************************
+CASE 7: GET DATA ABOUT TAGS FROM A PARTICULAR TIME
+**************************************************
+
+REQUIRED FILES:
+getTagLimitedTimeData.py
+toastyTools.py
+AO3search.py
+convert.py
+
+This function takes in a list of tags from a file, and for each tag,
+finds out how many works were produced between a start date and end
+date specified by the user.
+
+*** EXAMPLE: For every tag in tags.txt, find how many works were produced during the year 2020
+
+> python getTagLimitedTimeData.py tags.txt "2020-01-01" "2020-12-31" out.csv
+
+*******************************************************
+CASE 7: GET DATA ABOUT LANGUAGES FROM A PARTICULAR TIME
+*******************************************************
+
+REQUIRED FILES:
+getLanguageLimitedTimeData.py
+toastyTools.py
+
+This function takes in a list of language codes (e.g., "en" for
+English; "es" for Spanish) from a file, and for each language, finds
+out how many works were produced during a specific time frame
+specified by the user.  The timeframe is specified in the same way
+that AO3 Works Search specifies time frames.  (Sorry this is
+inconsistent with how tag time frames work, above; I may fix this
+later.)  The user can also decide whether to only include single
+chapter works (penultimate argument is set to True) or to count all
+works (penultimate argument is set to False).
+
+*** EXAMPLE: For every language whose language code is listed in
+    languages.txt, find how many single chapter works were produced in
+    the last 19 days
+
+> python getLanguageLimitedTimeData.py languageCodes.txt "< 20 days" True out.csv

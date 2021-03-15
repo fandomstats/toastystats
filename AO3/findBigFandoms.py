@@ -35,5 +35,5 @@ for fi in fandominfo:
         # print out the fandom and num works if they pass the threshold
         if numworks >= threshold:
             #reformat special characters in fandom name
-            fandom = re.sub(r'&amp;', r'&', fandom)
+            #fandom = re.sub(r'&amp;', r'&', fandom)
             print fandom + ", " + str(numworks)

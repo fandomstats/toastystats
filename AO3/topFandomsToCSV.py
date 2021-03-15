@@ -4,6 +4,7 @@ import urllib3
 #import urllib.parse
 import re
 import sys
+#from convert import convertToAO3, convertFromAO3
 
 # VARIABLES WE MAY WANT TO CHANGE
 minFandomSize = 0
@@ -72,8 +73,9 @@ for category in sorted(mediaCategories):
     catFandoms = fandomsByCategory[category]
     i = 1
     for key, value in sorted(catFandoms.iteritems(), key=lambda(k,v): (v,k), reverse=True):
-         f.write("%s, %s, %s\n" % (category, key, value))
-         if i >= numFandoms:
-             break
-         i = i+1
+#        key = convertFromAO3(key, False)
+        f.write("%s, %s, %s\n" % (category, key, value))
+        if i >= numFandoms:
+            break
+        i = i+1
 

@@ -204,22 +204,14 @@ class AO3data:
     def getMetaTags(self):
         self.metaTags = []
         soup = self.fetchMetaHTML()
-        metaDiv = soup.find("div", {"class" : "meta listbox group"})
-        if metaDiv != None:
-#            print metaDiv
-            #print metaDiv.contents
-            for d in metaDiv.descendants:
-#                print d
-                try:
-#                    print d.attrs
-                    if d.has_attr('class'):
-#                        print d['class'][0]
-                        if d['class'][0] == "tag":
-#                            print d.string
-#                            print "!!!!!!!!!!!!!!!!!!!!"
-                            self.metaTags.append(d.string)
-                except:
-                    errorMsg = "no attributes"
+        try:
+            metaDiv = soup.find("div", {"class" : "meta listbox group"})
+            if metaDiv != None:
+                for d in metaDiv.descendants:
+                    if d['class'][0] == "tag":
+                        self.metaTags.append(d.string)
+        except:
+            errorMsg = "no attributes"
 
     # METHOD: getTopInfo -- scrape the top 10 ratings, etc from sidebar
     def getTopInfo(self):

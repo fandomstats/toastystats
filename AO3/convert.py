@@ -160,3 +160,7 @@ def convertToAO3(s, sType, verbose):
         sys.exit('unrecognized type!')
 
 
+#def convertFromAO3(s, verbose):
+    
+#        s = re.sub('\&amp\;', '&', s)
+#        s = re.sub('\%22', '"', s)

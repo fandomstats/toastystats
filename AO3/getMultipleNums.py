@@ -1,6 +1,7 @@
 import sys
 import time
 import os
+import toastytools
 
 #def getNum(url):
 
@@ -37,7 +38,7 @@ for u in urls:
     if verbose:
         print "Pausing so as not to DOS AO3..."
     
-    time.sleep(2)
+    time.sleep(PAUSE_INTERVAL)
 
     if verbose:
         cmd = 'python getNum.py "' + u + '" -v'

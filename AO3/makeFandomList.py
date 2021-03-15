@@ -4,6 +4,7 @@ import re
 import sys
 import time
 import os
+import toastytools
 
 
 if len(sys.argv) < 2:
@@ -43,7 +44,7 @@ for u in urls:
     if verbose:
         print "Pausing so as not to DOS AO3..."
     
-    time.sleep(2)
+    time.sleep(PAUSE_INTERVAL)
 
     http = urllib3.PoolManager()
 

@@ -3,11 +3,12 @@ import importJSON
 import AO3search
 import time
 import pdb
+from toastyTools import PAUSE_INTERVAL
 
 if len(sys.argv) < 3:
     sys.exit('Usage: %s JSONfile csvfile [-verbose]' % sys.argv[0])
 
-verbose = False
+verbose = True
 
 if len(sys.argv) > 3:
     arg = sys.argv[3]
@@ -19,7 +20,7 @@ csvfile = sys.argv[2]
 
 fo = open(csvfile, "w")
 
-searchList = importJSON.importFile(jsonfile, False)
+searchList = importJSON.importFile(jsonfile, verbose)
 
 # assume that all the searches have the same headers
 searchList[0].printCSVHeaders(fo)
@@ -29,16 +30,17 @@ for s in searchList:
     if verbose:
         print "Pausing so as not to DOS AO3..."
     
-    time.sleep(1.8)
+    time.sleep(PAUSE_INTERVAL)
 
 
     s.createSearchURL()
 #    pdb.set_trace()
-    try: 
+    try:
         tmp = s.searchURL.decode('utf-8')
         s.searchURL = tmp
         if verbose:
             print "SUCCESS: decode URL"
+#            print s.searchURL
     except:
         if verbose:
             print "FAIL: decode URL"
