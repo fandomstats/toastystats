@@ -242,7 +242,7 @@ class AO3data:
 #                print "@@@@@@@"
 #                print top
             except:
-                print "ERROR! " + k
+                print "ERROR! Failed to fetch top " + k + "s"
                 return
 
             try:

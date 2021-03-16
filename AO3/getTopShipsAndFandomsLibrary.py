@@ -164,16 +164,7 @@ def AddFandomAndFetchNewCandidateFandoms(fandomName, include, exclude, pastFando
             topS, topF = FetchTop10ShipsAndFandoms(fandomName, include, exclude)
             i = 1
             
-            for subFandom in topF:
-                print "POSSIBLE NEW CANDIDATE FANDOM: " + subFandom 
-                if subFandom in pastFandoms:
-                    print "already gathered data on this fandom"
-                elif subFandom in candidateFandoms:
-                    print "already a candidate"
-                else:
-                    candidateFandoms.append(subFandom)
-                    
-            
+            numBigShips = 0
             for shipName in topS:
                 print "FANDOM DEEP DIVE: " + fandomName + "; depth " + str(searchDepth) + "; ship " + str(i) + "/" + str(len(topS))
                 ship = AddShip(shipName, include, originalExcludeTags, pastShips, minShipSize)
@@ -181,9 +172,22 @@ def AddFandomAndFetchNewCandidateFandoms(fandomName, include, exclude, pastFando
                 if ship.totalWorks < minShipSize:
                     print "~~~ship below size threshold"
                     belowSizeThreshold = True
+                else:
+                    numBigShips += 1
                 i += 1
+
             exclude = exclude + list(topS.keys())
 
+            if numBigShips > 0:
+                for subFandom in topF:
+                    print "POSSIBLE NEW CANDIDATE FANDOM: " + subFandom 
+                    if subFandom in pastFandoms:
+                        print "already gathered data on this fandom"
+                    elif subFandom in candidateFandoms:
+                        print "already a candidate"
+                    else:
+                        candidateFandoms.append(subFandom)
+            
             searchDepth += 1
 
         # if there is a meta tag, also add it
@@ -194,6 +198,7 @@ def AddFandomAndFetchNewCandidateFandoms(fandomName, include, exclude, pastFando
     else:
         print "~~~~~~fandom previously found!"
         
+    print "................................. Ending fandom deep dive: " + fandomName
     try:
         return pastFandoms[fandomName]
     except:
@@ -327,17 +332,22 @@ def getTopShipsAndFandoms(primaryTag, includeTags, excludeTags, minShipSize, shi
     #This gives you the optional ability to govern how many times to
     #exclude previous ships & fandoms and repeat search
     for i in range(MAX_DEPTH):
+        if DEBUG:
+            print "*********** NEW BIG LOOP ITERATION: " + str(i)
+
+
         # write the files every time so we don't lose much data if the
         # program gets interrupted
         writeShipsToFile(topShips, minShipSize, shipOut, shipDiscard)
         writeFandomsToFile(topFandoms, minShipSize, fandomOut, fandomDiscard)
 
+        if DEBUG:
+            print "Smallest ship size: " + str(smallestShip)
+
         if smallestShip > minShipSize:
             fandoms = []
             ships = []
             iter = str(i+1)
-            if DEBUG:
-                print "*********** NEW BIG LOOP ITERATION: " + iter
 
             # fetch the tag page for the primary tag (e.g., "F/F")
 #            time.sleep(PAUSE_INTERVAL)
@@ -401,13 +411,20 @@ def getTopShipsAndFandoms(primaryTag, includeTags, excludeTags, minShipSize, shi
                 # fandoms that we haven't seen yet
                 excludeTags = list(set().union(excludeTags,fandoms.keys()))
             else:
-                print "********** no ships surpassed size threshold!  Ending main fn."
+                print "********** no ships in this big loop surpassed size threshold!  Ending main fn."
                 break
+
+            if DEBUG:
+                print "********** FINISHING BIG LOOP ITERATION " + str(i)
+
+        else:
+            print "~~~~~~~~~~MinShipSize not surpassed. Ennding main fn."
+            break
 
     return(topShips, topFandoms)
 
 
-        
+
 
 def getTopShipsAndFandomsDeprecated(primaryTag, includeTags, excludeTags, minShipSize, shipOut, fandomOut, shipDiscard, fandomDiscard):
 
@@ -504,3 +521,5 @@ def getTopShipsAndFandomsDeprecated(primaryTag, includeTags, excludeTags, minShi
                 break
 
     return(topShips, topFandoms)
+
+        
