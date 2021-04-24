@@ -1,0 +1,6 @@
+id, type, name, canonical, cached_count, merger_id
+9,Rating,Not Rated,True,825385,-1,
+10,Rating,General Audiences,True,2115153,-1,
+11,Rating,Teen And Up Audiences,True,2272688,-1,
+12,Rating,Mature,True,1151260,-1,
+13,Rating,Explicit,True,1238331,-1,

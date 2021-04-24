@@ -1,0 +1,8 @@
+These files are all subsets of the AO3 Selective Data Dump for Fan
+Statisticians, described here:
+https://www.archiveofourown.org/admin_posts/18804
+
+Each of these files contains just the canonical tags with a particular
+tag type (e.g., Rating, Relationship).  I additionally added a
+Polyships file that contains just the canonical relationship tags that
+contain at least two innstances of "/".

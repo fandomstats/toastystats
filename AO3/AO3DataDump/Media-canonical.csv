@@ -1,0 +1,13 @@
+id, type, name, canonical, cached_count, merger_id
+1,Media,TV Shows,True,910,-1,
+2,Media,Movies,True,1164,-1,
+3,Media,Books & Literature,True,134,-1,
+4,Media,Cartoons & Comics & Graphic Novels,True,166,-1,
+5,Media,Anime & Manga,True,501,-1,
+6,Media,Music & Bands,True,19,-1,
+7,Media,Celebrities & Real People,True,33,-1,
+8,Media,Other Media,True,11,-1,
+476,Media,Video Games,True,448,-1,
+5451,Media,No Media,True,0,-1,
+9971,Media,Uncategorized Fandoms,True,1,-1,
+30198,Media,Theater,True,104,-1,
