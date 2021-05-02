@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import urllib3
 import re
 import sys
+from toastyTools import getSoupFromURL
 
 #def getNum(url):
 
@@ -16,18 +17,11 @@ if len(sys.argv) > 2:
         verbose = True
 
 url = sys.argv[1]
-http = urllib3.PoolManager()
 
 if verbose:
     print "fetching page: ", url
 
-try:
-    r = http.request('GET', url)
-except:
-    sys.exit("invalid URL")
-
-soup = BeautifulSoup(r.data)
-soup.prettify()
+soup = getSoupFromURL(url)    
 
 # extract the number of works returned by this search
 tag = soup.find_all(text=re.compile("Works( found)* in"))

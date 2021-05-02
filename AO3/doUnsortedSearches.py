@@ -3,7 +3,6 @@ import importJSON
 import AO3search
 import time
 import pdb
-import toastyTools
 
 
 
@@ -29,11 +28,6 @@ searchList[0].printShortCSVHeaders(fo)
 
 for s in searchList:
 #    pdb.set_trace()
-    if verbose:
-        print "Pausing so as not to DOS AO3..."
-    
-    time.sleep(toastyTools.PAUSE_INTERVAL)
-
 
     s.createUnsortedSearchURL()
 #    pdb.set_trace()

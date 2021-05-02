@@ -10,7 +10,7 @@ import codecs
 import operator
 import io
 from convert import convertToAO3#, convertFromAO3
-import AO3search
+#import AO3search
 
 PAUSE_INTERVAL = 10
 
@@ -56,7 +56,23 @@ def setupUrllib():
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     reload(sys)
     sys.setdefaultencoding('utf8')
-    return urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
+    user_agent = {'user-agent': 'bot'}
+    return urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where(), headers=user_agent)
+
+#####
+def getSoupFromURL(url):
+    http = setupUrllib()
+    r = {}
+    try:
+        print "Pausing so as not to DOS AO3..."
+        time.sleep(PAUSE_INTERVAL) 
+        r = http.request('GET', url)
+        soup = BeautifulSoup(r.data, features="html.parser")
+        soup.prettify()
+        return soup
+    except: #urllib.error.HTTPError as e:
+        print "failure to fetch URL: ", url
+        return -1
 
 
 #####
@@ -157,14 +173,50 @@ def writeDictToCSV(mydict, filename):
 #            key=key.encode('utf-8')
             writer.writerow([key, value])
 
-##### getNumWorksFromURL
-# a wrapper for confusing AO3Search process.  takes in an AO3 url and
-# bool specifying whether or not it's a Sort and Filter url.
+##### getNumWorksFromURL and getNumWorksFromSoup
+# wrappers for confusing AO3Search process.  takes in an AO3 url or BeautifulSoup obj and
+# a bool specifying whether or not it's a Sort and Filter url.
             
+def getNumWorksFromSoup(soup, isSortAndFilterURL):
+
+#    print "************ getNumWorksFromSoup"
+
+    isSorted = isSortAndFilterURL
+    errorNum = -2
+    numWorks = errorNum
+    try:
+#        print "************ try1"
+
+        if isSorted:
+            tag = soup.find_all(text=re.compile("[0-9]+ Work(s)*( found)* in "))
+        else:
+            tag = soup.find_all(text=re.compile("[0-9]+ Found"))
+    except AttributeError:
+#        print "************ except1"
+        return errorNum
+
+    try:
+#        print "************ try2"
+        line =  tag[0]
+    except:
+#        print "************ except2"
+        line = ''
+        print "No num works found"
+        return errorNum
+
+#    print "************ nums"
+    nums = re.findall('([0-9]+)', line)
+    if len(nums) == 0:
+        return errorNum
+    elif len(nums) == 1:
+        numWorks = int(nums[0])
+    else:
+        numWorks = int(nums[2])
+
+    return numWorks
+
+    
 def getNumWorksFromURL(url, isSortAndFilterURL):
-    data = AO3search.AO3data()
-    data.searchURL = url
-    time.sleep(6)
-    data.getNumWorks(isSortAndFilterURL)
-    return data.numworks
- 
+    
+    soup = getSoupFromURL(url)
+    return getNumWorksFromSoup(soup, isSortAndFilterURL)

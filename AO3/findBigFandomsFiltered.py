@@ -4,6 +4,8 @@ import urllib3
 #import urllib.parse
 import re
 import sys
+from toastyTools import getSoupFromURL
+
 
 if len(sys.argv) < 3:
     sys.exit('Usage: %s [media category] [min size] (e.g.: %s "TV Shows" 500 )' % (sys.argv[0],sys.argv[0]))
@@ -15,15 +17,7 @@ category = re.sub(r'&', r'*a*', category)
 #url = "http://archiveofourown.org/media/TV%20Shows/fandoms"
 url = "http://archiveofourown.org/media/" + category + "/fandoms"
 
-try:
-    http = urllib3.PoolManager()
-    r = http.request('GET', url)
-except:
-    print "Bad URL: " + url
-
-soup = BeautifulSoup(r.data)
-
-soup.prettify()
+soup = getSoupFromURL(url)
 
 showinfo = soup.find_all('li')
 #print str(showinfo[0])

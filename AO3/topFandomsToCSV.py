@@ -5,6 +5,8 @@ import urllib3
 import re
 import sys
 #from convert import convertToAO3, convertFromAO3
+from toastyTools import getSoupFromURL
+
 
 # VARIABLES WE MAY WANT TO CHANGE
 minFandomSize = 0
@@ -22,6 +24,7 @@ fandomsByCategory = {}
 topFandoms = {}
 
 for category in mediaCategories:
+    print "Fetching " + category
 
     # SET UP THE DICTIONARY FOR THIS CATEGORY
     fandomsByCategory[category] = {}
@@ -30,15 +33,7 @@ for category in mediaCategories:
     modifiedCategory = category.replace(" ", "%20")
     modifiedCategory = modifiedCategory.replace("&", "*a*")
     url = "http://archiveofourown.org/media/" + modifiedCategory + "/fandoms"
-    try:
-        http = urllib3.PoolManager()
-        r = http.request('GET', url)
-    except:
-        print "Bad URL: " + url
-
-    soup = BeautifulSoup(r.data, "html.parser")
-
-    soup.prettify()
+    soup = getSoupFromURL(url)
 
     # ITERATE THROUGH ALL FANDOMS LISTED ON THE PAGE AND SAVE THEIR NAMES AND SIZES
     fandominfo = soup.find_all('li')

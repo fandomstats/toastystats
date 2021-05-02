@@ -34,6 +34,8 @@ outfiles = {}
 header = "id, type, name, canonical, cached_count, merger_id"
 polyfp = open(outdir + "/Polyships-canonical.csv", 'w')
 polyfp.write(header + "\n")
+bigshipfp = open(outdir + "/Bigships-canonical.csv", 'w')
+bigshipfp.write(header + "\n")
 
 # create a new outfile for each tag type (e.g., "Relationship", "Character")
 for tag in tagData:
@@ -49,9 +51,11 @@ for tag in tagData:
             fp.write(header + "\n")
             writeTagToFile(tag, fp)
             
-        #Also write poly relationships to their own file
+        #Also write poly and bigger relationships to their own file
         if ttype == "Relationship":
             ship =  tag["name"]
             if  re.search("\/.+\/", ship):
-                print ship
+                #print ship
                 writeTagToFile(tag, polyfp)
+            if tag["cached_count"] >= 10:
+                writeTagToFile(tag, bigshipfp)

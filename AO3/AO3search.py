@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import urllib3
 import pdb
 import UnicodeToURL
+from toastyTools import getSoupFromURL, getNumWorksFromSoup
 
 DEBUG=0
 
@@ -105,35 +106,15 @@ class AO3data:
     # METHOD: fetchHTML
     def fetchHTML(self):
         if self.htmlData == {}:
-            http = urllib3.PoolManager()
-            r = {}
-            if DEBUG:
-                print self.searchURL
-            try:
-                r = http.request('GET', self.searchURL)
-                soup = BeautifulSoup(r.data, features="html.parser")
-                soup.prettify()
-                self.htmlData = soup
-                return soup
-            except: #urllib.error.HTTPError as e:
-                print "failure to fetch URL: ", self.searchURL
+            self.htmlData = getSoupFromURL(self.searchURL)
+            return self.htmlData
         else:
             return self.htmlData
 
     def fetchMetaHTML(self):
         if self.tagHtmlData == {}:
-            http = urllib3.PoolManager()
-            r = {}
-            if DEBUG:
-                print self.metaURL
-            try:
-                r = http.request('GET', self.metaURL)
-                soup = BeautifulSoup(r.data, features="html.parser")
-                soup.prettify()
-                self.tagHtmlData = soup
-                return soup
-            except: #urllib.error.HTTPError as e:
-                print "failure to fetch URL: ", self.metaURL
+            self.tagHtmlData = getSoupFromURL(self.metaURL)
+            return self.tagHtmlData
         else:
             return self.tagHtmlData
 
@@ -143,40 +124,22 @@ class AO3data:
     # Because sometimes the tag name is different than what you
     # searched for (if you didn't search for the canonical version of a tag)
     def getNumWorksAndTagName(self, isSorted):
+#        print "******** getNumWorksAndTagName"
         if self.searchURL == '':
             sys.exit("empty searchURL field!")
-        # extract the number of works returned by this search
-        soup = self.fetchHTML()
+            # extract the number of works returned by this search
         try:
-            if isSorted:
-                tag = soup.find_all(text=re.compile("[0-9]+ Work(s)*( found)* in "))
-            else:
-                tag = soup.find_all(text=re.compile("[0-9]+ Found"))
-
-        except AttributeError:
-            print "ERROR: empty HTML data: ", self.searchURL
-            self.numworks = -2
+#            print "******** fetching soup"
+            soup = self.fetchHTML()
+        except:
+            print "******** didn't fetch soup"
             return
 
-        try:
-            line =  tag[0]
-        except:
-            line = ''
-            self.numworks = -2
-#            sys.exit("no number of works found")
-
-        nums = re.findall('([0-9]+)', line)
-        if len(nums) == 0:
-            self.numworks = -2
-#            sys.exit("No numbers found in H2 tag content")
-        elif len(nums) == 1:
-            self.numworks = int(nums[0])
-        else:
-            self.numworks = int(nums[2])
-
+        #        print "************ fetching num works"
+        self.numworks = getNumWorksFromSoup(soup, isSorted)
         if DEBUG:
             print self.numworks
-
+            
         if isSorted:
 #            print "*****************"
 #            print line
@@ -195,8 +158,10 @@ class AO3data:
     # the second parameter indicates if this is a Sort and Filter type search or the other kind of search
     def getNumWorks(self, isSorted):
         try:
+#            print "************ TRY"
             self.getNumWorksAndTagName(isSorted)
         except:
+#            print "************ EXCEPT"
             self.numworks = -2
             self.canonicalTagName = ""
 

@@ -2,7 +2,7 @@ import sys
 import AO3search
 from convert import convertToAO3
 import time
-from toastyTools import PAUSE_INTERVAL, getListFromTextFile, getAO3TagURL, getAO3TagTimeframeURL, getNumWorksFromURL, setupUrllib, getAO3SimpleTagURL
+from toastyTools import getListFromTextFile, getAO3TagURL, getAO3TagTimeframeURL, getNumWorksFromURL, setupUrllib, getAO3SimpleTagURL
 
 if len(sys.argv) < 5:
     sys.exit('Usage: %s tagfile csvfile startdate enddate (e.g., getFemslashInfo tags.txt out.csv "2020-01-01" "2020-12-31")' % sys.argv[0])
@@ -52,7 +52,6 @@ for t in tags:
         if verbose:
             print numWorks
         fo.write(str(numWorks) + ",")
-        time.sleep(PAUSE_INTERVAL)
     
     fo.write("\n")
     

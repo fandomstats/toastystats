@@ -4,6 +4,7 @@ import urllib3
 #import urllib.parse
 import re
 import sys
+from toastyTools import getSoupFromURL
 
 # basic error checking for right number of arguments
 if len(sys.argv) < 3:
@@ -16,13 +17,7 @@ category = re.sub(r'&', r'*a*', category)
 url = "http://archiveofourown.org/media/" + category + "/fandoms"
 
 # get the web page listing the fandoms for this Media Type category
-try:
-    http = urllib3.PoolManager()
-    r = http.request('GET', url)
-except:
-    print "Bad URL: " + url
-soup = BeautifulSoup(r.data)
-soup.prettify()
+soup = getSoupFromURL(url)
 
 # grab all the fandoms and numbers of fanworks
 fandominfo = soup.find_all('li')

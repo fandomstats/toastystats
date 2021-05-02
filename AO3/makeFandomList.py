@@ -4,7 +4,8 @@ import re
 import sys
 import time
 import os
-import toastytools
+#import toastytools
+from toastyTools import getSoupFromURL
 
 
 if len(sys.argv) < 2:
@@ -44,18 +45,9 @@ for u in urls:
     if verbose:
         print "Pausing so as not to DOS AO3..."
     
-    time.sleep(PAUSE_INTERVAL)
+    soup = getSoupFromURL(u)
 
-    http = urllib3.PoolManager()
-
-    try:
-        r = http.request('GET', u)
-    except:
-        sys.exit("invalid URL")
-
-    soup = BeautifulSoup(r.data)
-    soup.prettify()
-
+    
     # extract the fandom names
     tmpList = soup.findAll("a", {"class" : "tag"})
 

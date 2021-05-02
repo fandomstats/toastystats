@@ -10,7 +10,7 @@ import codecs
 import operator
 #import convert
 import AO3search
-from toastyTools import setupUrllib, getAO3SearchURL, getAO3TagStructureURL, mergeDictionaries, writeDictToCSV, getAO3TagURL, getBiggestKeyByValue, PAUSE_INTERVAL
+from toastyTools import setupUrllib, getAO3SearchURL, getAO3TagStructureURL, mergeDictionaries, writeDictToCSV, getAO3TagURL, getBiggestKeyByValue
 
 # GLOBAL VARIABLES
 DEBUG = 1
@@ -42,7 +42,7 @@ def FetchTopTagInfo(primaryTag, includeTags, excludeTags):
     print "fetching top tag info: " + primaryTag 
     print "excluding: "
     print excludeTags 
-    time.sleep(PAUSE_INTERVAL)
+#    time.sleep(PAUSE_INTERVAL)
     url = getAO3SearchURL(primaryTag, includeTags, excludeTags)
 #    if DEBUG:
 #       print "including " +  str(len(includeTags)) + " tags: "
@@ -59,7 +59,7 @@ def FetchTopTagInfo(primaryTag, includeTags, excludeTags):
 def FetchMetaTags(tagName):
     print "fetching meta tags"
 
-    time.sleep(PAUSE_INTERVAL)
+#    time.sleep(PAUSE_INTERVAL)
     url = getAO3TagStructureURL(tagName)
     tagData = AO3search.AO3data()
     tagData.metaURL = url

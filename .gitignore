@@ -1,3 +1,10 @@
+# my additions
+*.csv
+*.tags
+*.out
+*.json
+*~
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
