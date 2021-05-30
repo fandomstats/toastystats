@@ -150,27 +150,27 @@ def getFFNInfo(soup, f):
 
 # SCRAPE ONE FANWORK FN: WATTPAD
 def getWattpadInfo(soup, f):
-
-    # get genres ("keywords") and summary ("description")
-    for tag in soup.findAll("meta"):
+    # get summary ("pre")
+    for tag in soup.findAll("pre"):
+        print stripPunct(tag)
+        f.summary = stripPunct(tag)
+    
+    # get genres ("keywords")
+    for tag in soup.findAll("meta", attrs={"name": "keywords"}):
         if tag.has_attr('name') and tag.has_attr('content'):
             print "@@@@@@"
             print tag
             content = tag['content']
             content = stripPunct(content)
             print content
-
-            if tag['name'] == "keywords":
-                print "$$$$$$$"
-                f.genre = content
-            elif tag['name'] == "description":
-                print content
-                f.summary = content#.encode('utf-8').strip()
+            print "$$$$$$$"
+            f.genre = content
 
     # get popularity metrics and numeric data
-    for tag in soup.findAll("span"):
+    for tag in soup.findAll("span", attrs={"data-toggle": "tooltip"}):
         if tag.has_attr('title'):
             print "$%$%$%$%"
+            print tag
             content = tag['title']
             content = stripPunct(content)
             if "Reads" in content:
@@ -182,32 +182,27 @@ def getWattpadInfo(soup, f):
                 print content
                 numvotes = findNum(content)
                 f.kudos = numvotes
+            elif "First published" in title:
+                published = findDate(content)
+                print published
+                f.firstPosted = published
+                if "Completed" in content:
+                    f.complete = True
+                elif "Ongoing" in content:
+                    f.complete = False
+                else:
+                    for elem in soup(text=re.compile(r'Updated ')):
+                        print elem
+                        updated = findDate(elem)
+                        print updated
+                        f.lastUpdated = updated
+                    
+   
     for elem in soup(text=re.compile(r'\d+ Part Story')):
         elem = stripPunct(elem)
         print elem
         numparts = findNum(elem)
         f.chapters = numparts
-
-        # get dates and finished status
-        for tag in soup.findAll("small"):
-            if tag.has_attr('title'):
-                content = tag['title']
-                print "~!~!~!~!~!~"
-                print content
-                published = findDate(content)
-                print published
-                f.firstPosted = published
-        for elem in soup(text=re.compile(r'Updated ')):
-            print elem
-            updated = findDate(elem)
-            print updated
-            f.lastUpdated = updated
-        for status in soup(text=re.compile(r'Completed')):
-#            print status
-            f.complete = True
-        for status in soup(text=re.compile(r'Ongoing')):
-#            print status
-            f.complete = False
 
         # get rating and language
         for elem in soup(text=re.compile(r'\"storyRating\"\:\d+')):
@@ -225,26 +220,19 @@ def getWattpadInfo(soup, f):
                 language = "-1"
             print language
             f.language = findNum(language)
+# 
+#     # get freeform tags
+    freeforms = []
+    for tag in soup.findAll('a', attrs={"class": "tag-item"}):
+        print "!!!!!!!!"
+        print tag
+        freeforms.append(tag.string.encode('utf-8').strip())
+    if freeforms:
+        print freeforms
+        f.freeform = ';'.join(freeforms)
 
-    # get freeform tags
-#    for tag in soup.findAll('ul'):
-#        if tag.has_attr('class'):
-#            print "!!!!!!!!"
-#            print tag
-    for tag in soup.findAll("div", recursive=True):
-        if tag.has_attr('id'):
-            if "component" in tag['id']:
-                print "@#@#@#@#@#"
-                print tag
-#                tag = tag.children[0]
-                freeforms = []
-                for child in tag.descendants:
-                    print "#######"
-                    if child.name == "div" and child.has_attr('style'):
-                        print child
-                        freeforms.append(child.string.encode('utf-8').strip())
-                f.freeform = ';'.join(freeforms)
-
+def getTag(href):
+    return href[9]
 
 # SCRAPE ONE FANWORK FN: AO3
 def getAO3Info(soup, f):
@@ -380,10 +368,9 @@ for i in range(0, numworks):
     # pause to avoid inadvertant DOS attack
     time.sleep(2)
 
-
     # get the fanwork ID and convert to a URL 
-    workID = randint(1, maxID)
-#    workID = 6981072
+#    workID = randint(1, maxID)
+    workID = 71593395
     workURL = makeURL(platform, workID)
     f = Fanwork(workURL, platform)
     fanworkDict[workID] = f
@@ -463,3 +450,4 @@ printCSV(outfile, fanworkDict)
             #reformat special characters in fandom name
 #            fandom = re.sub(r'&amp;', r'&', fandom)
 #            print fandom + ", " + str(numworks)
+
