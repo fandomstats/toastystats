@@ -150,86 +150,64 @@ def getFFNInfo(soup, f):
 
 # SCRAPE ONE FANWORK FN: WATTPAD
 def getWattpadInfo(soup, f):
-    # get summary ("pre")
+    for tag in soup.find("div", class_="author-info__username"):
+        print "  ## AUTHOR ##  "
+        print tag.string
+        f.author = tag.string
+
+    for tag in soup.find("span", class_="table-of-contents__last-updated"):
+        if tag.string != 'Last updated ':
+            print "  ~~ LastUpdated ~~  "
+            print tag.string
+            f.lastUpdated = tag.string
+
+    for tag in soup.find("div", class_="icon completed"):
+        print "  ~  Complete  ~  "
+        print tag.string
+        f.complete = tag.string
+
     for tag in soup.findAll("pre"):
+        print "  @@ SUMMARY @@  "
         print stripPunct(tag)
         f.summary = stripPunct(tag)
+    
+    tag = soup.find("div", class_="icon mature")
+    if tag:
+        print "  ++ Rating ++  "
+        print tag.string
+        f.rating = tag.string
+
+    for tag in soup.findAll("li", class_="stats-item", limit=3):
+        print "  == Stats: reads, votes, parts ==  "
+        label = tag.find("span", class_="stats-label__text").string
+        value = tag.find("span", class_="stats-value").string
+        print label + " = " + value
+        if label == "Reads":
+            f.hits = value
+        if label == "Votes":
+            f.kudos = value
+        if label == "Parts":
+            f.chapters = value
     
     # get genres ("keywords")
     for tag in soup.findAll("meta", attrs={"name": "keywords"}):
         if tag.has_attr('name') and tag.has_attr('content'):
-            print "@@@@@@"
-            print tag
+            print "  $$ GENRE $$  "
             content = tag['content']
             content = stripPunct(content)
             print content
-            print "$$$$$$$"
             f.genre = content
 
-    # get popularity metrics and numeric data
-    for tag in soup.findAll("span", attrs={"data-toggle": "tooltip"}):
-        if tag.has_attr('title'):
-            print "$%$%$%$%"
-            print tag
-            content = tag['title']
-            content = stripPunct(content)
-            if "Reads" in content:
-                print content
-                numreads = findNum(content)
-                f.hits = numreads
-                print numreads
-            elif "Votes" in content:
-                print content
-                numvotes = findNum(content)
-                f.kudos = numvotes
-            elif "First published" in title:
-                published = findDate(content)
-                print published
-                f.firstPosted = published
-                if "Completed" in content:
-                    f.complete = True
-                elif "Ongoing" in content:
-                    f.complete = False
-                else:
-                    for elem in soup(text=re.compile(r'Updated ')):
-                        print elem
-                        updated = findDate(elem)
-                        print updated
-                        f.lastUpdated = updated
-                    
-   
-    for elem in soup(text=re.compile(r'\d+ Part Story')):
-        elem = stripPunct(elem)
-        print elem
-        numparts = findNum(elem)
-        f.chapters = numparts
-
-        # get rating and language
-        for elem in soup(text=re.compile(r'\"storyRating\"\:\d+')):
-            print "%^%^%^%^%^"
-            print elem
-            try:
-                rating = re.search(r'\"storyRating\"\:\d+', elem).group()
-            except: 
-                rating = "-1"
-            print rating
-            f.rating = findNum(rating)
-            try:
-                language = re.search(r'\"language\"\:\d+', elem).group()
-            except:
-                language = "-1"
-            print language
-            f.language = findNum(language)
-# 
-#     # get freeform tags
+    # get freeform tags
     freeforms = []
-    for tag in soup.findAll('a', attrs={"class": "tag-item"}):
-        print "!!!!!!!!"
-        print tag
-        freeforms.append(tag.string.encode('utf-8').strip())
-    if freeforms:
-        print freeforms
-        f.freeform = ';'.join(freeforms)
+    for tag in soup.findAll("ul", class_="tag-items"):
+        if tag:
+            print "  ### Tags ###  "
+            for t2 in tag.findAll("li"):
+                freeforms.append(t2.string.encode('utf-8').strip())
+            if freeforms:
+                print freeforms
+                f.freeform = ';'.join(freeforms)
 
 def getTag(href):
     return href[9]
@@ -369,8 +347,7 @@ for i in range(0, numworks):
     time.sleep(2)
 
     # get the fanwork ID and convert to a URL 
-#    workID = randint(1, maxID)
-    workID = 71593395
+    workID = randint(1, maxID)
     workURL = makeURL(platform, workID)
     f = Fanwork(workURL, platform)
     fanworkDict[workID] = f
