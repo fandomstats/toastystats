@@ -1,5 +1,5 @@
 # sampleFanworks.py
-# Last modified: July 17, 2019
+# Last modified: June 1, 2021
 
 sampleFanworks.py lets you sample random fanworks from AO3, FFN, or
 Wattpad.  It does so by grabbing random numbers between 0 and the
@@ -28,3 +28,4 @@ KNOWN LIMITATIONS:
   AO3 some fanworks are not public and thus can't be retrieved).  This
   means you may need to sample a much larger number of URLs in order
   to get the number of fanworks you want (especially on Wattpad).
+  
