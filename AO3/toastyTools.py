@@ -10,6 +10,7 @@ import codecs
 import operator
 import io
 from convert import convertToAO3#, convertFromAO3
+import importlib
 #import AO3search
 
 PAUSE_INTERVAL = 10
@@ -25,7 +26,7 @@ def getArguments(args, numArgs, errorMsg):
 # Take in a file with a separate tag/fandom/language/etc on each line,
 # in UTF encoding, and return it as a list
 def getListFromTextFile(filename):
-    fp = io.open(filename, "r", encoding="utf-8")
+    fp = io.open(filename, "r")
     lines = fp.read().splitlines() 
 #    lines = fp.readlines()
     return lines
@@ -34,9 +35,9 @@ def getListFromTextFile(filename):
 # Setup and return a file pointer to an outfile that writes UTF
 # strings; also write the header row to the CSV
 def prepCSVOutfile(filename, headers):
-    outfp = io.open(filename, "w", encoding="utf-8")
-    outfp.write(headers.decode('utf-8'))
-    outfp.write("\n".decode('utf-8'))
+    outfp = io.open(filename, "w")
+    outfp.write(headers)
+    outfp.write("\n")
     return outfp
 
 #####
@@ -45,17 +46,16 @@ def writeFieldToCSV(outfp, text):
     # added this to try to fix some special characters weirdness Feb 2021
     # at best this is a patch on issues somewhere else with string formatting though :-/
 #    text = convertFromAO3(text, False)
-    outfp.write(text.decode('utf-8'))
-    outfp.write(",".decode('utf-8'))
+    outfp.write(text)
+    outfp.write(",")
 
 def writeEndlineToCSV(outfp):
-    outfp.write("\n".decode('utf-8'))
+    outfp.write("\n")
 
 #####
 def setupUrllib():
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    reload(sys)
-    sys.setdefaultencoding('utf8')
+    importlib.reload(sys)
     user_agent = {'user-agent': 'bot'}
     return urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where(), headers=user_agent)
 
@@ -64,14 +64,14 @@ def getSoupFromURL(url):
     http = setupUrllib()
     r = {}
     try:
-        print "Pausing so as not to DOS AO3..."
+        print("Pausing so as not to DOS AO3...")
         time.sleep(PAUSE_INTERVAL) 
         r = http.request('GET', url)
         soup = BeautifulSoup(r.data, features="html.parser")
         soup.prettify()
         return soup
     except: #urllib.error.HTTPError as e:
-        print "failure to fetch URL: ", url
+        print("failure to fetch URL: ", url)
         return -1
 
 
@@ -98,7 +98,7 @@ def getAO3TagStructureURL(tag):
 ####
 def getAO3TagWordCountURL(tag, minWC, maxWC):
     formattedTag = convertToAO3(tag, "tag", False)
-    url = "https://archiveofourown.org/works?utf8=%E2%9C%93&work_search%5Bsort_column%5D=revised_at&work_search%5Bother_tag_names%5D=&work_search%5Bexcluded_tag_names%5D=&work_search%5Bcrossover%5D=&work_search%5Bcomplete%5D=&work_search%5Bwords_from%5D="+minWC+"&work_search%5Bwords_to%5D="+maxWC+"&work_search%5Bdate_from%5D=&work_search%5Bdate_to%5D=&work_search%5Bquery%5D=&work_search%5Blanguage_id%5D=&commit=Sort+and+Filter&tag_id=" + formattedTag[0]
+    url = "https://archiveofourown.org/works?work_search%5Bsort_column%5D=revised_at&work_search%5Bother_tag_names%5D=&work_search%5Bexcluded_tag_names%5D=&work_search%5Bcrossover%5D=&work_search%5Bcomplete%5D=&work_search%5Bwords_from%5D="+minWC+"&work_search%5Bwords_to%5D="+maxWC+"&work_search%5Bdate_from%5D=&work_search%5Bdate_to%5D=&work_search%5Bquery%5D=&work_search%5Blanguage_id%5D=&commit=Sort+and+Filter&tag_id=" + formattedTag[0]
     return url
 
 ##### getAO3TagURL and getAO3TagTimeframeURL
@@ -110,7 +110,7 @@ def getAO3TagWordCountURL(tag, minWC, maxWC):
 # dates must be strings in format YYYY-MM-DD.
 
 def getAO3TagTimeframeURL(tag, includeTags, excludeTags, startDate, endDate):
-    url = "https://archiveofourown.org/works?utf8=%E2%9C%93&commit=Sort+and+Filter&work_search%5Bsort_column%5D=revised_at&work_search%5Bother_tag_names%5D="
+    url = "https://archiveofourown.org/works?work_search%5Bsort_column%5D=revised_at&work_search%5Bother_tag_names%5D="
     url = addListOfTags(url, includeTags)
     url += "&work_search%5Bexcluded_tag_names%5D="
     url = addListOfTags(url, excludeTags)
@@ -119,7 +119,7 @@ def getAO3TagTimeframeURL(tag, includeTags, excludeTags, startDate, endDate):
     url = url + startDate
     url = url + "&work_search%5Bdate_to%5D="
     url = url + endDate
-    url = url + "&work_search%5Bquery%5D=&work_search%5Blanguage_id%5D=&tag_id=" + ao3tag[0]
+    url = url + "&work_search%5Bquery%5D=&work_search%5Blanguage_id%5D=&commit=Sort+and+Filter&tag_id=" + ao3tag[0]
     return url
     
 ######
@@ -141,7 +141,7 @@ def getAO3SearchTimeframeURL(tag, includeTags, excludeTags,startDate,endDate):
 # whether to limit to single work chapters. Returns an unstructured
 # Search format (no sort and filter)
 
-def getAO3LanguageTimeframeURL(langCode, timeframeString, singleChapterOnly):
+def getAO3LanguageTimeframeURL(langCode, timeframeString, singleChapterOnly): #update this to remove the utf8
     url = "https://archiveofourown.org/works/search?utf8=%E2%9C%93&commit=Search&work_search%5Bquery%5D=&work_search%5Btitle%5D=&work_search%5Bcreators%5D=&work_search%5Brevised_at%5D="
     timeframeString, tmp = convertToAO3(timeframeString, "unsorted", False) 
     url += timeframeString
@@ -166,16 +166,16 @@ def unionOfLists(list1, list2):
     return list(set().union(list1,list2))
 
 def getBiggestKeyByValue(mydict):
-    return max(mydict.items(), key=operator.itemgetter(1))[0]
+    return max(list(mydict.items()), key=operator.itemgetter(1))[0]
 
 def getSmallestKeyByValue(mydict):
-    return min(mydict.items(), key=operator.itemgetter(1))[0]
+    return min(list(mydict.items()), key=operator.itemgetter(1))[0]
 
 ####
 def writeDictToCSV(mydict, filename):
     with open(filename, 'w') as csv_file:
         writer = csv.writer(csv_file)
-        for key, value in sorted(mydict.items(), key=operator.itemgetter(1), reverse=True):
+        for key, value in sorted(list(mydict.items()), key=operator.itemgetter(1), reverse=True):
 #            key=key.encode('utf-8')
             writer.writerow([key, value])
 
@@ -194,9 +194,9 @@ def getNumWorksFromSoup(soup, isSortAndFilterURL):
 #        print "************ try1"
 
         if isSorted:
-            tag = soup.find_all(text=re.compile("[0-9]+ Work(s)*( found)* in "))
+            tag = soup.find_all(text=re.compile("[0-9,]+ Work(s)*( found)* in "))
         else:
-            tag = soup.find_all(text=re.compile("[0-9]+ Found"))
+            tag = soup.find_all(text=re.compile("[0-9,]+ Found"))
     except AttributeError:
 #        print "************ except1"
         return errorNum
@@ -207,17 +207,17 @@ def getNumWorksFromSoup(soup, isSortAndFilterURL):
     except:
 #        print "************ except2"
         line = ''
-        print "No num works found"
+        print("No num works found")
         return errorNum
 
 #    print "************ nums"
-    nums = re.findall('([0-9]+)', line)
+    nums = re.findall('[0-9,]+', line) # 
     if len(nums) == 0:
         return errorNum
     elif len(nums) == 1:
-        numWorks = int(nums[0])
+        numWorks = (nums[0])
     else:
-        numWorks = int(nums[2])
+        numWorks = (nums[2])
 
     return numWorks
 
