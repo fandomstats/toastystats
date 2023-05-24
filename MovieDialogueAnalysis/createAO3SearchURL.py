@@ -1,4 +1,4 @@
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import convert
 
 convertToAO3 = convert.convertToAO3
@@ -11,9 +11,9 @@ def FandomSearchURL(fandom, verbose):
     urlsuffix = "&work_search%5Brating_ids%5D=&work_search%5Bcharacter_names%5D=&work_search%5Brelationship_names%5D=&work_search%5Bfreeform_names%5D=&work_search%5Bhits%5D=&work_search%5Bkudos_count%5D=&work_search%5Bcomments_count%5D=&work_search%5Bbookmarks_count%5D=&work_search%5Bsort_column%5D=&work_search%5Bsort_direction%5D=&commit=Search"
     fandom = convertToAO3(fandom, 'unsorted', verbose)
     fandom = fandom[0]
-    searchURL = unicode(urlprefix + fandom + urlsuffix)
+    searchURL = str(urlprefix + fandom + urlsuffix)
     if verbose:
-        print searchURL
+        print(searchURL)
 
     return searchURL
 
@@ -23,8 +23,8 @@ def CombinedSearchURL(fandom, characterID, verbose):
 
     fandom = convertToAO3(fandom, 'tag', verbose)
     fandom = fandom[0]
-    searchURL = unicode(urlprefix + str(characterID) + urlmidfix + fandom)
+    searchURL = str(urlprefix + str(characterID) + urlmidfix + fandom)
     if verbose:
-        print searchURL
+        print(searchURL)
 
     return searchURL

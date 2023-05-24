@@ -24,7 +24,7 @@ fandomsByCategory = {}
 topFandoms = {}
 
 for category in mediaCategories:
-    print "Fetching " + category
+    print("Fetching " + category)
 
     # SET UP THE DICTIONARY FOR THIS CATEGORY
     fandomsByCategory[category] = {}
@@ -67,7 +67,7 @@ for category in sorted(mediaCategories):
 #    print "TOP FANDOMS: %s" % category
     catFandoms = fandomsByCategory[category]
     i = 1
-    for key, value in sorted(catFandoms.iteritems(), key=lambda(k,v): (v,k), reverse=True):
+    for key, value in sorted(iter(catFandoms.items()), key=lambda k_v: (k_v[1],k_v[0]), reverse=True):
 #        key = convertFromAO3(key, False)
         f.write("%s, %s, %s\n" % (category, key, value))
         if i >= numFandoms:

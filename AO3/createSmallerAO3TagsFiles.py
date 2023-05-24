@@ -41,7 +41,7 @@ bigshipfp.write(header + "\n")
 for tag in tagData:
     if tag["canonical"]:
         ttype = tag["type"]
-        if ttype in outfiles.keys():
+        if ttype in list(outfiles.keys()):
             fp = outfiles[ttype]
             writeTagToFile(tag, fp)
         else:

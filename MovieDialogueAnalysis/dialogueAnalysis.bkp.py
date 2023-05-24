@@ -17,7 +17,7 @@ class Character:
     def __init__(self, name, movieID):
         self.name = name
         # Character contains a pointer to a Movie
-        if movieDict.has_key(movieID):
+        if movieID in movieDict:
             self.movie = movieDict[movieID]
         else:
             self.movie = Movie(movieID)
@@ -60,14 +60,14 @@ try:
     charmap = csv.DictReader(cmfp)
     metadata = csv.DictReader(mefp)
 except ValueError:
-    print "File read failed!"
+    print("File read failed!")
 
 
 # 'transpose' metadata so it's rows indexed by scriptID
 for row in metadata:
     scriptID = row['script_id']
     movie = None
-    if movieDict.has_key(scriptID):
+    if scriptID in movieDict:
         movie = movieDict[scriptID]
     else:
         movie = Movie(scriptID)
@@ -80,9 +80,9 @@ for row in metadata:
         movie.gross = None
 #    movie.linesdata = row['lines_data']
     if verbose:
-        print movie.title
-        print movie.year
-        print movie.gross
+        print(movie.title)
+        print(movie.year)
+        print(movie.gross)
 
 
 # read in the character's stats, and find the matching full name & movie title
@@ -98,10 +98,10 @@ for charStats in charlist:
         c.age = None
     characters.append(c)
     if verbose:
-        print "Character:", c.name
-        print "Movie:", c.movie.title
-        print "Age (actor):", c.age
-        print "Gender:", c.gender
-        print "Words:", c.words
-        print "num characters: ", len(characters)
+        print("Character:", c.name)
+        print("Movie:", c.movie.title)
+        print("Age (actor):", c.age)
+        print("Gender:", c.gender)
+        print("Words:", c.words)
+        print("num characters: ", len(characters))
 

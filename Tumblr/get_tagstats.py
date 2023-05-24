@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 import pytumblr, sys, re, operator, datetime 
-reload(sys)
+import importlib
+importlib.reload(sys)
 sys.setdefaultencoding("utf-8")
 
 ### SUBROUTINES
@@ -25,7 +26,7 @@ def printall(typecount, tagcount, datecount, hourcount, threshold, outfile):
     f = open(outfile, 'w')
 
     f.write("******* TYPES:\n")
-    sorttype = sorted(typecount.iteritems(), key=operator.itemgetter(1), reverse=True)
+    sorttype = sorted(iter(typecount.items()), key=operator.itemgetter(1), reverse=True)
     for st in sorttype:
          printpair(st[0], st[1], f)
 
@@ -39,7 +40,7 @@ def printall(typecount, tagcount, datecount, hourcount, threshold, outfile):
          printpair(str(hour), hourcount[hour], f)
 
     f.write("\n\n******* TAGS:\n")
-    sorttag = sorted(tagcount.iteritems(), key=operator.itemgetter(1), reverse=True)
+    sorttag = sorted(iter(tagcount.items()), key=operator.itemgetter(1), reverse=True)
     for st in sorttag:
         if st[1] >= threshold:
                 printpair(st[0], st[1], f)
@@ -51,7 +52,7 @@ def trytoprint(r, name, f):
     try: 
         f.write(str(r[name]))
     except:
-        print "couldn't write ", name
+        print("couldn't write ", name)
 #        print r
     f.write(", ")
 
@@ -62,7 +63,7 @@ def printpost(postdata, outfile):
     try:
         f = open(outfile, 'a')
     except:
-        print "couldn't open outfile"
+        print("couldn't open outfile")
         return None
 #    print 'trying to print post to outfile'
 
@@ -123,7 +124,7 @@ datecount = {}
 hourcount = {}
 
 for i in range(0, numposts/20):
-    print "posts fetched: " + str(20 * i - 20)
+    print("posts fetched: " + str(20 * i - 20))
 #    sys.stderr.write(str(i))
     sys.stderr.write("\n")
     localtimestamps = []
@@ -141,14 +142,14 @@ for i in range(0, numposts/20):
                 dt = datetime.datetime.fromtimestamp(ts)
                 hour = dt.hour
                 if debug:
-                    print d, "\n"
+                    print(d, "\n")
 #                    if ts == 1320565860:
 #                        print r
                 
                 addtocount(d, datecount)
                 addtocount(hour, hourcount)
             except:
-                print 'failed to handle timestamp/date/hour count'
+                print('failed to handle timestamp/date/hour count')
 
             #if debug:
              #   print timestamps , "\n"
@@ -158,7 +159,7 @@ for i in range(0, numposts/20):
                 ty = r['type']
                 addtocount(ty, typecount)
             except:
-                print 'failed to handle type count'
+                print('failed to handle type count')
 
             try:
                 tags = r['tags']
@@ -168,13 +169,13 @@ for i in range(0, numposts/20):
 #                    tag = re.sub(' ', '', tag)
                     addtocount(tag, tagcount)
             except:
-                print 'failed to handle tag count'
+                print('failed to handle tag count')
 
             # if postfile then print post
             if postfile: 
                 printpost(r, postfile)
     except:
-        print "bad result: ", num
+        print("bad result: ", num)
         break
 
     # find the earliest timestamp -- but for some reason sometimes
@@ -210,8 +211,8 @@ for i in range(0, numposts/20):
     # no longer the case (remove the gap)
     while ((maxdiff > THRESHOLD * avgdiff) and (lmaxdiff > THRESHOLD * lavgdiff)):
         if debug:
-            print "maxdiff: ", maxdiff, ", avgdiff: ", avgdiff
-            print "lmaxdiff: ", lmaxdiff, ", lavgdiff: ", lavgdiff
+            print("maxdiff: ", maxdiff, ", avgdiff: ", avgdiff)
+            print("lmaxdiff: ", lmaxdiff, ", lavgdiff: ", lavgdiff)
 
         ts1 = timestamps[:-1]
         ts2 = timestamps[1:]
@@ -219,11 +220,11 @@ for i in range(0, numposts/20):
         lts2 = localtimestamps[1:]
 
 
-        tsdiff = map(operator.sub, ts2, ts1)
+        tsdiff = list(map(operator.sub, ts2, ts1))
         sorteddiff = sorted(tsdiff)
         maxdiff = max(tsdiff)
 
-        ltsdiff = map(operator.sub, lts2, lts1)
+        ltsdiff = list(map(operator.sub, lts2, lts1))
         lsorteddiff = sorted(ltsdiff)
         lmaxdiff = max(ltsdiff)
 
@@ -256,16 +257,16 @@ for i in range(0, numposts/20):
         #again
         if (lmaxdiff > THRESHOLD * lavgdiff) and (maxdiff > THRESHOLD * avgdiff) :
             if debug:
-                print "OUTLIER DETECTED!  timestamps has just had an element popped \n"
-                print datetime.date.fromtimestamp(timestamps[0]), "\n"
-                print "maxdiff v avgdiff: ", maxdiff, ", ", avgdiff, "\n" 
-                print "lmaxdiff v lavgdiff: ", lmaxdiff, ", ", lavgdiff, "\n" 
-                print "BEFORE: ", localtimestamps, "\n"
+                print("OUTLIER DETECTED!  timestamps has just had an element popped \n")
+                print(datetime.date.fromtimestamp(timestamps[0]), "\n")
+                print("maxdiff v avgdiff: ", maxdiff, ", ", avgdiff, "\n") 
+                print("lmaxdiff v lavgdiff: ", lmaxdiff, ", ", lavgdiff, "\n") 
+                print("BEFORE: ", localtimestamps, "\n")
 #                print "BEFORE: ", timestamps, "\n"
             timestamps = timestamps[1:]
             localtimestamps = localtimestamps[1:]
             if debug:
-                print "AFTER: ", localtimestamps, "\n"
+                print("AFTER: ", localtimestamps, "\n")
 #                print "AFTER: ", timestamps, "\n"
 
     earliest = timestamps[0]

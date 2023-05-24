@@ -21,7 +21,7 @@ fandomsByCategory = {}
 topFandoms = {}
 
 for category in mediaCategories:
-    print "Fetching " + category
+    print("Fetching " + category)
 
     # SET UP THE DICTIONARY FOR THIS CATEGORY
     fandomsByCategory[category] = {}
@@ -60,24 +60,24 @@ for category in mediaCategories:
 
 # DISPLAY THE TOP FANDOMS PER CATEGORY
 for category in sorted(mediaCategories):
-    print "TOP FANDOMS: %s" % category
+    print("TOP FANDOMS: %s" % category)
     catFandoms = fandomsByCategory[category]
     i = 1
-    for key, value in sorted(catFandoms.iteritems(), key=lambda(k,v): (v,k), reverse=True):
-         print "%d, %s, %s" % (i, key, value)
+    for key, value in sorted(iter(catFandoms.items()), key=lambda k_v: (k_v[1],k_v[0]), reverse=True):
+         print("%d, %s, %s" % (i, key, value))
          # PUT IT IN THE TOP FANDOM DICTIONARY
          topFandoms[key] = value
          if i >= numFandoms:
              break
          i = i+1
 
-    print " "
+    print(" ")
 
 # DISPLAY THE TOP FANDOMS OVERALL
 i = 1
-print "TOP FANDOMS OVERALL"
-for key, value in sorted(topFandoms.iteritems(), key=lambda(k,v): (v,k), reverse=True):
-    print "%d, %s, %s" % (i, key, value)
+print("TOP FANDOMS OVERALL")
+for key, value in sorted(iter(topFandoms.items()), key=lambda k_v1: (k_v1[1],k_v1[0]), reverse=True):
+    print("%d, %s, %s" % (i, key, value))
     if i >= numFandoms:
         break
     i = i+1

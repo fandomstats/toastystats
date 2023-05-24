@@ -30,7 +30,7 @@ for si in showinfo:
             if not re.search(r'Related Fandoms', fandom, re.I):
                 numworks = int(matchObj.group(2))
                 if numworks >= threshold:
-                    print fandom + ", " + str(numworks)
+                    print(fandom + ", " + str(numworks))
 #        print matchObj.group(1)
 #        print matchObj.group(2)
 

@@ -21,7 +21,7 @@ if len(sys.argv) > 2:
 urlfile = sys.argv[1]
 
 if verbose:
-    print "reading file: ", urlfile
+    print("reading file: ", urlfile)
 
 try:
     with open(urlfile) as f:
@@ -30,20 +30,20 @@ except:
     sys.exit("could not read URL file")
 
 if verbose:
-    print "Number of lines: ", len(urls)
+    print("Number of lines: ", len(urls))
 
 fandomNames = []
 for u in urls:
     if verbose:
-        print "******\n"
+        print("******\n")
 
     u = u.rstrip('\n')
 
     if verbose:
-        print "fetching page: ", u
+        print("fetching page: ", u)
 
     if verbose:
-        print "Pausing so as not to DOS AO3..."
+        print("Pausing so as not to DOS AO3...")
     
     soup = getSoupFromURL(u)
 
@@ -53,5 +53,5 @@ for u in urls:
 
     #just grab the text part
     for link in tmpList:
-        print link.text.encode('utf-8')
+        print(link.text.encode('utf-8'))
 

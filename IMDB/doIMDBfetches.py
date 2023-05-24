@@ -31,12 +31,12 @@ for show in fi:
     showdata = IMDBdata(show)
 
     if verbose:
-        print "Show: ", showdata.showname
+        print("Show: ", showdata.showname)
 
     IMDBdata.createURL(startdate, enddate)
     
     if verbose:
-        print "URL: ", showdata.showSearchURL
+        print("URL: ", showdata.showSearchURL)
 
 #fo = open(csvfile, "w")
 

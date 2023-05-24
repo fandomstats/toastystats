@@ -26,7 +26,7 @@ fo.write("tag,num works,num works with "+minWC+"-"+maxWC+" words\n")
 for t in tags:
     fo.write(t.encode('utf-8') + ",")
     if verbose:
-        print t
+        print(t)
         
     includeTags = []
     excludeTags = []
@@ -42,7 +42,7 @@ for t in tags:
     for u in urls:
         numWorks = getNumWorksFromURL(u, True)
         if verbose:
-            print numWorks
+            print(numWorks)
         fo.write(str(numWorks).encode('utf-8') + ",")
     
     fo.write("\n")

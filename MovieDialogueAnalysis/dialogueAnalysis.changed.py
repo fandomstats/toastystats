@@ -34,7 +34,7 @@ class Character:
     def __init__(self, name, movieID):
         self.name = name
         # Character contains a pointer to a Movie
-        if movieDict.has_key(movieID):
+        if movieID in movieDict:
             self.movie = movieDict[movieID]
         else:
             self.movie = Movie(movieID)
@@ -98,17 +98,17 @@ try:
     charmap = csv.DictReader(cmfp)
     metadata = csv.DictReader(mefp)
 except ValueError:
-    print "File read failed!"
+    print("File read failed!")
 
 
 # read in movie metadata into movieDict
 if verbose:
-    print "reading in movie data..."
+    print("reading in movie data...")
 
 for row in metadata:
     scriptID = row['script_id']
     movie = None
-    if movieDict.has_key(scriptID):
+    if scriptID in movieDict:
         movie = movieDict[scriptID]
     else:
         movie = Movie(scriptID)
@@ -126,7 +126,7 @@ for row in metadata:
 #        print movie.gross
 
 if verbose:
-    print "reading in character data..."
+    print("reading in character data...")
 
 # read in the character stats, and link to the matching movies
 for charStats in charlist:
@@ -153,13 +153,13 @@ for c in characters:
 # and now to find the AO3 data and print to CSV...
 
 for c in characters:
-    print "**********************************"
-    print "Fetching AO3 data for", c.name, "(", c.movie.title, ")"
+    print("**********************************")
+    print("Fetching AO3 data for", c.name, "(", c.movie.title, ")")
 
     # first make sure that searching for the movie title on AO3
     # returns some fanworks
     numResults = 0
-    if moviesWithFewAO3Results.has_key(c.movie.title):
+    if c.movie.title in moviesWithFewAO3Results:
         numResults = moviesWithFewAO3Results[c.movie.title]
     else:
         movieData = AO3search.AO3data()
@@ -169,7 +169,7 @@ for c in characters:
         numResults = movieData.getNumWorks(False)
 
     if verbose:
-        print "Num works returned for movie:", numResults
+        print("Num works returned for movie:", numResults)
 
     if numResults < MIN_AO3_MOVIE_RESULTS:
         moviesWithFewAO3Results[c.movie.title] = numResults
@@ -183,13 +183,13 @@ for c in characters:
 
         url = TagURL(c.name, 'works', verbose)
         if verbose:
-            print "Character:", c.name
-            print "Movie:", c.movie.title
-            print "Age (actor):", c.age
-            print "Gender:", c.gender
-            print "Words:", c.words
-            print "Fraction of dialogue:", c.fractionOfDialogue
-            print "URL:", url
+            print("Character:", c.name)
+            print("Movie:", c.movie.title)
+            print("Age (actor):", c.age)
+            print("Gender:", c.gender)
+            print("Words:", c.words)
+            print("Fraction of dialogue:", c.fractionOfDialogue)
+            print("URL:", url)
             ao3data = AO3search.AO3data()
             ao3data.searchURL = url
             try:
@@ -198,11 +198,11 @@ for c in characters:
 #                if verbose:
 #                    print fandoms
             except:
-                print "AO3 fetch failed"
+                print("AO3 fetch failed")
 
         # now try to find the right fandom amongst this character's top10 fandoms
         canonTitle = c.movie.title 
-        print "Canonical title:", canonTitle
+        print("Canonical title:", canonTitle)
         closestMatch = ''
         biggestRatio = 0
         numworks = 0
@@ -215,7 +215,7 @@ for c in characters:
             levSim = levSim / float(max(len(str(canonTitle)), len(str(f.encode('utf-8')))))
             if verbose:
                 #            print levSim
-                print substringSim, f
+                print(substringSim, f)
 #                print longestSubstring
                 sim = substringSim
                 if sim > biggestRatio:
@@ -226,7 +226,7 @@ for c in characters:
         c.titleSimilarity = biggestRatio
         c.numWorks = numworks
         if verbose:
-            print "closest Fandom:", c.closestFandom, ",", c.numWorks 
+            print("closest Fandom:", c.closestFandom, ",", c.numWorks) 
 
     # if we found an acceptable fandom match, find total words in fandom
         if c.titleSimilarity > 0:
@@ -237,16 +237,16 @@ for c in characters:
                 fandomData.getNumWorks(True)
                 fandomData.numworks = max(fandomData.numworks, 0)
                 if verbose:
-                    print "Num fandom works:", fandomData.numworks
-                    print url
+                    print("Num fandom works:", fandomData.numworks)
+                    print(url)
             except:
-                print "AO3 numworks fetch failed", url
+                print("AO3 numworks fetch failed", url)
 
             c.fandomNumWorks = fandomData.numworks
             if(c.fandomNumWorks > 0):
                 c.fractionOfFanworks = float(c.numWorks) / float(c.fandomNumWorks)
                 if verbose:
-                    print "Fraction of works:", c.fractionOfFanworks
+                    print("Fraction of works:", c.fractionOfFanworks)
 
 # print output row
     newrow = [c.name, c.movie.title, str(c.fractionOfDialogue), str(c.fractionOfFanworks), str(c.age), c.gender, str(c.movie.year), str(c.movie.scriptID), c.movie.imdbID, str(c.movie.totalWords), str(c.movie.gross), str(c.numWorks), c.closestFandom, str(c.titleSimilarity)]

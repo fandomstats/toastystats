@@ -26,19 +26,19 @@ class AO3data:
 
     # METHOD: printAll
     def printAll(self):
-        print self.searchParams, ", ", self.numworks
-        print self.categories
+        print(self.searchParams, ", ", self.numworks)
+        print(self.categories)
 
     # METHOD: printCSV
     def printCSV(self, fo):
-        for k in self.searchParams.keys():
+        for k in list(self.searchParams.keys()):
             string = self.searchParams[k] + ", "
             fo.write(string.encode('utf8'))
         try:
             fo.write(str(self.numworks))
         except:
             pdb.set_trace()
-            print "COULDN'T WRITE TO FILE: ", self.numworks
+            print("COULDN'T WRITE TO FILE: ", self.numworks)
         fo.write(", ")
 
         sortedcats = sorted(self.categories.keys())
@@ -63,7 +63,7 @@ class AO3data:
     # METHOD: printShortCSV
         # just the NumWorks
     def printShortCSV(self, fo):
-        for k in self.searchParams.keys():
+        for k in list(self.searchParams.keys()):
             string = self.searchParams[k] + ", "
             fo.write(string.encode('utf8'))
         try:
@@ -71,13 +71,13 @@ class AO3data:
             fo.write("\n")
         except:
             pdb.set_trace()
-            print "COULDN'T WRITE TO FILE: ", self.numworks
+            print("COULDN'T WRITE TO FILE: ", self.numworks)
 
 
 
     # METHOD: printShortCSVHeaders
     def printShortCSVHeaders(self, fo):
-        for k in self.searchParams.keys():
+        for k in list(self.searchParams.keys()):
             string = k + ", "
             fo.write(string.encode('utf8'))
         fo.write("Num Works,")
@@ -87,7 +87,7 @@ class AO3data:
 
     # METHOD: printCSVHeaders
     def printCSVHeaders(self, fo):
-        for k in self.searchParams.keys():
+        for k in list(self.searchParams.keys()):
             string = k + ", "
             fo.write(string.encode('utf8'))
         fo.write("Num Works,")
@@ -132,13 +132,13 @@ class AO3data:
 #            print "******** fetching soup"
             soup = self.fetchHTML()
         except:
-            print "******** didn't fetch soup"
+            print("******** didn't fetch soup")
             return
 
         #        print "************ fetching num works"
         self.numworks = getNumWorksFromSoup(soup, isSorted)
         if DEBUG:
-            print self.numworks
+            print(self.numworks)
             
         if isSorted:
 #            print "*****************"
@@ -181,7 +181,7 @@ class AO3data:
     # METHOD: getTopInfo -- scrape the top 10 ratings, etc from sidebar
     def getTopInfo(self):
 
-        for k in self.categories.keys():
+        for k in list(self.categories.keys()):
             self.categories[k]["top"] = {}
 
         if self.searchURL == '':
@@ -190,7 +190,7 @@ class AO3data:
         soup = self.fetchHTML()
 #        print soup
 
-        for k in self.categories.keys():
+        for k in list(self.categories.keys()):
             idstring = "include_" + k + "_tags"
 #            print "*******"
 #            print idstring
@@ -198,7 +198,7 @@ class AO3data:
                 topList = soup.findAll("dd", {"id" : idstring})
 #                print(topList)
             except AttributeError:
-                print "ERROR: empty HTML data: ", self.searchURL
+                print("ERROR: empty HTML data: ", self.searchURL)
                 self.numworks = -2
                 return
 
@@ -207,7 +207,7 @@ class AO3data:
 #                print "@@@@@@@"
 #                print top
             except:
-                print "ERROR! Failed to fetch top " + k + "s"
+                print("ERROR! Failed to fetch top " + k + "s")
                 return
 
             try:
@@ -220,7 +220,7 @@ class AO3data:
                     m = tmp.match(L.text.strip())
                     self.categories[k]["top"][m.group(1)] = int(m.group(2))
             except:
-                print "ERROR! label issue " + k
+                print("ERROR! label issue " + k)
                 return
 
 
@@ -260,11 +260,11 @@ class AO3data:
             #print "no warning in searchParams ", self.searchParams
 
         # fetch the tag(s)
-        t = unicode('&tag_id=')
+        t = str('&tag_id=')
         try:
             tag = self.searchParams['tag']
             tmp = convert.convertToAO3(tag, 'tag', False)
-            t += unicode(tmp[0])
+            t += str(tmp[0])
         except:
             dummy = ''
             #print "no tag in searchParams ", self.searchParams
@@ -285,7 +285,7 @@ class AO3data:
         urlpredate = '&work_search%5Brevised_at%5D='
         urlpretag = '&work_search%5Blanguage_id%5D=&work_search%5Bcomplete%5D=0'
 
-        tmp = unicode(urlprefix + c + w + urlpredate + d + urlprequery + swr + urlpretag + t)
+        tmp = str(urlprefix + c + w + urlpredate + d + urlprequery + swr + urlpretag + t)
         self.searchURL = tmp.encode('utf-8')
 
 
@@ -330,16 +330,16 @@ class AO3data:
         except:
             dummy = ''
 
-        print d
-        print fan
-        print free
+        print(d)
+        print(fan)
+        print(free)
         # assemble the URL
         urlpredate = 'http://archiveofourown.org/works/search?utf8=%E2%9C%93&work_search%5Bquery%5D=&work_search%5Btitle%5D=&work_search%5Bcreator%5D=&work_search%5Brevised_at%5D='
         urlprefandom = '&work_search%5Bcomplete%5D=0&work_search%5Bsingle_chapter%5D=0&work_search%5Bword_count%5D=&work_search%5Blanguage_id%5D=&work_search%5Bfandom_names%5D='
         urlprefreeform = '&work_search%5Brating_ids%5D=&work_search%5Bcharacter_names%5D=&work_search%5Brelationship_names%5D=&work_search%5Bfreeform_names%5D='
         urlsuffix = '&work_search%5Bhits%5D=&work_search%5Bkudos_count%5D=&work_search%5Bcomments_count%5D=&work_search%5Bbookmarks_count%5D=&work_search%5Bsort_column%5D=&work_search%5Bsort_direction%5D=&commit=Search'
 
-        tmp = unicode(urlpredate + d + urlprefandom + fan + urlprefreeform + free + urlsuffix)
+        tmp = str(urlpredate + d + urlprefandom + fan + urlprefreeform + free + urlsuffix)
         self.searchURL = tmp.encode('utf-8')
 
 

@@ -39,7 +39,7 @@ class IMDBdata:
 #METHOD: createURL
     def createURL(startyear, endyear):
         if self.showname == '':
-            print "ERROR: no show name"
+            print("ERROR: no show name")
         else:
             tmpname = re.sub('\s', '%20', self.showname)
             showSearchURL = "http://www.imdb.com/search/title?release_date=" + startyear + "," + endyear + "&title=" + tmpname + "&title_type=tv_series"

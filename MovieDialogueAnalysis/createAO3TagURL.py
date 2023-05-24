@@ -1,4 +1,4 @@
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import convert
 
 convertToAO3 = convert.convertToAO3

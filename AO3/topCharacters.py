@@ -22,7 +22,7 @@ numArgs = 5
 args = getArguments(sys.argv, numArgs, 'Usage: topCharacters [primary tag] [include tags file] [exclude tags file] [recursion depth [chars out] (e.g.: topCharacters "F/F" "include.tags" "exclude.tags" 10 "characters.csv"")\n')
 
 if DEBUG:
-    print args
+    print(args)
 
 tag, includefile, excludefile, recursionDepth, charOut = args[0:numArgs]
 recursionDepth = int(recursionDepth)
@@ -39,16 +39,16 @@ topCharacters = {}
 includeTags = [line.rstrip('\n') for line in open(includefile)]
 excludeTags = [line.rstrip('\n') for line in open(excludefile)]
 if DEBUG:
-    print includeTags
-    print excludeTags
+    print(includeTags)
+    print(excludeTags)
 
 http = setupUrllib()
 
 for i in range(recursionDepth):
     url = getSearchURL(tag, includeTags, excludeTags)
-    print i
+    print(i)
     if DEBUG:
-        print url
+        print(url)
 
     # create an AO3 search object for the tag
     tagData = AO3search.AO3data()
@@ -58,7 +58,7 @@ for i in range(recursionDepth):
     tagData.getTopInfo()
     chars = tagData.categories["character"]["top"]
     if DEBUG:
-        print chars
+        print(chars)
 
     # merge the dictionaries into topFandoms and topShips
 #    topFandoms = mergeDictionaries(topFandoms, fandoms)
@@ -67,10 +67,10 @@ for i in range(recursionDepth):
 
     # exclude the top ships (but not the fandoms, because there may be
     # other ships that match the search criteria in the same fandom)
-    excludeTags = list(set().union(chars.keys(), excludeTags))
+    excludeTags = list(set().union(list(chars.keys()), excludeTags))
 
     if DEBUG:
-        print topCharacters
-        print excludeTags
+        print(topCharacters)
+        print(excludeTags)
     
     writeDictToCSV(topCharacters, charOut)

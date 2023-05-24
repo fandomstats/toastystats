@@ -7,9 +7,10 @@ import createAO3TagURL
 import createAO3SearchURL
 import Levenshtein
 import string
+import importlib
 
 # try to fix the damn issues with non-ASCII characters
-reload(sys)  
+importlib.reload(sys)  
 sys.setdefaultencoding('utf8')
 
 NUMARGS = 5
@@ -43,7 +44,7 @@ class Character:
     def __init__(self, name, movieID):
         self.name = name
         # Character contains a pointer to a Movie
-        if movieDict.has_key(movieID):
+        if movieID in movieDict:
             self.movie = movieDict[movieID]
         else:
             self.movie = Movie(movieID)
@@ -107,17 +108,17 @@ try:
     charmap = csv.DictReader(cmfp)
     metadata = csv.DictReader(mefp)
 except ValueError:
-    print "File read failed!"
+    print("File read failed!")
 
 
 # read in movie metadata into movieDict
 if verbose:
-    print "reading in movie data..."
+    print("reading in movie data...")
 
 for row in metadata:
     scriptID = row['script_id']
     movie = None
-    if movieDict.has_key(scriptID):
+    if scriptID in movieDict:
         movie = movieDict[scriptID]
     else:
         movie = Movie(scriptID)
@@ -135,7 +136,7 @@ for row in metadata:
 #        print movie.gross
 
 if verbose:
-    print "reading in character data..."
+    print("reading in character data...")
 
 # read in the character stats, and link to the matching movies
 for charStats in charlist:
@@ -159,39 +160,39 @@ for charStats in charlist:
 for c in characters:
     c.fractionOfDialogue = float(c.words) / float(c.movie.totalWords)
     if verbose:
-        print "Character:", c.name
-        print "Words:", c.words
-        print "Movie total words:", c.movie.totalWords
-        print "Ratio:", c.fractionOfDialogue
+        print("Character:", c.name)
+        print("Words:", c.words)
+        print("Movie total words:", c.movie.totalWords)
+        print("Ratio:", c.fractionOfDialogue)
 
 # and now to find the AO3 data and print to CSV...
 
 for c in characters:
-    print "**********************************"
-    print "Fetching AO3 data for", c.name, "(", c.movie.title, ")"
+    print("**********************************")
+    print("Fetching AO3 data for", c.name, "(", c.movie.title, ")")
 
     if verbose:
-        print "Age (actor):", c.age
-        print "Gender:", c.gender
-        print "Fraction of dialogue:", c.fractionOfDialogue
+        print("Age (actor):", c.age)
+        print("Gender:", c.gender)
+        print("Fraction of dialogue:", c.fractionOfDialogue)
 
 
     # first make sure that searching for the movie title on AO3
     # returns some fanworks
     numResults = 0
-    if moviesWithFewAO3Results.has_key(c.movie.title):
+    if c.movie.title in moviesWithFewAO3Results:
         numResults = moviesWithFewAO3Results[c.movie.title]
     else:
         movieData = AO3search.AO3data()
         bareTitle = c.movie.title.translate(None, string.punctuation)
         # in case of a movie like Alien^3 with encoding errors...
-        bareTitle = unicode(bareTitle, errors='ignore')
+        bareTitle = str(bareTitle, errors='ignore')
 #        movieData.searchURL = FandomSearchURL(bareTitle, verbose)
         movieData.searchURL = FandomSearchURL(bareTitle, False)
         numResults = movieData.getNumWorks(False)
 
     if verbose:
-        print "Num works returned for movie:", numResults
+        print("Num works returned for movie:", numResults)
 
     if numResults < MIN_AO3_MOVIE_RESULTS:
         moviesWithFewAO3Results[c.movie.title] = numResults
@@ -218,17 +219,17 @@ for c in characters:
             fandoms = ao3data.categories['fandom']['top']
             c.AO3characterID = ao3data.tagID
             if verbose:
-                print "tagID:", ao3data.tagID
-                print fandoms
+                print("tagID:", ao3data.tagID)
+                print(fandoms)
         except:
-            print "AO3 TopInfo + tagID fetch failed"
+            print("AO3 TopInfo + tagID fetch failed")
                 
         sys.stdout.flush()
 
         # now try to find the right fandom amongst this character's top10 fandoms
         canonTitle = c.movie.title 
         if verbose:
-            print "Canonical title:", canonTitle
+            print("Canonical title:", canonTitle)
         closestMatch = ''
         biggestRatio = 0
         numworks = 0
@@ -257,7 +258,7 @@ for c in characters:
 #        c.metaNumWorks
 
         if verbose:
-            print "closest Fandom:", c.closestFandom, ",", c.numFandomWorksLiteral 
+            print("closest Fandom:", c.closestFandom, ",", c.numFandomWorksLiteral) 
 
     # if we found an acceptable fandom match, find total words in fandom
         if c.titleSimilarity > 0:
@@ -268,10 +269,10 @@ for c in characters:
                 fandomData.getNumWorks(True)
                 fandomData.numworks = max(fandomData.numworks, 0)
                 if verbose:
-                    print "Num fandom works in closest fandom:", fandomData.numworks
+                    print("Num fandom works in closest fandom:", fandomData.numworks)
  #                   print url
             except:
-                print "AO3 numworks fetch failed", url
+                print("AO3 numworks fetch failed", url)
 
 
             # now do a search for the fandom tag + character tag in case
@@ -289,21 +290,21 @@ for c in characters:
                     tmpData.getNumWorks(True)
                     c.numFandomWorksMeta = tmpData.numworks
                     if verbose:
-                        print "Num combined fandom works (meta):", tmpData.numworks
+                        print("Num combined fandom works (meta):", tmpData.numworks)
                 except:
-                    print "AO3 combined fetch failed", url
+                    print("AO3 combined fetch failed", url)
             else:
                 if verbose:
-                    print "no character ID"
+                    print("no character ID")
 
             c.fandomTotalWorks = fandomData.numworks
             if(c.fandomTotalWorks > 0):
                 c.fractionOfFanworksLiteral = float(c.numFandomWorksLiteral) / float(c.fandomTotalWorks)
                 c.fractionOfFanworksMeta = float(c.numFandomWorksMeta) / float(c.fandomTotalWorks)
                 if verbose:
-                    print "Total fanworks in closest fandom:", c.fandomTotalWorks
-                    print "Fraction of works (literal):", c.fractionOfFanworksLiteral
-                    print "Fraction of works (meta):", c.fractionOfFanworksMeta
+                    print("Total fanworks in closest fandom:", c.fandomTotalWorks)
+                    print("Fraction of works (literal):", c.fractionOfFanworksLiteral)
+                    print("Fraction of works (meta):", c.fractionOfFanworksMeta)
 
 # print output row
     newrow = [c.name, c.movie.title, str(c.fractionOfDialogue), str(c.fractionOfFanworksLiteral), str(c.fractionOfFanworksMeta), str(c.age), c.gender, str(c.movie.year), str(c.movie.scriptID), c.movie.imdbID, str(c.movie.totalWords), str(c.movie.gross), str(c.numFandomWorksLiteral), str(c.numFandomWorksMeta), c.closestFandom, str(c.titleSimilarity)]

@@ -1,7 +1,7 @@
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 def TagURL(tag, type):
-    tag = urllib.quote_plus(tag)
+    tag = urllib.parse.quote_plus(tag)
     if type == 'works':
         url = 'http://archiveofourown.org/tags/' + tag + '/works'
     else:

@@ -87,7 +87,7 @@ def getFFNInfo(soup, f):
     # get assorted metadata
     for tag in soup.findAll("span"):
         if tag.has_attr('class') and 'xcontrast_txt' in tag['class'] and 'xgray' in tag['class']:
-            print tag
+            print(tag)
             for child in tag.descendants:
 #                print "*&(&(*&(*&"
 #                print child
@@ -115,7 +115,7 @@ def getFFNInfo(soup, f):
                                     words = re.findall(r'[0-9,]+', md)
                                     f.words = stripPunct(words)
                             except:
-                                print "genre, chapters, or words error"
+                                print("genre, chapters, or words error")
                     else:
                         # COMMENTS ("reviews")
                         f.comments = child.string
@@ -133,7 +133,7 @@ def getFFNInfo(soup, f):
                                     follows = re.findall(r'[0-9,]+', md)
                                     f.follows = stripPunct(follows)
                             except:
-                                print "favs/follows error"
+                                print("favs/follows error")
                 else:
                     # COMPLETE?
                     if "Status" in child:
@@ -151,37 +151,37 @@ def getFFNInfo(soup, f):
 # SCRAPE ONE FANWORK FN: WATTPAD
 def getWattpadInfo(soup, f):
     for tag in soup.find("div", class_="author-info__username"):
-        print "  ## AUTHOR ##  "
-        print tag.string
+        print("  ## AUTHOR ##  ")
+        print(tag.string)
         f.author = tag.string
 
     for tag in soup.find("span", class_="table-of-contents__last-updated"):
         if tag.string != 'Last updated ':
-            print "  ~~ LastUpdated ~~  "
-            print tag.string
+            print("  ~~ LastUpdated ~~  ")
+            print(tag.string)
             f.lastUpdated = tag.string
 
     for tag in soup.find("div", class_="icon completed"):
-        print "  ~  Complete  ~  "
-        print tag.string
+        print("  ~  Complete  ~  ")
+        print(tag.string)
         f.complete = tag.string
 
     for tag in soup.findAll("pre"):
-        print "  @@ SUMMARY @@  "
-        print stripPunct(tag)
+        print("  @@ SUMMARY @@  ")
+        print(stripPunct(tag))
         f.summary = stripPunct(tag)
     
     tag = soup.find("div", class_="icon mature")
     if tag:
-        print "  ++ Rating ++  "
-        print tag.string
+        print("  ++ Rating ++  ")
+        print(tag.string)
         f.rating = tag.string
 
     for tag in soup.findAll("li", class_="stats-item", limit=3):
-        print "  == Stats: reads, votes, parts ==  "
+        print("  == Stats: reads, votes, parts ==  ")
         label = tag.find("span", class_="stats-label__text").string
         value = tag.find("span", class_="stats-value").string
-        print label + " = " + value
+        print(label + " = " + value)
         if label == "Reads":
             f.hits = value
         if label == "Votes":
@@ -192,21 +192,21 @@ def getWattpadInfo(soup, f):
     # get genres ("keywords")
     for tag in soup.findAll("meta", attrs={"name": "keywords"}):
         if tag.has_attr('name') and tag.has_attr('content'):
-            print "  $$ GENRE $$  "
+            print("  $$ GENRE $$  ")
             content = tag['content']
             content = stripPunct(content)
-            print content
+            print(content)
             f.genre = content
 
     # get freeform tags
     freeforms = []
     for tag in soup.findAll("ul", class_="tag-items"):
         if tag:
-            print "  ### Tags ###  "
+            print("  ### Tags ###  ")
             for t2 in tag.findAll("li"):
                 freeforms.append(t2.string.encode('utf-8').strip())
             if freeforms:
-                print freeforms
+                print(freeforms)
                 f.freeform = ';'.join(freeforms)
 
 def getTag(href):
@@ -216,14 +216,14 @@ def getTag(href):
 def getAO3Info(soup, f):
 
     if DEBUG: 
-        print "Checkpoint 0"
+        print("Checkpoint 0")
 
     for ta in soup.findAll("textarea"):
-        print "---&@&@&@&@&@&@&@&@&@&@&@&@&"
-        print ta
+        print("---&@&@&@&@&@&@&@&@&@&@&@&@&")
+        print(ta)
 
     if DEBUG: 
-        print "Checkpoint 1"
+        print("Checkpoint 1")
 
 #    try:
 #        for tag in soup.findAll("div", recursive=True):
@@ -251,19 +251,19 @@ def getAO3Info(soup, f):
 #        print "Failed to find workskin tag"
 
     if DEBUG: 
-        print "Checkpoint 2"
+        print("Checkpoint 2")
 
 
     try:
         sumTag = soup.find(text="Summary:")
 #    print "@&@&@&@&@&@&@&@&@&@&@&@&@&@&"
         if DEBUG:
-            print "summary tag v2: " + sumTag
+            print("summary tag v2: " + sumTag)
     except:
-        print "failed to find summary"
+        print("failed to find summary")
 
     if DEBUG: 
-        print "Checkpoint 3"
+        print("Checkpoint 3")
 
     for dd in soup.findAll("dd"):
 #        print "###########################"
@@ -275,7 +275,7 @@ def getAO3Info(soup, f):
             c = "no class"
 
         if DEBUG:
-            print "Class:" + c
+            print("Class:" + c)
 
 #        if DEBUG: 
 #            print "Checkpoint 3.1"
@@ -302,7 +302,7 @@ def getAO3Info(soup, f):
                 setattr(f, c, cleanedUp)
             except:
                 if DEBUG:
-                    print "Exception -- trying to set value for: " + c
+                    print("Exception -- trying to set value for: " + c)
 
 #        if DEBUG: 
 #            print "Checkpoint 3.2"
@@ -341,8 +341,8 @@ http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
 # sample the fanwork
 for i in range(0, numworks):
     if DEBUG: 
-        print "~~~~~~~~~~~~~~~~~~~~~~~~~"
-        print "fetching work " + str(i+1)
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print("fetching work " + str(i+1))
     # pause to avoid inadvertant DOS attack
     time.sleep(2)
 
@@ -357,14 +357,14 @@ for i in range(0, numworks):
         r = http.request('GET', workURL, headers={'Accept-Encoding': 'gzip'})
     except:
 #        print r.status
-        print "Bad URL: " + workURL
+        print("Bad URL: " + workURL)
         continue
 
     try:
         soup = BeautifulSoup(r.data, "html.parser")
         soup.prettify()
     except:
-        print "Couldn't prettify"
+        print("Couldn't prettify")
         continue
 
     # get the title (same for all platforms)
@@ -383,7 +383,7 @@ for i in range(0, numworks):
             elif platform == "ffn":
                 getFFNInfo(soup, f)
         except:
-            print "work error"
+            print("work error")
     if DEBUG:
 #        for key in fanworkDict:
 #        print key

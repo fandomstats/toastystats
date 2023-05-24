@@ -34,14 +34,14 @@ for s in searchList:
         tmp = s.searchURL.decode('utf-8')
         s.searchURL = tmp
         if verbose:
-            print "SUCCESS: decode URL"
+            print("SUCCESS: decode URL")
 #            print s.searchURL
     except:
         if verbose:
-            print "FAIL: decode URL"
+            print("FAIL: decode URL")
 
     if verbose:
-        print s.searchURL
+        print(s.searchURL)
     s.getNumWorks(True)
 #    pdb.set_trace()
     s.getTopInfo()
