@@ -4,7 +4,6 @@ import re
 from bs4 import BeautifulSoup
 import urllib3
 import pdb
-import UnicodeToURL
 from toastyTools import getSoupFromURL, getNumWorksFromSoup
 
 DEBUG=0
@@ -33,7 +32,7 @@ class AO3data:
     def printCSV(self, fo):
         for k in list(self.searchParams.keys()):
             string = self.searchParams[k] + ", "
-            fo.write(string.encode('utf8'))
+            fo.write(string)
         try:
             fo.write(str(self.numworks))
         except:
@@ -48,7 +47,7 @@ class AO3data:
             sortedkeys = sorted(currlist, key=currlist.get, reverse=True)
             count = 0
             for k in sortedkeys:
-                fo.write(k.encode("utf-8") + ", ")
+                fo.write(k + ", ")
 #                print k.encode("utf-8") + ", "
                 fo.write(str(currlist[k]) + ", ")
 #                print str(currlist[k]) + ", "
@@ -65,7 +64,7 @@ class AO3data:
     def printShortCSV(self, fo):
         for k in list(self.searchParams.keys()):
             string = self.searchParams[k] + ", "
-            fo.write(string.encode('utf8'))
+            fo.write(string)
         try:
             fo.write(str(self.numworks))
             fo.write("\n")
@@ -79,7 +78,7 @@ class AO3data:
     def printShortCSVHeaders(self, fo):
         for k in list(self.searchParams.keys()):
             string = k + ", "
-            fo.write(string.encode('utf8'))
+            fo.write(string)
         fo.write("Num Works,")
 
         #NEWLINE
@@ -89,7 +88,7 @@ class AO3data:
     def printCSVHeaders(self, fo):
         for k in list(self.searchParams.keys()):
             string = k + ", "
-            fo.write(string.encode('utf8'))
+            fo.write(string)
         fo.write("Num Works,")
 
         # PRINT TOP X names
@@ -286,7 +285,7 @@ class AO3data:
         urlpretag = '&work_search%5Blanguage_id%5D=&work_search%5Bcomplete%5D=0'
 
         tmp = str(urlprefix + c + w + urlpredate + d + urlprequery + swr + urlpretag + t)
-        self.searchURL = tmp.encode('utf-8')
+        self.searchURL = tmp
 
 
     # METHOD: createUnsortedSearchURL
@@ -340,7 +339,7 @@ class AO3data:
         urlsuffix = '&work_search%5Bhits%5D=&work_search%5Bkudos_count%5D=&work_search%5Bcomments_count%5D=&work_search%5Bbookmarks_count%5D=&work_search%5Bsort_column%5D=&work_search%5Bsort_direction%5D=&commit=Search'
 
         tmp = str(urlpredate + d + urlprefandom + fan + urlprefreeform + free + urlsuffix)
-        self.searchURL = tmp.encode('utf-8')
+        self.searchURL = tmp
 
 
 

@@ -37,7 +37,7 @@ class IMDBdata:
             return self.htmlData
             
 #METHOD: createURL
-    def createURL(startyear, endyear):
+    def createURL(self, startyear, endyear):
         if self.showname == '':
             print("ERROR: no show name")
         else:

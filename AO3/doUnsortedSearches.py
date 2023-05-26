@@ -32,8 +32,7 @@ for s in searchList:
     s.createUnsortedSearchURL()
 #    pdb.set_trace()
     try: 
-        tmp = s.searchURL.decode('utf-8')
-        s.searchURL = tmp
+        tmp = s.searchURL
         if verbose:
             print("SUCCESS: decode URL")
     except:

@@ -53,5 +53,5 @@ for u in urls:
 
     #just grab the text part
     for link in tmpList:
-        print(link.text.encode('utf-8'))
+        print(link.text)
 

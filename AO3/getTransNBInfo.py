@@ -24,7 +24,7 @@ fo.write("tag,num works,Trans,Nonbinary Character,Trans between "+startdate+" an
 
 
 for t in tags:
-    fo.write(t.encode('utf-8') + ",")
+    fo.write(t + ",")
     if verbose:
         print(t)
         
@@ -50,7 +50,7 @@ for t in tags:
         numWorks = getNumWorksFromURL(u, True)
         if verbose:
             print(numWorks)
-        fo.write(str(numWorks).encode('utf-8') + ",")
+        fo.write(str(numWorks) + ",")
     
     fo.write("\n")
     
