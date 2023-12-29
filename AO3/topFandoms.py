@@ -21,7 +21,7 @@ fandomsByCategory = {}
 topFandoms = {}
 
 for category in mediaCategories:
-    print "Fetching " + category
+    print("Fetching " + category)
 
     # SET UP THE DICTIONARY FOR THIS CATEGORY
     fandomsByCategory[category] = {}
@@ -41,7 +41,7 @@ for category in mediaCategories:
             # IF IT PASSES A THRESHOLD...
             numworks = int(matchObj.group(2))
             if numworks >= minFandomSize:
-#                print "%s: %d" % (fandom, numworks)
+#                print("%s: %d" % (fandom, numworks)
                 # PUT IT IN THE CATEGORY DICTIONARY
                 if includeUmbrellaFandoms:
                     fandomsByCategory[category][fandom] = numworks
@@ -51,7 +51,7 @@ for category in mediaCategories:
                     if fandom == "Marvel":
                         isUmbrella = True
                     for u in umbrellaTerms:
-#                        print "%s in %s? %s" % (u, fandom, u in fandom)
+#                        print("%s in %s? %s" % (u, fandom, u in fandom)
                         if u in fandom:
                             isUmbrella = True
                     if not(isUmbrella):
@@ -60,24 +60,24 @@ for category in mediaCategories:
 
 # DISPLAY THE TOP FANDOMS PER CATEGORY
 for category in sorted(mediaCategories):
-    print "TOP FANDOMS: %s" % category
+    print("TOP FANDOMS: %s" % category)
     catFandoms = fandomsByCategory[category]
     i = 1
-    for key, value in sorted(catFandoms.iteritems(), key=lambda(k,v): (v,k), reverse=True):
-         print "%d, %s, %s" % (i, key, value)
+    for key, value in sorted(catFandoms.items(), key=lambda k:k[1], reverse=True):
+         print("%d, %s, %s" % (i, key, value))
          # PUT IT IN THE TOP FANDOM DICTIONARY
          topFandoms[key] = value
          if i >= numFandoms:
              break
          i = i+1
 
-    print " "
+    print(" ")
 
 # DISPLAY THE TOP FANDOMS OVERALL
 i = 1
-print "TOP FANDOMS OVERALL"
-for key, value in sorted(topFandoms.iteritems(), key=lambda(k,v): (v,k), reverse=True):
-    print "%d, %s, %s" % (i, key, value)
+print("TOP FANDOMS OVERALL")
+for key, value in sorted(topFandoms.items(), key=lambda k:k[1], reverse=True):
+    print("%d, %s, %s" % (i, key, value))
     if i >= numFandoms:
         break
     i = i+1

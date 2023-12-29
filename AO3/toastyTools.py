@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from importlib import reload
 import urllib3
 import certifi
 import re
@@ -55,7 +56,6 @@ def writeEndlineToCSV(outfp):
 def setupUrllib():
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     reload(sys)
-    sys.setdefaultencoding('utf8')
     user_agent = {'user-agent': 'bot'}
     return urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where(), headers=user_agent)
 
@@ -64,14 +64,14 @@ def getSoupFromURL(url):
     http = setupUrllib()
     r = {}
     try:
-        print "Pausing so as not to DOS AO3..."
+        print("Pausing so as not to DOS AO3...")
         time.sleep(PAUSE_INTERVAL) 
         r = http.request('GET', url)
         soup = BeautifulSoup(r.data, features="html.parser")
         soup.prettify()
         return soup
     except: #urllib.error.HTTPError as e:
-        print "failure to fetch URL: ", url
+        print("failure to fetch URL: ", url)
         return -1
 
 
@@ -207,7 +207,7 @@ def getNumWorksFromSoup(soup, isSortAndFilterURL):
     except:
 #        print "************ except2"
         line = ''
-        print "No num works found"
+        print("No num works found")
         return errorNum
 
 #    print "************ nums"

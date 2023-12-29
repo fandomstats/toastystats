@@ -26,8 +26,8 @@ class AO3data:
 
     # METHOD: printAll
     def printAll(self):
-        print self.searchParams, ", ", self.numworks
-        print self.categories
+        print(self.searchParams, ", ", self.numworks)
+        print(self.categories)
 
     # METHOD: printCSV
     def printCSV(self, fo):
@@ -38,7 +38,7 @@ class AO3data:
             fo.write(str(self.numworks))
         except:
             pdb.set_trace()
-            print "COULDN'T WRITE TO FILE: ", self.numworks
+            print("COULDN'T WRITE TO FILE: ", self.numworks)
         fo.write(", ")
 
         sortedcats = sorted(self.categories.keys())
@@ -71,7 +71,7 @@ class AO3data:
             fo.write("\n")
         except:
             pdb.set_trace()
-            print "COULDN'T WRITE TO FILE: ", self.numworks
+            print("COULDN'T WRITE TO FILE: ", self.numworks)
 
 
 
@@ -132,13 +132,13 @@ class AO3data:
 #            print "******** fetching soup"
             soup = self.fetchHTML()
         except:
-            print "******** didn't fetch soup"
+            print("******** didn't fetch soup")
             return
 
         #        print "************ fetching num works"
         self.numworks = getNumWorksFromSoup(soup, isSorted)
         if DEBUG:
-            print self.numworks
+            print(self.numworks)
             
         if isSorted:
 #            print "*****************"
@@ -198,7 +198,7 @@ class AO3data:
                 topList = soup.findAll("dd", {"id" : idstring})
 #                print(topList)
             except AttributeError:
-                print "ERROR: empty HTML data: ", self.searchURL
+                print("ERROR: empty HTML data: ", self.searchURL)
                 self.numworks = -2
                 return
 
@@ -207,7 +207,7 @@ class AO3data:
 #                print "@@@@@@@"
 #                print top
             except:
-                print "ERROR! Failed to fetch top " + k + "s"
+                print("ERROR! Failed to fetch top " + k + "s")
                 return
 
             try:
@@ -220,7 +220,7 @@ class AO3data:
                     m = tmp.match(L.text.strip())
                     self.categories[k]["top"][m.group(1)] = int(m.group(2))
             except:
-                print "ERROR! label issue " + k
+                print("ERROR! label issue " + k)
                 return
 
 
@@ -330,9 +330,9 @@ class AO3data:
         except:
             dummy = ''
 
-        print d
-        print fan
-        print free
+        print(d)
+        print(fan)
+        print(free)
         # assemble the URL
         urlpredate = 'http://archiveofourown.org/works/search?utf8=%E2%9C%93&work_search%5Bquery%5D=&work_search%5Btitle%5D=&work_search%5Bcreator%5D=&work_search%5Brevised_at%5D='
         urlprefandom = '&work_search%5Bcomplete%5D=0&work_search%5Bsingle_chapter%5D=0&work_search%5Bword_count%5D=&work_search%5Blanguage_id%5D=&work_search%5Bfandom_names%5D='

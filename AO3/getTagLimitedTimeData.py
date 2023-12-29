@@ -15,17 +15,17 @@ outfp = prepCSVOutfile(outfile,"tag,works "+startDate+" to "+endDate)
                        
 for tag in tags:
     if DEBUG:
-        print tag
+        print(tag)
 
     writeFieldToCSV(outfp, tag)
 
     limitedURL = getAO3TagTimeframeURL(tag,[],[],startDate,endDate)
     if DEBUG:
-        print limitedURL
+        print(limitedURL)
 
     limitedWorks = getNumWorksFromURL(limitedURL, True)
     if DEBUG:
-        print limitedWorks
+        print(limitedWorks)
 
     writeFieldToCSV(outfp, str(limitedWorks))
 

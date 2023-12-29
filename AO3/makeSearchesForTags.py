@@ -18,8 +18,8 @@ tagfile = sys.argv[1]
 outfile = sys.argv[2]
 
 if verbose:
-    print "tag file: ", tagfile
-    print "output  file: ", outfile
+    print("tag file: ", tagfile)
+    print("output  file: ", outfile)
 
 try:
     with open(tagfile) as fin:
@@ -28,7 +28,7 @@ except:
     sys.exit("could not read input file")
 
 if verbose:
-    print "Number of lines: ", len(tags)
+    print("Number of lines: ", len(tags))
 
 fout = open(outfile, "w")
 fout.write("{ \"searches\": [\n")
@@ -37,13 +37,13 @@ fout.write("{ \"searches\": [\n")
 # iterate through all items except the last one
 for f in tags[:-1]:
     if verbose:
-        print f
+        print(f)
 #    f = re.sub("\"", '%22', f)
     f = re.sub("\"", '\\\"', f)
     f = f.rstrip("\n")
 
     if verbose:
-        print "tag: ", f
+        print("tag: ", f)
 
     # write to outfile
     fout.write("{ \"tag\": \"")
@@ -56,7 +56,7 @@ f = tags[-1]
 f = re.sub("\"", '\\\"', f)
 f = f.rstrip("\n")
 if verbose:
-    print "tag: ", f
+    print("tag: ", f)
 
 fout.write("{ \"tag\": \"")
 fout.write(f)

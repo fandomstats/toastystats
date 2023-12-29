@@ -10,7 +10,7 @@ outfp = prepCSVOutfile(outfile, "language,works "+timeframe)
 
 for langCode in langs:
     if DEBUG:
-        print langCode
+        print(langCode)
 
     # write to CSV: language code
     writeFieldToCSV(outfp, langCode)
@@ -18,11 +18,11 @@ for langCode in langs:
     # get data on how many works exist for this language code overall and within limited timeframe, and write to CSV
     limitedURL = getAO3LanguageTimeframeURL(langCode,timeframe,singleChapter)
     if DEBUG:
-        print limitedURL
+        print(limitedURL)
 
     limitedWorks = getNumWorksFromURL(limitedURL, False)
     if DEBUG:
-        print limitedWorks
+        print(limitedWorks)
 
     writeFieldToCSV(outfp, str(limitedWorks))
 

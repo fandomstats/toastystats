@@ -17,7 +17,7 @@ if len(sys.argv) > 2:
 urlfile = sys.argv[1]
 
 if verbose:
-    print "reading file: ", urlfile
+    print("reading file: ", urlfile)
 
 try:
     with open(urlfile) as f:
@@ -26,11 +26,11 @@ except:
     sys.exit("could not read URL file")
 
 if verbose:
-    print "Number of lines: ", len(urls)
+    print("Number of lines: ", len(urls))
 
 for u in urls:
     if verbose:
-        print "******\n"
+        print("******\n")
 
     u = u.rstrip('\n')
 
@@ -41,7 +41,7 @@ for u in urls:
         cmd = 'python getNum.py "' + u + '"' 
 
     if verbose:
-        print "cmd: ", cmd
+        print("cmd: ", cmd)
 
     try:
         os.system(cmd)

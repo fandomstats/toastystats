@@ -16,7 +16,7 @@ if len(sys.argv) > 2:
 filename = sys.argv[1]
 
 if verbose:
-    print "filename: ", filename
+    print("filename: ", filename)
 
 # load JSON from file
 try:
@@ -33,7 +33,7 @@ except:
 
 for s in searches:
     if verbose:
-        print "search: ", s
+        print("search: ", s)
 
     params = ''
 
@@ -46,11 +46,11 @@ for s in searches:
         params += tmp[1]
         params += ', '
         if verbose: 
-            print "category: ", c
-            print "params ", params
+            print("category: ", c)
+            print("params ", params)
     except:
         if verbose: 
-            print "no category in search ", s
+            print("no category in search ", s)
 
     # fetch the warning(s)
     w = ''        
@@ -61,11 +61,11 @@ for s in searches:
         params += tmp[1]
         params += ', '
         if verbose: 
-            print "warning: ", w
-            print "params ", params
+            print("warning: ", w)
+            print("params ", params)
     except:
         if verbose: 
-            print "no warning in search ", s
+            print("no warning in search ", s)
 
     # fetch the tag(s)
     t = '&tag_id='
@@ -76,11 +76,11 @@ for s in searches:
         params += tmp[1]
         params += ', '
         if verbose: 
-            print "tag: ", t
-            print "params ", params
+            print("tag: ", t)
+            print("params ", params)
     except:
         if verbose: 
-            print "no tag in search ", s
+            print("no tag in search ", s)
 
     # fetch the "search within results"
     swr = '&work_search%5Bquery%5D='
@@ -91,11 +91,11 @@ for s in searches:
         params += tmp[1]
         params += ', '
         if verbose: 
-            print "search within results: ", swr
-            print "params ", params
+            print("search within results: ", swr)
+            print("params ", params)
     except:
         if verbose: 
-            print "no search within results in search ", s
+            print("no search within results in search ", s)
 
     # assemble the URL
     urlprefix = 'http://archiveofourown.org/works?utf8=%E2%9C%93&commit=Sort+and+Filter&work_search%5Bsort_column%5D=revised_at'
@@ -104,8 +104,8 @@ for s in searches:
 
     u = urlprefix + c + w + urlprequery + swr + urlpretag + t
     if verbose: 
-        print '***********'
-    print u
+        print('***********')
+    print(u)
     if verbose: 
-        print '***********'
+        print('***********')
 

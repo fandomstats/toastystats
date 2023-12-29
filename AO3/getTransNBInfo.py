@@ -26,7 +26,7 @@ fo.write("tag,num works,Trans,Nonbinary Character,Trans between "+startdate+" an
 for t in tags:
     fo.write(t.encode('utf-8') + ",")
     if verbose:
-        print t
+        print(t)
         
     includeTagsTrans = ["Trans"]
     includeTagsNB = ["Nonbinary Character"]
@@ -49,7 +49,7 @@ for t in tags:
         # TO DO: would ideally like to get not just num works, but also top category and top fandom
         numWorks = getNumWorksFromURL(u, True)
         if verbose:
-            print numWorks
+            print(numWorks)
         fo.write(str(numWorks).encode('utf-8') + ",")
     
     fo.write("\n")

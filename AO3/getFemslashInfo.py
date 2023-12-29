@@ -26,7 +26,7 @@ fo.write("tag,num works,F/F,F/F -M/M -F/M,F/F -M/M -F/M between "+startdate+" an
 for t in tags:
     fo.write(t + ",")
     if verbose:
-        print t
+        print(t)
         
     includeTags = []
     excludeTags = []
@@ -50,7 +50,7 @@ for t in tags:
         # TO DO: would ideally like to get not just num works, but also top category and top fandom
         numWorks = getNumWorksFromURL(u, True)
         if verbose:
-            print numWorks
+            print(numWorks)
         fo.write(str(numWorks) + ",")
     
     fo.write("\n")

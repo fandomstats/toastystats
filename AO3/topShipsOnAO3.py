@@ -13,7 +13,7 @@ excludeTags = []
 ratingsTags = ["Not Rated", "General Audiences", "Teen And Up Audiences", "Mature", "Explicit"]
 
 for r in ratingsTags:
-    print "!!!!!!!!!!!!!!!!!!!!!!!! FETCHING SHIPS FOR RATING TAG: " + r
+    print("!!!!!!!!!!!!!!!!!!!!!!!! FETCHING SHIPS FOR RATING TAG: " + r)
     rShipsOut = r + "-ships-tmp.csv"
     rFandomsOut = r + "-fandoms-tmp.csv"
     ships, fandoms = getTopShipsAndFandoms(r, [], excludeTags, minShipSize/len(ratingsTags), rShipsOut, rFandomsOut)

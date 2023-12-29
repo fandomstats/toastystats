@@ -24,7 +24,7 @@ fandomsByCategory = {}
 topFandoms = {}
 
 for category in mediaCategories:
-    print "Fetching " + category
+    print("Fetching " + category)
 
     # SET UP THE DICTIONARY FOR THIS CATEGORY
     fandomsByCategory[category] = {}
@@ -44,7 +44,7 @@ for category in mediaCategories:
             # IF IT PASSES A THRESHOLD...
             numworks = int(matchObj.group(2))
             if numworks >= minFandomSize:
-#                print "%s: %d" % (fandom, numworks)
+#                print("%s: %d" % (fandom, numworks)
                 # PUT IT IN THE CATEGORY DICTIONARY
                 if includeUmbrellaFandoms:
                     fandomsByCategory[category][fandom] = numworks
@@ -54,7 +54,7 @@ for category in mediaCategories:
                     if fandom == "Marvel":
                         isUmbrella = True
                     for u in umbrellaTerms:
-#                        print "%s in %s? %s" % (u, fandom, u in fandom)
+#                        print("%s in %s? %s" % (u, fandom, u in fandom)
                         if u in fandom:
                             isUmbrella = True
                     if not(isUmbrella):
@@ -64,10 +64,10 @@ for category in mediaCategories:
 f = open(outfile, 'w')
 # DISPLAY THE TOP FANDOMS PER CATEGORY
 for category in sorted(mediaCategories):
-#    print "TOP FANDOMS: %s" % category
+#    print("TOP FANDOMS: %s" % category
     catFandoms = fandomsByCategory[category]
     i = 1
-    for key, value in sorted(catFandoms.iteritems(), key=lambda(k,v): (v,k), reverse=True):
+    for key, value in sorted(catFandoms.items(), key=lambda k:k[1], reverse=True):
 #        key = convertFromAO3(key, False)
         f.write("%s, %s, %s\n" % (category, key, value))
         if i >= numFandoms:

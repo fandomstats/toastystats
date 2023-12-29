@@ -41,6 +41,6 @@ for tag in tagData:
     tagName = tag["name"]
     tagLength = len(tagName)
     if tagLength > minLength:
-        print tagName
-        print tagLength
+        print(tagName)
+        print(tagLength)
         writeTagToFile(tag, tagLength, outfp)

@@ -22,7 +22,7 @@ def importFile(filename, verbose):
 
     for s in searches:
         if verbose:
-            print "search: ", s
+            print("search: ", s)
             
         x = AO3search.AO3data()
         x.searchParams = s

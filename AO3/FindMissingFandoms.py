@@ -25,9 +25,9 @@ for fandom in open(fanf):
     if pattern in ao3data:
 #    if re.search(pattern, ao3data) is not None:
         if (verbose):
-            print "FOUND: ", fandom
+            print("FOUND: ", fandom)
     else:
 #        print "MISSING: ", fandom
 #        pdb.set_trace()
-        print fandom
+        print(fandom)
 
