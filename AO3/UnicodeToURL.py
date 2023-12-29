@@ -1,4 +1,4 @@
-import urlparse, urllib
+import urllib.parse, urllib
 
 def fixurl(url):
     # turn string into unicode
@@ -6,7 +6,7 @@ def fixurl(url):
         url = url.decode('utf8')
 
     # parse it
-    parsed = urlparse.urlsplit(url)
+    parsed = urllib.parse.urlsplit(url)
 
     # divide the netloc further
     userpass,at,hostport = parsed.netloc.rpartition('@')
@@ -31,5 +31,5 @@ def fixurl(url):
 
     # put it back together
     netloc = ''.join((user,colon1,pass_,at,host,colon2,port))
-    return urlparse.urlunsplit((scheme,netloc,path,query,fragment))
+    return urllib.parse.urlunsplit((scheme,netloc,path,query,fragment))
 

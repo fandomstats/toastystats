@@ -10,7 +10,7 @@ import codecs
 import operator
 import convert
 import AO3search
-from toastyTools import getArguments, setupUrllib, getSearchURL, mergeDictionaries, writeDictToCSV
+from toastyTools import getArguments, setupUrllib, mergeDictionaries, writeDictToCSV
 
 # GLOBAL VARIABLES
 DEBUG = 0
